@@ -1,4 +1,4 @@
-Verpacken mit Parallel-bzip2
+# pbzip2 - parallel packen
 
 * geht schneller
 * verbraucht weniger Platz
@@ -23,12 +23,9 @@ tar -vc directory_to_compress/ | pbzip2 -vc > myfile.tar.bz2
 pbzip2pbzip2 -dck <bz2file> | tar xvf -
 ```
 
-
-
 ## Links {#links}
 
 * [http://compression.ca/pbzip2/](http://compression.ca/pbzip2/)
 
-  
 
 
