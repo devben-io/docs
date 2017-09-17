@@ -193,7 +193,7 @@ testen
 
 #### Anpassungen {#anpassungen1}
 
-„snapfifo“ löschen & als pipe neu anlegen[7\)](https://wiki.mechbrain.de/doku.php?id=de:wiki:raspberry:multiroom_audiowiedergabe&s[]=snapcast#fn__7)
+„snapfifo“ löschen & als pipe neu anlegen
 
 ```
 rm -Rfv /root/spotify-connect-web-chroot/tmp/snapfifo
@@ -206,7 +206,7 @@ Spotify wird ja in einer eigenen chroot ausgeführt.
 
 Dort muss ALSA mitgeteilt werden, dass seine Ausgabe in eine Pipe umgeleitet werden soll…
 
-[/root/spotify-connect-web-chroot/etc/asound.conf](https://wiki.mechbrain.de/doku.php?do=export_code&id=de:wiki:raspberry:multiroom_audiowiedergabe&codeblock=14)
+`/root/spotify-connect-web-chroot/etc/asound.conf`
 
 ```
 # Ben's Spotify Connect Einstellung
