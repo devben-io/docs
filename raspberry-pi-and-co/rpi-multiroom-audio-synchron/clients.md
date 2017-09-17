@@ -1,11 +1,10 @@
 # Client\(s\)
 
-_\(die Dinger, wo die Musik rauskommen tut…\)_  
-
+_\(die Dinger, wo die Musik rauskommen tut…\)_
 
 ### Voraussetzung {#voraussetzung1}
 
-* raspian \(minimal\)
+* raspian \(Debian 8 minimal\)
 * optional: Filesystem vergrößern:
 
 ```
@@ -44,8 +43,6 @@ make all
 sudo make installclient
 ```
 
-
-
 ### Wifi einrichten {#wifi_einrichten}
 
 Firmware installieren:
@@ -56,8 +53,6 @@ apt-get install <FIRMWARE>
 ```
 
 **&lt;FIRMWARE&gt;**-`firmware-realtek`;`firmware-atheros`;`firmware-ralink`; je nach verwendeteten WLAN-Adapter
-
-
 
 WPA-Supplicant installieren:
 
@@ -77,8 +72,6 @@ psk="<PASSWORT>"
 ```
 
 rebooten
-
-
 
 ## Weblinks {#weblinks1}
 
