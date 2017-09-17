@@ -31,4 +31,6 @@
 * [FreeBSD](freebsd.md)
   * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
+* [Raspberry Pi & Co](raspberry-pi-and-co.md)
+  * [RPI \| Multiroom-Audio \(synchron\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron.md)
 
