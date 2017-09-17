@@ -22,46 +22,45 @@ Multiroom-Wiedergabe \(synchrone Wiedergabe auf mehreren Lautsprechern\) von
 ## Übersicht
 
 ```
-<INPUT>   or	<INPUT>
-Spotify		NAS/Webradio/etc.
-  │   ♫"lalla"♪	 │
-  │ 		 │
-  │ 		 │
-  │   <SERVER>   │	 <NETWORK>	 <CLIENT-1>
-╔═▼════════════╦═▼══╗  	 WiFi / LAN	╔══════════╗
-║spotifyConnect║ mpd║			║	   ║
-╠═▼════╦═══════╩═▼══╣			╠══════════╣ 
-║ │ ┌──▶ "snapfifo" ║			║	   ║
-║ │ │  ╠═══▼════════╣			╠══════════╣
-║ │ │  ║ snapserver ▶─────────┐		║	   ║
-║ │ │  ╠═══▼════════╣	      │		╠══════════╣
-║ │ │  ║ snapclient ║	      └──SYNC───▶snapclient║
-╠═│═│══╩═══▼════════╣	      │		╠══════════╣
-║ └⚙┘   ALSA	    ║	      │		║   ALSA   ║
-╚══════════▼════════╝	      │		╚═════▼════╝
-	   │		      │		      │
-	   ▼		      │		      ▼
-        <OUTPUT>	      │		  <OUTPUT>
-	♫"lalla"♪	      │		  ♫"lalla"♪
-			      │
-			      │
-			      │		 <CLIENT-n>
-			      │		╔══════════╗
-			      │		║	   ║
-			      │		╠══════════╣
-			      │		║	   ║
-			      │		╠══════════╣
-			      │		║	   ║
-			      │		╠══════════╣
-			      └──SYNC───▶snapclient║
-					╠═════▼════╣
-					║   ALSA   ║
-					╚═════▼════╝
-					      │
-					      ▼
-					  <OUTPUT>
-					  ♫"lalla"♪
-
+<INPUT>   or    <INPUT>
+Spotify        NAS/Webradio/etc.
+  │   ♫"lalla"♪     │
+  │          │
+  │          │
+  │   <SERVER>   │     <NETWORK>     <CLIENT-1>
+╔═▼════════════╦═▼══╗       WiFi / LAN    ╔══════════╗
+║spotifyConnect║ mpd║            ║       ║
+╠═▼════╦═══════╩═▼══╣            ╠══════════╣ 
+║ │ ┌──▶ "snapfifo" ║            ║       ║
+║ │ │  ╠═══▼════════╣            ╠══════════╣
+║ │ │  ║ snapserver ▶─────────┐        ║       ║
+║ │ │  ╠═══▼════════╣          │        ╠══════════╣
+║ │ │  ║ snapclient ║          └──SYNC───▶snapclient║
+╠═│═│══╩═══▼════════╣          │        ╠══════════╣
+║ └⚙┘   ALSA        ║          │        ║   ALSA   ║
+╚══════════▼════════╝          │        ╚═════▼════╝
+       │              │              │
+       ▼              │              ▼
+        <OUTPUT>          │          <OUTPUT>
+    ♫"lalla"♪          │          ♫"lalla"♪
+                  │
+                  │
+                  │         <CLIENT-n>
+                  │        ╔══════════╗
+                  │        ║       ║
+                  │        ╠══════════╣
+                  │        ║       ║
+                  │        ╠══════════╣
+                  │        ║       ║
+                  │        ╠══════════╣
+                  └──SYNC───▶snapclient║
+                    ╠═════▼════╣
+                    ║   ALSA   ║
+                    ╚═════▼════╝
+                          │
+                          ▼
+                      <OUTPUT>
+                      ♫"lalla"♪
 ```
 
 **„snapfifo“ **=`/tmp/snapfifo`-Pipe
@@ -209,7 +208,7 @@ Spotify wird ja in einer eigenen chroot ausgeführt.
 
 Dort muss ALSA mitgeteilt werden, dass seine Ausgabe in eine Pipe umgeleitet werden soll…
 
-[/root/spotify-connect-web-chroot/etc/asound.conf](https://wiki.mechbrain.de/doku.php?do=export_code&id=de:wiki:raspberry:multiroom_audiowiedergabe&codeblock=14)
+`/root/spotify-connect-web-chroot/etc/asound.conf`
 
 ```
 # Ben's Spotify Connect Einstellung
@@ -243,7 +242,7 @@ pcm.writeFile {
 
 #### fstab anpassen {#fstab_anpassen}
 
-Um das_„echte“_`/tmp`-Verzeichnis in der chroot verfügbar zu machen, ergänzen wir noch eine Zeile in der`/etc/fstab`
+Um das _„echte“_`/tmp`-Verzeichnis in der chroot verfügbar zu machen, ergänzen wir noch eine Zeile in der`/etc/fstab`
 
 ```
 /tmp    /root/spotify-connect-web-chroot/tmp/    none    bind    0    0
