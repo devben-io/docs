@@ -11,5 +11,5 @@
 * [CLI Magic](cli-magic.md)
   * [dd progressbar](dd-progressbar.md)
   * [Logging im bash skript](logging-im-bash-skript.md)
-  * nur Dateinamen ausgeben
+  * [nur Dateinamen ausgeben](nur-dateinamen-ausgeben.md)
 
