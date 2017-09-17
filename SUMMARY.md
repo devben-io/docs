@@ -20,4 +20,5 @@
   * [PDFs scannen](cli_magic/pdfs-scannen.md)
   * [Schreibmaschine simulieren](scli_magic/chreibmaschine-simulieren.md)
   * [SSH Key löschen](cli_magic/ssh-key-loschen.md)
+* test
 
