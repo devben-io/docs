@@ -17,4 +17,5 @@
   * [LVM thinprovisioned Volume erstellen](lvm-thinprovisioned-volume-erstellen.md)
   * [OS Version anzeigen](os-version-anzeigen.md)
   * [pbzip2 parallel packen](pbzip2-parallel-packen.md)
+  * [PDFs scannen](pdfs-scannen.md)
 
