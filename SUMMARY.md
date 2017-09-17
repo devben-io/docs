@@ -13,4 +13,5 @@
   * [Logging im bash skript](logging-im-bash-skript.md)
   * [nur Dateinamen ausgeben](nur-dateinamen-ausgeben.md)
   * [dmesg fortlaufend anzeigen lassen](dmesg-fortlaufend-anzeigen-lassen.md)
+  * [live ssh network throughput test](live-ssh-network-throughput-test.md)
 

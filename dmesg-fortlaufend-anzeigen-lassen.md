@@ -12,8 +12,6 @@ als root:
 while sleep 0.1; do dmesg -c; done
 ```
 
-Bearbeiten
-
 ## Weblinks {#weblinks}
 
 * [http://mitschang.net/software/](http://mitschang.net/software/)
