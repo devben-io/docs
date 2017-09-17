@@ -67,7 +67,7 @@ Spotify        NAS/Webradio/etc.
 
 **⚙**= Umwandlung des Audiostreams in eine Pipe
 
-##  {#server}
+
 
 
 
