@@ -33,4 +33,6 @@
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
 * [Raspberry Pi & Co](raspberry-pi-and-co.md)
   * [RPI \| Multiroom-Audio \(synchron\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron.md)
+    * [Server](raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md)
+    * [Client\(s\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md)
 
