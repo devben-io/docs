@@ -1,13 +1,13 @@
-# Server
+# Server[^1]
 
 _\(datt Ding, wo die Musik reinkommen tut…\)_
 
-### Voraussetzung {#voraussetzung}
+## Voraussetzung
 
 * Rasbian \(Debian 8 minimal\)
 * [Volumio](https://volumio.org/) ist installiert
 
-### Software nachinstallieren {#software_nachinstallieren}
+## Software nachinstallieren
 
 ```
 sudo apt-get update
@@ -15,7 +15,7 @@ sudo apt-get install build-essential git
 sudo apt-get install libboost-dev libboost-system-dev libboost-program-options-dev libasound2-dev libvorbis-dev libflac-dev alsa-utils libavahi-client-dev avahi-daemon
 ```
 
-### snapcastausm git installieren {#snapcast_ausm_git_installieren}
+## snapcast ausm git installieren
 
 Sourcen runterladen…
 
@@ -39,9 +39,9 @@ sudo make installserver
 sudo make installclient
 ```
 
-### Anpassungen {#anpassungen}
+## Anpassungen
 
-#### ''/etc/mpd.conf'' anpassen {#etcmpdconf_anpassen}
+### ''/etc/mpd.conf'' anpassen
 
 altes Zeux auskommentieren
 
@@ -74,7 +74,7 @@ audio_output {
 }
 ```
 
-#### ''/etc/default/snapserver'' anpassen {#etcdefaultsnapserver_anpassen}
+### ''/etc/default/snapserver'' anpassen
 
 ```
 SNAPSERVER_OPTS="-d -s pipe:///tmp/snapfifo?name=multiroom&mode=read"
@@ -86,16 +86,18 @@ Alternativ: bei mehreren Räumen/Streams:
 SNAPSERVER_OPTS="-d -s pipe:///tmp/snapfifo-room_1?name=room_1&sampleformat=48000:16:2&codec=flac -s pipe:///tmp/snapfifo-room_2?name=room_2&sampleformat=48000:16:2&codec=flac -s pipe:///tmp/snapfifo-room_3?name=room_3&sampleformat=48000:16:2&codec=flac"
 ```
 
-### SpotifyConnect installieren + einrichten {#spotifyconnect_installieren_einrichten}
+## 
 
-#### Spotify Key beantragen {#spotify_key_beantragen}
+## SpotifyConnect installieren + einrichten
+
+### Spotify Key beantragen
 
 _\(geht nur mir einen Spotify Premiumaccount\)_
 
 * einloggen unter: [https://devaccount.spotify.com/my-account/keys/](https://devaccount.spotify.com/my-account/keys/)
 * eine „App“ anlegen und App-Key als „**Binary**“ herunterladen \(`spotify_appkey.key`\)
 
-#### Spotify installieren {#spotify_installieren}
+### Spotify installieren
 
 Skript herunterladen
 
@@ -104,7 +106,7 @@ curl -O curl -OL https://github.com/Fornoth/spotify-connect-web/releases/downloa
 chmod u+x spotify-connect-web.sh
 ```
 
-pre-built chroot installieren
+pre-built chroot installieren[^1]
 
 ```
 # Download the current chroot (~ 180 MB)
@@ -123,7 +125,7 @@ testen
 ./spotify-connect-web.sh --username 1234 --password abcd --bitrate 320 --name Volumio --playback_device plughw:CARD=ALSA,DEV=0
 ```
 
-#### Anpassungen {#anpassungen1}
+### Anpassungen
 
 „snapfifo“ löschen & als pipe neu anlegen
 
@@ -132,7 +134,7 @@ rm -Rfv /root/spotify-connect-web-chroot/tmp/snapfifo
 mknod /root/spotify-connect-web-chroot/tmp/snapfifo p
 ```
 
-#### asound.conf \(chroot\) anlegen {#asoundconf_chroot_anlegen}
+### asound.conf \(chroot\) anlegen
 
 Spotify wird ja in einer eigenen chroot ausgeführt.
 
@@ -170,7 +172,7 @@ pcm.writeFile {
 #######################################################################
 ```
 
-#### fstab anpassen {#fstab_anpassen}
+### fstab anpassen
 
 Um das_„echte“_`/tmp`-Verzeichnis in der chroot verfügbar zu machen, ergänzen wir noch eine Zeile in der`/etc/fstab`
 
@@ -180,7 +182,7 @@ Um das_„echte“_`/tmp`-Verzeichnis in der chroot verfügbar zu machen, ergän
 
 ####  {#testen_spotifyconnect_starten}
 
-#### Testen \(SpotifyConnect starten\) {#testen_spotifyconnect_starten}
+### Testen \(SpotifyConnect starten\)
 
 ```
 /root/spotify-connect-web.sh --username <NAME> --password <GEHEIM> --bitrate 320 --name Bens_Volumio -o ben
@@ -188,7 +190,7 @@ Um das_„echte“_`/tmp`-Verzeichnis in der chroot verfügbar zu machen, ergän
 
 wenn der Dienst gestartet ist sollte in $einer Spotify-Anwendung folgende zusätzliche Wiedergabe-Optionen verfügbar sein
 
-#### Systemd Unit anlegen {#systemd_unit_anlegen}
+### Systemd Unit anlegen
 
 zuerst eine kleine Config für die Unit in`/etc/default/spotify-conncect`anlegen:
 
@@ -232,7 +234,7 @@ systemctl enable spotify-connect-ben.service
 systemctl restart spotify-connect-ben.service
 ```
 
-#### Weblinks {#weblinks}
+## Weblinks
 
 * [http://powerpi.de/spotify-connect-auf-dem-raspberry-pi-2-installieren-dein-smartphone-ist-die-fernbedienung/](http://powerpi.de/spotify-connect-auf-dem-raspberry-pi-2-installieren-dein-smartphone-ist-die-fernbedienung/)
 * [http://www.runeaudio.com/forum/spotify-connect-autostart-t3315.html](http://www.runeaudio.com/forum/spotify-connect-autostart-t3315.html)
