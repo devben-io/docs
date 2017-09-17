@@ -106,7 +106,7 @@ curl -O curl -OL https://github.com/Fornoth/spotify-connect-web/releases/downloa
 chmod u+x spotify-connect-web.sh
 ```
 
-pre-built chroot installieren[^1]
+pre-built chroot installieren
 
 ```
 # Download the current chroot (~ 180 MB)
