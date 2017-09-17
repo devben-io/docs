@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [SaltStack](saltstack.md)
-  * Creating hashed passwords
+  * [Creating hashed passwords](saltstack/creating-hashed-passwords.md)
 
