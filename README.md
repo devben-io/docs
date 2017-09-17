@@ -1,4 +1,4 @@
-# Knowledge-Base 
+# \(random-\)Knowledge-Base
 
 Collection of "random knowledge" as a [GitBook](https://www.gitbook.com/ "GitBook").
 
