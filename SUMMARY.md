@@ -18,4 +18,5 @@
   * [OS Version anzeigen](os-version-anzeigen.md)
   * [pbzip2 parallel packen](pbzip2-parallel-packen.md)
   * [PDFs scannen](pdfs-scannen.md)
+  * [Schreibmaschine simulieren](schreibmaschine-simulieren.md)
 
