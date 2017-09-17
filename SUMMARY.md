@@ -19,4 +19,5 @@
   * [pbzip2 parallel packen](pbzip2-parallel-packen.md)
   * [PDFs scannen](pdfs-scannen.md)
   * [Schreibmaschine simulieren](schreibmaschine-simulieren.md)
+  * [SSH Key löschen](ssh-key-loschen.md)
 
