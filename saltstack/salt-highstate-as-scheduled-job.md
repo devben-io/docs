@@ -1,4 +1,4 @@
-# SALT \| Highstate per scheduled job \(config pullen\) {#salt_highstate_per_scheduled_job_config_pullen}
+# SALT \| Highstate per scheduled job \(config pull \) {#salt_highstate_per_scheduled_job_config_pullen}
 
 folgendes in die &lt;minion-config&gt; eintragen:
 
