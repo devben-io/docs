@@ -29,6 +29,6 @@
   * [Top 10 Prozesse anzeigen lassen](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [Zufallszahlen in der Shell](cli_magic/zufallszahlen-in-der-shell.md)
 * [FreeBSD](freebsd.md)
-  * FreeBSD \| ZFS
+  * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
 
