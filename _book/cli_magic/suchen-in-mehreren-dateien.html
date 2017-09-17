@@ -1,0 +1,599 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Suchen in mehreren Dateien · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="suchen-und-entpacken.html" />
+    
+    
+    <link rel="prev" href="ssh-key-loschen.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../saltstack.html">
+            
+                <a href="../saltstack.html">
+            
+                    
+                    SaltStack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../saltstack/creating-hashed-passwords.html">
+            
+                <a href="../saltstack/creating-hashed-passwords.html">
+            
+                    
+                    SALT | Creating hashed passwords
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../saltstack/salt-cheatsheet.html">
+            
+                <a href="../saltstack/salt-cheatsheet.html">
+            
+                    
+                    SALT | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../saltstack/salt-header-in-managed-files.html">
+            
+                <a href="../saltstack/salt-header-in-managed-files.html">
+            
+                    
+                    SALT | Header in managed files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../saltstack/salt-highstate-as-scheduled-job.html">
+            
+                <a href="../saltstack/salt-highstate-as-scheduled-job.html">
+            
+                    
+                    SALT | Highstate as scheduled job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../saltstack/salt-install-salt-with-salt-ssh.html">
+            
+                <a href="../saltstack/salt-install-salt-with-salt-ssh.html">
+            
+                    
+                    SALT | install salt with salt-ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../saltstack/salt-pillars.html">
+            
+                <a href="../saltstack/salt-pillars.html">
+            
+                    
+                    SALT | Pillars
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../cli-magic.html">
+            
+                <a href="../cli-magic.html">
+            
+                    
+                    CLI Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="dd-progressbar.html">
+            
+                <a href="dd-progressbar.html">
+            
+                    
+                    dd progressbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="logging-im-bash-skript.html">
+            
+                <a href="logging-im-bash-skript.html">
+            
+                    
+                    Logging im bash skript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="nur-dateinamen-ausgeben.html">
+            
+                <a href="nur-dateinamen-ausgeben.html">
+            
+                    
+                    nur Dateinamen ausgeben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="dmesg-fortlaufend-anzeigen-lassen.html">
+            
+                <a href="dmesg-fortlaufend-anzeigen-lassen.html">
+            
+                    
+                    dmesg fortlaufend anzeigen lassen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="live-ssh-network-throughput-test.html">
+            
+                <a href="live-ssh-network-throughput-test.html">
+            
+                    
+                    live ssh network throughput test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="lvm-thinprovisioned-volume-erstellen.html">
+            
+                <a href="lvm-thinprovisioned-volume-erstellen.html">
+            
+                    
+                    LVM thinprovisioned Volume erstellen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="os-version-anzeigen.html">
+            
+                <a href="os-version-anzeigen.html">
+            
+                    
+                    OS Version anzeigen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="pbzip2-parallel-packen.html">
+            
+                <a href="pbzip2-parallel-packen.html">
+            
+                    
+                    pbzip2 parallel packen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="pdfs-scannen.html">
+            
+                <a href="pdfs-scannen.html">
+            
+                    
+                    PDFs scannen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../scli_magic/chreibmaschine-simulieren.md">
+            
+                <span>
+            
+                    
+                    Schreibmaschine simulieren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="ssh-key-loschen.html">
+            
+                <a href="ssh-key-loschen.html">
+            
+                    
+                    SSH Key löschen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.12" data-path="suchen-in-mehreren-dateien.html">
+            
+                <a href="suchen-in-mehreren-dateien.html">
+            
+                    
+                    Suchen in mehreren Dateien
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="suchen-und-entpacken.html">
+            
+                <a href="suchen-und-entpacken.html">
+            
+                    
+                    Suchen und Entpacken
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="suchen-und-ersetzen-in-mehreren-dateien.html">
+            
+                <a href="suchen-und-ersetzen-in-mehreren-dateien.html">
+            
+                    
+                    Suchen und Ersetzen in mehreren Dateien
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="suchen-und-loschen.html">
+            
+                <a href="suchen-und-loschen.html">
+            
+                    
+                    Suchen und Löschen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="tar-mit-progressbar.html">
+            
+                <a href="tar-mit-progressbar.html">
+            
+                    
+                    tar mit Progressbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="text-highlighten-mit-grep.html">
+            
+                <a href="text-highlighten-mit-grep.html">
+            
+                    
+                    Text Highlighten mit grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="top-10-prozesse-anzeigen-lassen.html">
+            
+                <a href="top-10-prozesse-anzeigen-lassen.html">
+            
+                    
+                    Top 10 Prozesse anzeigen lassen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="zufallszahlen-in-der-shell.html">
+            
+                <a href="zufallszahlen-in-der-shell.html">
+            
+                    
+                    Zufallszahlen in der Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Suchen in mehreren Dateien</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="suchen_in_mehreren_dateien">Suchen in mehreren Dateien</h1><pre><code>find /&lt;PFAD-DER-DURCHSUCHT-WERDEN-SOLL&gt; -type f -exec grep -l &apos;&lt;SUCHBEGRIFF-IN-DEN-DATEIEN&gt;&apos; {} \;</code></pre>
+<h2 id="links">Links</h2><ul><li><a href="https://forums.opensuse.org/showthread.php/471286-mit-grep-alle-nachfolgenden-verzeichnisse-durchsuchen" target="_blank">https://forums.opensuse.org/showthread.php/471286-mit-grep-alle-nachfolgenden-verzeichnisse-durchsuchen</a>
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ssh-key-loschen.html" class="navigation navigation-prev " aria-label="Previous page: SSH Key löschen">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="suchen-und-entpacken.html" class="navigation navigation-next " aria-label="Next page: Suchen und Entpacken">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Suchen in mehreren Dateien","level":"1.3.12","depth":2,"next":{"title":"Suchen und Entpacken","level":"1.3.13","depth":2,"path":"cli_magic/suchen-und-entpacken.md","ref":"cli_magic/suchen-und-entpacken.md","articles":[]},"previous":{"title":"SSH Key löschen","level":"1.3.11","depth":2,"path":"cli_magic/ssh-key-loschen.md","ref":"cli_magic/ssh-key-loschen.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cli_magic/suchen-in-mehreren-dateien.md","mtime":"2017-09-17T16:44:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2017-09-17T16:49:54.848Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
