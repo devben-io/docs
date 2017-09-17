@@ -23,4 +23,5 @@
   * [Suchen in mehreren Dateien](cli_magic/suchen-in-mehreren-dateien.md)
   * [Suchen und Entpacken](cli_magic/suchen-und-entpacken.md)
   * [Suchen und Ersetzen in mehreren Dateien](cli_magic/suchen-und-ersetzen-in-mehreren-dateien.md)
+  * [Suchen und Löschen](cli_magic/suchen-und-loschen.md)
 
