@@ -21,4 +21,5 @@
   * [Schreibmaschine simulieren](scli_magic/chreibmaschine-simulieren.md)
   * [SSH Key löschen](cli_magic/ssh-key-loschen.md)
   * [Suchen in mehreren Dateien](cli_magic/suchen-in-mehreren-dateien.md)
+  * [Suchen und Entpacken](cli_magic/suchen-und-entpacken.md)
 
