@@ -2,3 +2,7 @@
 
 Collection of "random knowledge"
 
+* in english and german \(sometimes\)
+
+
+
