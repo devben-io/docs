@@ -27,8 +27,8 @@ Spotify        NAS/Webradio/etc.
   │   ♫"lalla"♪  │
   │              │
   │              │
-  │   <SERVER>   │     <NETWORK>         <CLIENT-1>
-╔═▼════════════╦═▼══╗  WiFi / LAN       ╔══════════╗
+  │   <SERVER>   │       <NETWORK>      <CLIENT-1>
+╔═▼════════════╦═▼══╗    WiFi / LAN     ╔══════════╗
 ║spotifyConnect║ mpd║                   ║          ║
 ╠═▼════╦═══════╩═▼══╣                   ╠══════════╣ 
 ║ │ ┌──▶ "snapfifo" ║                   ║          ║
