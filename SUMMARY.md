@@ -14,4 +14,6 @@
   * [nur Dateinamen ausgeben](nur-dateinamen-ausgeben.md)
   * [dmesg fortlaufend anzeigen lassen](dmesg-fortlaufend-anzeigen-lassen.md)
   * [live ssh network throughput test](live-ssh-network-throughput-test.md)
+  * [LVM thinprovisioned Volume erstellen](lvm-thinprovisioned-volume-erstellen.md)
+  * [OS Version anzeigen](os-version-anzeigen.md)
 
