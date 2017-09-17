@@ -1,4 +1,4 @@
-# Server[^1]
+# Server
 
 _\(datt Ding, wo die Musik reinkommen tut…\)_
 
