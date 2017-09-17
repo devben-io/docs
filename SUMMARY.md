@@ -25,4 +25,7 @@
   * [Suchen und Ersetzen in mehreren Dateien](cli_magic/suchen-und-ersetzen-in-mehreren-dateien.md)
   * [Suchen und Löschen](cli_magic/suchen-und-loschen.md)
   * [tar mit Progressbar](cli_magic/tar-mit-progressbar.md)
+  * [Text Highlighten mit grep](cli_magic/text-highlighten-mit-grep.md)
+  * [Top 10 Prozesse anzeigen lassen](cli_magic/top-10-prozesse-anzeigen-lassen.md)
+  * [Zufallszahlen in der Shell](cli_magic/zufallszahlen-in-der-shell.md)
 
