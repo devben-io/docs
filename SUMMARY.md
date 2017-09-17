@@ -12,4 +12,5 @@
   * [dd progressbar](dd-progressbar.md)
   * [Logging im bash skript](logging-im-bash-skript.md)
   * [nur Dateinamen ausgeben](nur-dateinamen-ausgeben.md)
+  * [dmesg fortlaufend anzeigen lassen](dmesg-fortlaufend-anzeigen-lassen.md)
 
