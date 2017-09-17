@@ -8,4 +8,6 @@
   * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
+* CLI Magic
+  * [dd progressbar](dd-progressbar.md)
 
