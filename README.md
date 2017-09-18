@@ -1,4 +1,4 @@
-# RKaaG - "random-knowledge-as-a-[GitBook](https://www.gitbook.com/ "GitBook")"
+# RKaaG - "Random-Knowledge-as-a-[GitBook](https://www.gitbook.com/ "GitBook")"
 
 * [SUMMARY](SUMMARY.md)
 * "How Tos" and "Nice To Knows" about:
@@ -7,5 +7,6 @@
   * Raspberry Pis
   * Config Management
   * ...
+
 
 
