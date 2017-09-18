@@ -9,6 +9,3 @@ Collection of "random-knowledge"-as-a-[GitBook](https://www.gitbook.com/ "GitBoo
   * Raspberry Pis
   * Config Management
   * ...
-
-.
-
