@@ -1,4 +1,4 @@
-# CLI \| Text Highlighten mit grep \(ohne zu Filtern\) {#text_highlighten_mit_grep_ohne_zu_filtern}
+# CLI \| Text highlighten mit grep \(ohne zu Filtern\) {#text_highlighten_mit_grep_ohne_zu_filtern}
 
 ```
 $ grep --color -E '^|pattern1|pattern2' file name
