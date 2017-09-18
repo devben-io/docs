@@ -44,5 +44,26 @@ Bearbeiten
 * `-R`Specifies that the given port on the remote \(server\) host is to be forwarded to the given host and port on the local side.
 * `ssh -R sourcePort:forwardToHost:onPort` `connectToHost` means: connect with ssh to`connectToHost`, and forward all connection attempts to the **remote **`sourcePort `to port `onPort `on the machine called `forwardToHost`, which can be reached from your`local`machine.
 
+`ssh -R 456:localhost:123 remotehost`
 
+```
+ your host              remotehost
+╔══════════╗           ╔══════════╗
+║localhost ║           ║          ║
+║          ║           ║          ║
+║         R:123-------L:456       ║
+╚══════════╝           ╚══════════╝
+```
+
+
+`ssh -R 456:nearhost:123 remotehost`
+
+```
+ nearhost             remotehost             faraway-host
+╔══════════╗          ╔══════════╗            ╔══════════╗
+║          ║          ║          ║            ║          ║
+║          ║          ║          ║            ║          ║
+║         R:123------------------------------L:456       ║
+╚══════════╝          ╚══════════╝            ╚══════════╝
+```
 
