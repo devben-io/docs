@@ -31,6 +31,8 @@
 * [FreeBSD](freebsd.md)
   * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
+  * pfSense
+    * [pfSense \| LACP & Jumbo Frames \(DE\)](freebsd/pfsense-lacp-and-jumbo-frames-de.md)
 * [Raspberry Pi & Co](raspberry-pi-and-co.md)
   * [RPI \| synchroner Multiroom-Audio \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron.md)
     * [Server \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md)
