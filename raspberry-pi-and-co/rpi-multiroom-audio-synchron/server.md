@@ -4,7 +4,6 @@ _\(datt Ding, wo die Musik reinkommen tut…\)_
 
 ## Voraussetzung
 
-* Rasbian \(Debian 8 minimal\)
 * [Volumio](https://volumio.org/) ist installiert
 
 ## Software nachinstallieren
