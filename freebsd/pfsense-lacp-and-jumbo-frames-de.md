@@ -9,9 +9,6 @@
 
 * `Shellcmd`Paket nachinstallieren und danach folgende Kommandos in der WebGUI eintragen:
 
-| AAAAAAA |
-| :--- |
-
 
 | Command | Type |
 | :--- | :--- |
