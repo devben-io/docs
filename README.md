@@ -10,5 +10,5 @@ Collection of "random-knowledge"-as-a-[GitBook](https://www.gitbook.com/ "GitBoo
   * Config Management
   * ...
 
-
+.
 
