@@ -1,4 +1,4 @@
-# BASH \| Logging im bash skript {#bash_logging_im_bash_skript}
+# CLI \| Logging im bash skript {#bash_logging_im_bash_skript}
 
 folgendes Codeschnipsel am Anfang vom Skript bewirkt, dass die komplette Bildschirmausgabe \(auch remote-Sessions\) ins Logfile geschrieben wird.
 
@@ -7,7 +7,7 @@ folgendes Codeschnipsel am Anfang vom Skript bewirkt, dass die komplette Bildsch
 # Logging
 LOG="/var/log/$(basename $0.log)"
 exec > >(tee -a $LOG ) 2>&1
- 
+
 # Kosmetik / Header fürs Log
 echo -e "\n---------------------------------------------------------------------------------------------\n
 $(date) \n

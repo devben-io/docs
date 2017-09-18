@@ -1,7 +1,6 @@
-# Zufallszahlen in der Shell {#zufallszahlen_in_der_shell}
+# CLI \| Zufallszahlen in der Shell {#zufallszahlen_in_der_shell}
 
-Umgebungsvariablen:`$RANDOM`  
-
+Umgebungsvariablen:`$RANDOM`
 
 **Ausgeben:**
 

@@ -1,11 +1,11 @@
-# dd Progressbar {#dd_progressbar}
+# CLI \| dd Progressbar {#dd_progressbar}
 
 ##### Problem {#problem}
 
 > _„Ich will einen Fortschritt bei dd sehen“_
-
-> _„Ich will wissen wie weit dd ist und wie lange es noch dauert_
-> _**\*ningl\***_
+>
+> _„Ich will wissen wie weit dd ist und wie lange es noch dauert_  
+> _**\*ningl\***_  
 > _“_
 
 ##### Ursache {#ursache}
@@ -30,6 +30,5 @@ pv -tpreb <pfad/zum/input-file> | dd of=<pfad/zum/output-file>
 
 * [http://linux.die.net/man/1/pv](http://linux.die.net/man/1/pv)
 
-  
 
 

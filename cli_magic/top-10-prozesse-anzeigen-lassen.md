@@ -1,4 +1,4 @@
-# Top 10 Prozesse anzeigen lassen {#top_10_prozesse_anzeigen_lassen}
+# CLI \| Top 10 Prozesse anzeigen lassen {#top_10_prozesse_anzeigen_lassen}
 
 die 10 Prozesse mit der meisten CPU-Load anzeigen lassen \(sortiert\)
 

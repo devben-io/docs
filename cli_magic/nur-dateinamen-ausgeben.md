@@ -1,4 +1,4 @@
-# BASH \| nur Dateinamen ausgeben {#bash_nur_dateinamen_ausgeben}
+# CLI \| nur Dateinamen ausgeben {#bash_nur_dateinamen_ausgeben}
 
 Folgende CLI Magic ermöglicht es aus einem`<OUTPUT>`/ einem Dateipfad mit variabler Verzeichnistiefe \(z.B.`/irgend/ein/Pfad/zu/einer/<DATEI>.<ENDUNG>`\) , nur die`<DATEI>.<ENDUNG>`herauszufiltern. \(z.B wenn `basename` nicht zur Verfügung steht\)
 
@@ -12,8 +12,7 @@ von der Ausgabe wird die Zeichenfolge mit`rev`umgedreht. Dadurch ist das letzte`
 
 ## Möglichkeit 2 {#moeglichkeit_2}
 
-\(wenn nur`cut`zur Verfügung steht\)  
-
+\(wenn nur`cut`zur Verfügung steht\)
 
 kleiner Trick auf aus einer Ausgabe \(z.B. find\) sich nur die Dateinamen + Endung ausgeben zu lassen.  
 Bei unbekannter Verzeichnistiefe.
@@ -23,8 +22,6 @@ Bei unbekannter Verzeichnistiefe.
 ```
 
 `…`- ensprechend weiter fortsetzen
-
-
 
 ## Weblinks {#weblinks}
 

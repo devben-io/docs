@@ -1,4 +1,4 @@
-# dmesg fortlaufend anzeigen lassen {#dmesg_fortlaufend_anzeigen_lassen}
+# CLI \| dmesg fortlaufend anzeigen lassen {#dmesg_fortlaufend_anzeigen_lassen}
 
 als user:
 

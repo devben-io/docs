@@ -1,4 +1,4 @@
-# tar mit Progressbar {#tar_mit_progressbar}
+# CLI \| tar mit Progressbar {#tar_mit_progressbar}
 
 * mit Hilfe von `pv`
 * mittels `du` wird die Größe des Verzeichnisses ermittelt

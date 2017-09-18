@@ -1,4 +1,4 @@
-# pbzip2 - parallel packen
+# CLI \| pbzip2 - parallel packen
 
 * geht schneller
 * verbraucht weniger Platz

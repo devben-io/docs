@@ -1,4 +1,4 @@
-# live ssh network throughput test {#live_ssh_network_throughput_test}
+# CLI \| live ssh network throughput test {#live_ssh_network_throughput_test}
 
 ```
 yes | pv | ssh <USER>@<HOST> "cat > /dev/null"
