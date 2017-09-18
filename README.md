@@ -1,6 +1,4 @@
-# \(random-\)Knowledge-Base
-
-Collection of "random-knowledge"-as-a-[GitBook](https://www.gitbook.com/ "GitBook"). \(_**RKaaG**_\)
+# **RKaaG - **"random-knowledge-as-a-[GitBook](https://www.gitbook.com/ "GitBook")"
 
 * [SUMMARY](SUMMARY.md)
 * "How Tos" and "Nice To Knows" about:
