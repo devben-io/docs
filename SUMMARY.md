@@ -18,7 +18,7 @@
   * [CLI \| OS Version anzeigen](cli_magic/os-version-anzeigen.md)
   * [CLI \| pbzip2 parallel packen \(DE\)](cli_magic/pbzip2-parallel-packen.md)
   * [CLI \| PDFs scannen \(DE\)](cli_magic/pdfs-scannen.md)
-  * [CLI \| Schreibmaschine simulieren](scli_magic/chreibmaschine-simulieren.md)
+  * [CLI \| Schreibmaschine simulieren](cli_magic/schreibmaschine-simulieren.md)
   * [CLI \| SSH Key löschen \(DE\)](cli_magic/ssh-key-loschen.md)
   * [CLI \| Suchen in mehreren Dateien \(DE\)](cli_magic/suchen-in-mehreren-dateien.md)
   * [CLI \| Suchen und Entpacken \(DE\)](cli_magic/suchen-und-entpacken.md)
