@@ -35,4 +35,5 @@
   * [RPI \| Multiroom-Audio \(synchron\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron.md)
     * [Server](raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md)
     * [Client\(s\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md)
+* [CJDNS \| install on Debian 8](cjdns-install-on-debian-8.md)
 
