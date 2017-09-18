@@ -1,4 +1,5 @@
 # Users
+
 ```
 adduser                                 # wrapper script to add users
 chsh                                    # change user shell and other info
@@ -7,8 +8,6 @@ pw groupmod teamtwo -m <username>       # add a user to a group
 /etc/group                              # file to edit groups manually
 id                                      # show group membership for current user
 ```
-
-
 
 # System Configuration
 
@@ -25,7 +24,6 @@ sysctl net                              # show all network related info and sett
 sysctl hw.model                         # show CPU model
 sysctl net.inet.tcp.delayed_ack=0       # disable delayed ack in tcp
 ```
-
 
 # System Statistics
 
@@ -161,22 +159,22 @@ ipsec stroke down [conn]                # terminate connection [conn]
 # ezjail
 
 ```
-ezjail-admin start|stop                 # start and stop all the jails
-ezjail-admin start|stop <JID>|<hostname># start and stop individual jail
-ezjail-admin list                       # list all the jails on the host system
-ezjail-admin console <JID>|<hostname>   # open root shell into jail
+ezjail-admin start|stop                        # start and stop all the jails
+ezjail-admin start|stop <JID>|<hostname>       # start and stop individual jail
+ezjail-admin list                              # list all the jails on the host system
+ezjail-admin console <JID>|<hostname>          # open root shell into jail
 ezjail-admin create -f exmaple <hostname> <IP> # create a new jail
-ezjail-admin delete -w hostname         # delete the jail (in case you use zfs also delete the volume)
+ezjail-admin delete -w hostname                # delete the jail (in case you use zfs also delete the volume)
 ```
 
 # Common sysctl's to set
 
 ```
-hw.usb.no_shutdown_wait=1               # don't wait for USB devices when shutting down (if your system hangs when  
-                                          rebooting)
-                                          
+hw.usb.no_shutdown_wait=1               # don't wait for USB devices when shutting down (if your system hangs when rebooting)
+
 kern.maxfiles=204800                    # Increase file descriptor limits                       
 kern.maxfilesperproc=200000
 ```
+
 
 
