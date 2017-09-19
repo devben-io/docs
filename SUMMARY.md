@@ -29,6 +29,8 @@
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
   * pfSense
     * [pfSense \| LACP & Jumbo Frames \(DE\)](freebsd/pfsense-lacp-and-jumbo-frames-de.md)
+* Git
+  * [GIT \| Subtrees](git-subtrees.md)
 * [Linux](linux.md)
   * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
 * [Raspberry Pi & Co](raspberry-pi-and-co.md)
@@ -42,9 +44,7 @@
   * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
-* [SSH](ssh.md)
-  * [Proxies und Jumphosts](ssh/proxies-und-jumphosts-en.md)
-  * [Tunneling / Port Forwarding](ssh/tunneling-port-forwarding.md)
+* Git
 
 
 
