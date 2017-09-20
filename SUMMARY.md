@@ -6,6 +6,7 @@
 * [CJDNS \| install on Debian 8](cjdns-install-on-debian-8.md)
 * [CLI Magic](cli-magic.md)
   * [CLI \| Bash Skripting](cli_magic/cli-bash-skripting.md)
+    * [CLI \| Bash Scripting Grundlagen](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
   * [CLI \| dd progressbar \(DE\)](cli_magic/dd-progressbar.md)
   * [CLI \| nur Dateinamen ausgeben \(DE\)](cli_magic/nur-dateinamen-ausgeben.md)
   * [CLI \| Logging im bash skript \(DE\)](cli_magic/logging-im-bash-skript.md)
@@ -44,8 +45,4 @@
   * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
-
-
-
-
 
