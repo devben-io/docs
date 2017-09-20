@@ -1,3 +1,12 @@
+# General
+
+## Identifying your disks
+
+```
+camcontrol devlist                      #
+glabel list                             # show UUIDs from partitions
+```
+
 # Users
 
 ```
