@@ -28,6 +28,7 @@
 * [FreeBSD](freebsd.md)
   * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
+  * [FreeBSD \| Tinc](freebsd/freebsd-tinc.md)
   * pfSense
     * [pfSense \| LACP & Jumbo Frames \(DE\)](freebsd/pfsense-lacp-and-jumbo-frames-de.md)
 * Git
