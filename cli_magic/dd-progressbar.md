@@ -10,7 +10,7 @@
 
 ##### Ursache {#ursache}
 
-`dd`bietet von Haus aus keine Fortschrittsanzeige.
+`dd`~~bietet~~ bot früher von Haus aus keine Fortschrittsanzeige.
 
 ##### Lösung {#loesung}
 
