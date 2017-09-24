@@ -7,7 +7,6 @@
   * Raspberry Pis
   * Config Management
   * ...
-  * 
 
 
 
