@@ -12,7 +12,7 @@
   * [CLI \| Logging im bash skript \(DE\)](cli_magic/logging-im-bash-skript.md)
   * [CLI \| dmesg fortlaufend anzeigen lassen \(DE\)](cli_magic/dmesg-fortlaufend-anzeigen-lassen.md)
   * [CLI \| live ssh network throughput test](cli_magic/live-ssh-network-throughput-test.md)
-  * [CLI \| LVM thinprovisioned Volume erstellen \(DE\)](cli_magic/lvm-thinprovisioned-volume-erstellen.md)
+  * [CLI \| create LVM thinprovisioned Volumes](cli_magic/lvm-thinprovisioned-volume-erstellen.md)
   * [CLI \| OS Version anzeigen](cli_magic/os-version-anzeigen.md)
   * [CLI \| pbzip2 parallel packen \(DE\)](cli_magic/pbzip2-parallel-packen.md)
   * [CLI \| PDFs scannen \(DE\)](cli_magic/pdfs-scannen.md)
