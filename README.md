@@ -1,12 +1,15 @@
-# RKaaG - "Random-Knowledge-as-a-[GitBook](https://www.gitbook.com/ "GitBook")"
+# Introduction
 
-* [SUMMARY](SUMMARY.md)
-* "How Tos" and "Nice To Knows" about:
+this is:
+
+* **RKaaG** - "Random-Knowledge-as-a-[GitBook](https://www.gitbook.com/ "GitBook")"
+* "**How Tos**", "**Nice To Knows**" and "**FAQs**" about:
   * Linux
   * FreeBSD
-  * Raspberry Pis
+
   * Config Management
-  * ...
+  * "random" IT knowledge
+* english-german mixed articles
 
 
 
