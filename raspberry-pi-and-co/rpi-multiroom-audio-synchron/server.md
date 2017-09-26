@@ -142,9 +142,9 @@ Dort muss ALSA mitgeteilt werden, dass seine Ausgabe in eine Pipe umgeleitet wer
 `/root/spotify-connect-web-chroot/etc/asound.conf`
 
 ```
-# Ben's Spotify Connect Einstellung
+# <USER>'s Spotify Connect Einstellung
 #######################################################################
-pcm.!ben {
+pcm.!<USER> {
     type plug
 #    slave.pcm rate44100Hz
     slave.pcm rate48000Hz
@@ -164,7 +164,7 @@ pcm.rate48000Hz {
 pcm.writeFile {
     type file
     slave.pcm null
-    file "/tmp/snapfifo-spotify-ben"
+    file "/tmp/snapfifo-spotify-<USER>"
 #    file "/root/spotify-connect-web-chroot/tmp/snapfifo"
     format "raw"
 }
@@ -184,7 +184,7 @@ Um das_„echte“_`/tmp`-Verzeichnis in der chroot verfügbar zu machen, ergän
 ### Testen \(SpotifyConnect starten\)
 
 ```
-/root/spotify-connect-web.sh --username <NAME> --password <GEHEIM> --bitrate 320 --name Bens_Volumio -o ben
+/root/spotify-connect-web.sh --username <NAME> --password <GEHEIM> --bitrate 320 --name <USER>s_Volumio -o <USER>
 ```
 
 wenn der Dienst gestartet ist sollte in $einer Spotify-Anwendung folgende zusätzliche Wiedergabe-Optionen verfügbar sein
@@ -229,8 +229,8 @@ Units neu laden & Dienst starten
 
 ```
 systemctl daemon-reload
-systemctl enable spotify-connect-ben.service
-systemctl restart spotify-connect-ben.service
+systemctl enable spotify-connect-<USER>.service
+systemctl restart spotify-connect-<USER>.service
 ```
 
 ## Weblinks
