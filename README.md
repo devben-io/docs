@@ -10,8 +10,11 @@ this is:
   * Config Management
   * "random" IT knowledge
 * english-german mixed articles
+<<<<<<< HEAD
 
 test
+=======
+>>>>>>> ef1190e3da80f5c71416954282ded967b78561ad
 
 
 
