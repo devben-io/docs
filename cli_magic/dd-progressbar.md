@@ -10,7 +10,9 @@
 
 ##### Ursache {#ursache}
 
-`dd`bietet von Haus aus keine Fortschrittsanzeige.
+`dd`~~bietet~~ bot früher von Haus aus keine Fortschrittsanzeige.
+
+_\(jetzt geht es mit `status=progress`\)_
 
 ##### Lösung {#loesung}
 
