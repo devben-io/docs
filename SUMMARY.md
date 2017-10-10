@@ -26,6 +26,7 @@
   * [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
   * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
+  * [CLI \| Zeile mit sed löschen \(DE\)](cli_magic/cli-zeile-mit-sed-loschen-de.md)
 * [FreeBSD](freebsd.md)
   * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
