@@ -48,4 +48,6 @@
   * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
+* VMware
+  * [VM export on VMware Fusion \(OSX\)](vm-export-on-vmware-fusion-osx.md)
 
