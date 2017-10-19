@@ -24,21 +24,21 @@ source bin/activate
 (.synapse) <user>@abc:~/.synapse$ /usr/local/bin/hash_password
 Password:
 Confirm password:
-$2a$12$UhPkkV0/vWhyBKOT7HnjzuaISYCyGXWr2JYBBU0sd2BuzlkU0fDMy
+$2a$12$q...sp3m
+
 
 su postgres
 psql
 \connect synapse
 synapse=# UPDATE users SET \
- password_hash='$2a$12$UhPkkV0/vWhyBKOT7HnjzuaIS \
- YCyGXWr2JYBBU0sd2BuzlkU0fDMy' WHERE name='@hsthompson:z.z6c.de';
+ password_hash='$2a$12$q...sp3m' WHERE name='@hsthompson:z.z6c.de';
 \q
 ```
 
 ## Links:
 
 * [https://www.zentonic.org/blog/125](https://www.zentonic.org/blog/125)
-* https://github.com/matrix-org/synapse\#password-reset
+* [https://github.com/matrix-org/synapse\#password-reset](https://github.com/matrix-org/synapse#password-reset)
 
 
 
