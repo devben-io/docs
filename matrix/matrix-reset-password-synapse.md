@@ -19,16 +19,17 @@ sqlite> .quit
 ## postgreSQL
 
 ```
-source bin/activate
+<user>@<host>:/# source bin/activate
 
-(.synapse) <user>@abc:~/.synapse$ /usr/local/bin/hash_password
+<user>@<host>:/# ~/.synapse$ /usr/local/bin/hash_password
 Password:
 Confirm password:
 $2a$12$q...sp3m
 
 
-su postgres
-psql
+<user>@<host>:/# su postgres
+<user>@<host>:/# psql
+
 \connect synapse
 synapse=# UPDATE users SET \
  password_hash='$2a$12$q...sp3m' WHERE name='@hsthompson:z.z6c.de';
