@@ -1,4 +1,4 @@
-# MATRIX \| reset passeord \(synapse\)
+# MATRIX \| reset password \(synapse\)
 
 ```
 source bin/activate
@@ -17,11 +17,9 @@ synapse=# UPDATE users SET \
 \q
 ```
 
-
-
 ## Links:
 
-* https://www.zentonic.org/blog/125
+* [https://www.zentonic.org/blog/125](https://www.zentonic.org/blog/125)
 
 
 
