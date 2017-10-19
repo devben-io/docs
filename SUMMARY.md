@@ -53,5 +53,5 @@
 * VMware
   * [VM export on VMware Fusion \(OSX\)](vm-export-on-vmware-fusion-osx.md)
 * [Matrix](matrix.md)
-  * MATRIX \| reset passeord \(synapse\)
+  * [MATRIX \| reset password \(synapse\)](matrix/matrix-reset-password-synapse.md)
 
