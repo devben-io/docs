@@ -1,6 +1,22 @@
 # MATRIX \| reset password \(synapse\)
 
-\(with postgres\)
+## SQLite
+
+```
+<user>@<host>:/# /usr/local/bin/hash_password
+Password: 
+Confirm password: 
+$2a$12$q...sp3m
+
+<user>@<host>:/# sqlite3 /<PATH-TO>/homeserver.db
+
+sqlite> UPDATE users SET password_hash='$2a$12$q...sp3m' WHERE name='@<USER>:<MATRIX-SERVER>';
+sqlite> .quit
+```
+
+## 
+
+## postgreSQL
 
 ```
 source bin/activate
@@ -22,6 +38,7 @@ synapse=# UPDATE users SET \
 ## Links:
 
 * [https://www.zentonic.org/blog/125](https://www.zentonic.org/blog/125)
+* https://github.com/matrix-org/synapse\#password-reset
 
 
 
