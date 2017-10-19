@@ -52,4 +52,6 @@
   * [SALT \| Pillars](saltstack/salt-pillars.md)
 * VMware
   * [VM export on VMware Fusion \(OSX\)](vm-export-on-vmware-fusion-osx.md)
+* [Matrix](matrix.md)
+  * MATRIX \| reset passeord \(synapse\)
 
