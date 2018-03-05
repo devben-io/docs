@@ -9,5 +9,8 @@
 
 * [http://www.uugear.com/portfolio/dht11-humidity-temperature-sensor-module/](http://www.uugear.com/portfolio/dht11-humidity-temperature-sensor-module/)
 
+* https://www.amazon.de/IZOKEE-digitaler-Feuchtigkeit-Temperatur-Sensor-Raspberry/dp/B077PQWZ1K/ref=sr\_1\_13?ie=UTF8&qid=1520281495&sr=8-13&keywords=raspberry+temperatur
+
+* 
 
 
