@@ -7,7 +7,7 @@
 
 * [https://klenzel.de/5793](https://klenzel.de/5793)
 
-* http://www.uugear.com/portfolio/dht11-humidity-temperature-sensor-module/
+* [http://www.uugear.com/portfolio/dht11-humidity-temperature-sensor-module/](http://www.uugear.com/portfolio/dht11-humidity-temperature-sensor-module/)
 
 
 
