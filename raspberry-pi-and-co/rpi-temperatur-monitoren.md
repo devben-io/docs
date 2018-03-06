@@ -14,7 +14,8 @@
 * [https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr\_1\_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20](https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr_1_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20)
 * [https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr\_1\_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20](https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr_1_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20)
 * [https://github.com/coding-world/Python\_BMP](https://github.com/coding-world/Python_BMP)
-* https://tutorials-raspberrypi.de/raspberry-pi-und-i2c-luftdrucksensor-bmp180/
+* [https://tutorials-raspberrypi.de/raspberry-pi-und-i2c-luftdrucksensor-bmp180/](https://tutorials-raspberrypi.de/raspberry-pi-und-i2c-luftdrucksensor-bmp180/)
+* https://www.einplatinencomputer.com/raspberry-pi-luftdrucksensor-bmp180-ansteuern/
 
 
 
