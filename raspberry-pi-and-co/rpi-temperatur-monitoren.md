@@ -13,7 +13,9 @@
 
 * [https://willy-tech.de/temperatursensor-an-raspberry-pi/](https://willy-tech.de/temperatursensor-an-raspberry-pi/)
 
-* https://github.com/kybernetyk/tempsense
+* [https://github.com/kybernetyk/tempsense](https://github.com/kybernetyk/tempsense)
+
+* https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlh%C3%BClse/dp/B018GQN5HE/ref=sr\_1\_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20
 
 
 
