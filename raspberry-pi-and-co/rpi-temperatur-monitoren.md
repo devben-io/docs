@@ -11,7 +11,8 @@
 * [https://codingworld.io/shop/ds18b20-one-wire-temperatursensor-outdoor](https://codingworld.io/shop/ds18b20-one-wire-temperatursensor-outdoor)
 * [https://willy-tech.de/temperatursensor-an-raspberry-pi/](https://willy-tech.de/temperatursensor-an-raspberry-pi/)
 * [https://github.com/kybernetyk/tempsense](https://github.com/kybernetyk/tempsense)
+* [https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr\_1\_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20](https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr_1_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20)
 * https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlh%C3%BClse/dp/B018GQN5HE/ref=sr\_1\_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20
-
+* 
 
 
