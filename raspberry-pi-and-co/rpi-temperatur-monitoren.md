@@ -11,7 +11,9 @@
 
 * [https://codingworld.io/shop/ds18b20-one-wire-temperatursensor-outdoor](https://codingworld.io/shop/ds18b20-one-wire-temperatursensor-outdoor)
 
-* https://willy-tech.de/temperatursensor-an-raspberry-pi/
+* [https://willy-tech.de/temperatursensor-an-raspberry-pi/](https://willy-tech.de/temperatursensor-an-raspberry-pi/)
+
+* https://github.com/kybernetyk/tempsense
 
 
 
