@@ -15,6 +15,8 @@
 * [https://www.amazon.de/Temperatur-Interface-Temperatursensor-wasserdicht-Edelstahlhülse/dp/B018GQN5HE/ref=sr\_1\_9?ie=UTF8&qid=1520318960&sr=8-9&keywords=DS18B20](#)
 * [https://codingworld.io/shop/ds18b20-one-wire-temperatursensor-outdoor](#)
 * [https://github.com/kybernetyk/tempsense](#)
+* http://www.d3noob.org/2015/02/raspberry-pi-multiple-temperature.html
+* http://www.reuk.co.uk/wordpress/raspberry-pi/connect-multiple-temperature-sensors-with-raspberry-pi/
 
 ## BMP180 - Luftdruck-, Temperatur Sensor
 
