@@ -25,11 +25,17 @@
 * [https://www.einplatinencomputer.com/raspberry-pi-luftdrucksensor-bmp180-ansteuern/](https://www.einplatinencomputer.com/raspberry-pi-luftdrucksensor-bmp180-ansteuern/)
 * [https://github.com/coding-world/Python\_BMP](#)
 
+## BM680 - Temperatur, Feuchtigkeit, Druck und Gas Sensor
+
+* https://shop.pimoroni.de/products/bme680
+* https://github.com/BoschSensortec/BME680\_driver
+* https://www.pi-shop.ch/adafruit-bme680-temperatur-feuchtigkeit-druck-und-gas-sensor
+
 ## andere:
 
 * [http://dev-random.net/temper-v1-4-usb-thermometer-temperature-recorder-review/](http://dev-random.net/temperature-measuring-using-linux-and-raspberry-pi/)
 * [https://willy-tech.de/temperatursensor-an-raspberry-pi/](https://willy-tech.de/temperatursensor-an-raspberry-pi/)
-* https://www.dexterindustries.com/GrovePi/supported-sensors/
+* [https://www.dexterindustries.com/GrovePi/supported-sensors/](https://www.dexterindustries.com/GrovePi/supported-sensors/)
 
 
 
