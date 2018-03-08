@@ -44,6 +44,7 @@
     * [Server \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md)
     * [Client\(s\) \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md)
   * [RPI \| Temperatur monitoren](raspberry-pi-and-co/rpi-temperatur-monitoren.md)
+    * [RPI \| Sensoren](raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md)
 * [SaltStack](saltstack.md)
   * [SALT \| Creating hashed passwords](saltstack/creating-hashed-passwords.md)
   * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
