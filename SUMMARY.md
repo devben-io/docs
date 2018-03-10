@@ -73,8 +73,3 @@
 * [Zabbix](monitoring/zabbix.md)
   * [123](monitoring/zabbix/123.md)
 
-## TESTPART1
-
-* [artikel](testpart1/artikel.md)
-  * [Sub-Artikel](testpart1/artikel/sub-artikel.md)
-
