@@ -58,6 +58,6 @@
 
 ## test-part
 
-* 123
-  * 234
+* [123](test-part/123.md)
+  * [234](test-part/123/234.md)
 
