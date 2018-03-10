@@ -18,7 +18,10 @@
   * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
 * [SSH](ssh.md)
   * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
-  * Tunneling / Port Forwarding \(EN\)
+  * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
+* verschiedenes
+  * [VM export on VMware Fusion \(OSX\)](devrandom/vm-export-on-vmware-fusion-osx.md)
+  * [CJDNS \| install on Debian 8](devrandom/cjdns-install-on-debian-8.md)
 
 ## CLI Magic
 

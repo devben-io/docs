@@ -56,8 +56,6 @@
 ╚══════════╝          ╚══════════╝            ╚══════════╝
 ```
 
-
-
 ## Examples {#examples}
 
 ### Example for 1 {#example_for_1}
