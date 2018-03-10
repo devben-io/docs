@@ -1,10 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Docker](docker.md)
-  * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
-  * [DOCKER \| save vs. export](docker-save-vs-export.md)
-  * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
 * [CLI Magic](cli-magic.md)
   * [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
     * [Grundlagen \(DE\)](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
@@ -27,6 +23,11 @@
   * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
   * [CLI \| Zeile mit sed löschen \(DE\)](cli_magic/cli-zeile-mit-sed-loschen-de.md)
+* Config Management
+* [Docker](docker.md)
+  * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
+  * [DOCKER \| save vs. export](docker-save-vs-export.md)
+  * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
 * [FreeBSD](freebsd.md)
   * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
@@ -52,6 +53,10 @@
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
 * [Monitoring](monitoring.md)
-* [/dev/random](devrandom.md)
-  * [CJDNS \| install on Debian 8](devrandom/cjdns-install-on-debian-8.md)
+* Config Management
+
+## test-part
+
+* 123
+  * 234
 
