@@ -1,30 +1,8 @@
 # Summary
 
+## /dev/random
+
 * [Introduction](README.md)
-* [CLI Magic](cli-magic.md)
-  * [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
-    * [Grundlagen \(DE\)](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
-  * [CLI \| dd progressbar \(DE\)](cli_magic/dd-progressbar.md)
-  * [CLI \| nur Dateinamen ausgeben \(DE\)](cli_magic/nur-dateinamen-ausgeben.md)
-  * [CLI \| Logging im bash skript \(DE\)](cli_magic/logging-im-bash-skript.md)
-  * [CLI \| dmesg fortlaufend anzeigen lassen \(DE\)](cli_magic/dmesg-fortlaufend-anzeigen-lassen.md)
-  * [CLI \| live ssh network throughput test](cli_magic/live-ssh-network-throughput-test.md)
-  * [CLI \| create LVM thinprovisioned Volumes](cli_magic/lvm-thinprovisioned-volume-erstellen.md)
-  * [CLI \| OS Version anzeigen](cli_magic/os-version-anzeigen.md)
-  * [CLI \| pbzip2 parallel packen \(DE\)](cli_magic/pbzip2-parallel-packen.md)
-  * [CLI \| PDFs scannen \(DE\)](cli_magic/pdfs-scannen.md)
-  * [CLI \| Schreibmaschine simulieren](cli_magic/schreibmaschine-simulieren.md)
-  * [CLI \| SSH Key löschen \(DE\)](cli_magic/ssh-key-loschen.md)
-  * [CLI \| Suchen in mehreren Dateien \(DE\)](cli_magic/suchen-in-mehreren-dateien.md)
-  * [CLI \| Suchen und Entpacken \(DE\)](cli_magic/suchen-und-entpacken.md)
-  * [CLI \| Suchen und Ersetzen in mehreren Dateien \(DE\)](cli_magic/suchen-und-ersetzen-in-mehreren-dateien.md)
-  * [CLI \| Suchen und Löschen \(DE\)](cli_magic/suchen-und-loschen.md)
-  * [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
-  * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
-  * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
-  * [CLI \| Zeile mit sed löschen \(DE\)](cli_magic/cli-zeile-mit-sed-loschen-de.md)
-* Config Management
-  * 123
 * [Docker](docker.md)
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [DOCKER \| save vs. export](docker-save-vs-export.md)
@@ -36,16 +14,35 @@
   * pfSense
     * [pfSense \| LACP & Jumbo Frames \(DE\)](freebsd/pfsense-lacp-and-jumbo-frames-de.md)
   * [FreeNAS \| Docker](freebsd/freenas-docker.md)
-* Git
-  * [GIT \| Subtrees](git-subtrees.md)
 * [Linux](linux.md)
   * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
-* [Raspberry Pi & Co](raspberry-pi-and-co.md)
-  * [RPI \| synchroner Multiroom-Audio \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron.md)
-    * [Server \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md)
-    * [Client\(s\) \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md)
-  * [RPI \| Temperatur monitoren](raspberry-pi-and-co/rpi-temperatur-monitoren.md)
-    * [RPI \| Sensoren](raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md)
+
+## CLI Magic
+
+* [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
+  * [Grundlagen \(DE\)](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
+* [CLI \| dd progressbar \(DE\)](cli_magic/dd-progressbar.md)
+* [CLI \| nur Dateinamen ausgeben \(DE\)](cli_magic/nur-dateinamen-ausgeben.md)
+* [CLI \| Logging im bash skript \(DE\)](cli_magic/logging-im-bash-skript.md)
+* [CLI \| dmesg fortlaufend anzeigen lassen \(DE\)](cli_magic/dmesg-fortlaufend-anzeigen-lassen.md)
+* [CLI \| live ssh network throughput test](cli_magic/live-ssh-network-throughput-test.md)
+* [CLI \| create LVM thinprovisioned Volumes](cli_magic/lvm-thinprovisioned-volume-erstellen.md)
+* [CLI \| OS Version anzeigen](cli_magic/os-version-anzeigen.md)
+* [CLI \| pbzip2 parallel packen \(DE\)](cli_magic/pbzip2-parallel-packen.md)
+* [CLI \| Schreibmaschine simulieren](cli_magic/schreibmaschine-simulieren.md)
+* [CLI \| PDFs scannen \(DE\)](cli_magic/pdfs-scannen.md)
+* [CLI \| SSH Key löschen \(DE\)](cli_magic/ssh-key-loschen.md)
+* [CLI \| Suchen in mehreren Dateien \(DE\)](cli_magic/suchen-in-mehreren-dateien.md)
+* [CLI \| Suchen und Entpacken \(DE\)](cli_magic/suchen-und-entpacken.md)
+* [CLI \| Suchen und Ersetzen in mehreren Dateien \(DE\)](cli_magic/suchen-und-ersetzen-in-mehreren-dateien.md)
+* [CLI \| Suchen und Löschen \(DE\)](cli_magic/suchen-und-loschen.md)
+* [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
+* [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
+* [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
+* [CLI \| Zeile mit sed löschen \(DE\)](cli_magic/cli-zeile-mit-sed-loschen-de.md)
+
+## Config Management
+
 * [SaltStack](saltstack.md)
   * [SALT \| Creating hashed passwords](saltstack/creating-hashed-passwords.md)
   * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
@@ -53,11 +50,20 @@
   * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
-* [Monitoring](monitoring.md)
-* Config Management
 
-## test-part
+## Git
 
-* [123](test-part/123.md)
-  * [234](test-part/123/234.md)
+* [Git](git.md)
+* [GIT \| Subtrees](git-subtrees.md)
+
+## Maker
+
+* [Raspberry Pi & Co](raspberry-pi-and-co.md)
+  * [RPI \| synchroner Multiroom-Audio \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron.md)
+    * [Server \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md)
+    * [Client\(s\) \(DE\)](raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md)
+  * [RPI \| Temperatur monitoren](raspberry-pi-and-co/rpi-temperatur-monitoren.md)
+    * [RPI \| Sensoren](raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md)
+
+## Monitoring
 
