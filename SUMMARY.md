@@ -76,5 +76,5 @@
 ## TESTPART1
 
 * [artikel](testpart1/artikel.md)
-  * Sub-Artikel
+  * [Sub-Artikel](testpart1/artikel/sub-artikel.md)
 
