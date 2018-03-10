@@ -1,6 +1,0 @@
-# README
-
-random IT Knowledge
-
-
-
