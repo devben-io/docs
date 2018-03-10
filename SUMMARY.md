@@ -73,3 +73,7 @@
 * [Zabbix](monitoring/zabbix.md)
   * [123](monitoring/zabbix/123.md)
 
+## HowTos
+
+* [HowTo \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
+
