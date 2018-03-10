@@ -1,5 +1,3 @@
-# 
-
 # CJDNS \| install on Debian 8
 
 ```

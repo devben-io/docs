@@ -5,7 +5,6 @@
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [DOCKER \| save vs. export](docker-save-vs-export.md)
   * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
-* [CJDNS \| install on Debian 8](cjdns-install-on-debian-8.md)
 * [CLI Magic](cli-magic.md)
   * [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
     * [Grundlagen \(DE\)](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
@@ -53,4 +52,6 @@
   * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
   * [SALT \| Pillars](saltstack/salt-pillars.md)
 * [Monitoring](monitoring.md)
+* [/dev/random](devrandom.md)
+  * [CJDNS \| install on Debian 8](devrandom/cjdns-install-on-debian-8.md)
 
