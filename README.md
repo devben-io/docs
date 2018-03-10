@@ -1,5 +1,6 @@
-# README
+# cat /dev/random-wisdom &gt; /dev/brain
 
-## /dev/random
 
-* [Summary](SUMMARY.md)
+
+
+
