@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>SALT | install salt with salt-ssh · GitBook</title>
+        <title>Tunneling / Port Forwarding (EN) · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="salt-pillars.html" />
     
-    
-    <link rel="prev" href="salt-highstate-as-scheduled-job.html" />
+    <link rel="prev" href="proxies-und-jumphosts-en.html" />
     
 
     </head>
@@ -311,9 +309,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../ssh/proxies-und-jumphosts-en.html">
+        <li class="chapter " data-level="1.5.1" data-path="proxies-und-jumphosts-en.html">
             
-                <a href="../ssh/proxies-und-jumphosts-en.html">
+                <a href="proxies-und-jumphosts-en.html">
             
                     
                     Proxies und Jumphosts (en)
@@ -324,9 +322,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../ssh/tunneling-port-forwarding.html">
+        <li class="chapter active" data-level="1.5.2" data-path="tunneling-port-forwarding.html">
             
-                <a href="../ssh/tunneling-port-forwarding.html">
+                <a href="tunneling-port-forwarding.html">
             
                     
                     Tunneling / Port Forwarding (EN)
@@ -694,9 +692,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="creating-hashed-passwords.html">
+        <li class="chapter " data-level="3.1.1" data-path="../saltstack/creating-hashed-passwords.html">
             
-                <a href="creating-hashed-passwords.html">
+                <a href="../saltstack/creating-hashed-passwords.html">
             
                     
                     SALT | Creating hashed passwords
@@ -707,9 +705,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="salt-cheatsheet.html">
+        <li class="chapter " data-level="3.1.2" data-path="../saltstack/salt-cheatsheet.html">
             
-                <a href="salt-cheatsheet.html">
+                <a href="../saltstack/salt-cheatsheet.html">
             
                     
                     SALT | Cheatsheet
@@ -720,9 +718,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="salt-header-in-managed-files.html">
+        <li class="chapter " data-level="3.1.3" data-path="../saltstack/salt-header-in-managed-files.html">
             
-                <a href="salt-header-in-managed-files.html">
+                <a href="../saltstack/salt-header-in-managed-files.html">
             
                     
                     SALT | Header in managed files
@@ -733,9 +731,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.4" data-path="salt-highstate-as-scheduled-job.html">
+        <li class="chapter " data-level="3.1.4" data-path="../saltstack/salt-highstate-as-scheduled-job.html">
             
-                <a href="salt-highstate-as-scheduled-job.html">
+                <a href="../saltstack/salt-highstate-as-scheduled-job.html">
             
                     
                     SALT | Highstate as scheduled job
@@ -746,9 +744,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.5" data-path="salt-install-salt-with-salt-ssh.html">
+        <li class="chapter " data-level="3.1.5" data-path="../saltstack/salt-install-salt-with-salt-ssh.html">
             
-                <a href="salt-install-salt-with-salt-ssh.html">
+                <a href="../saltstack/salt-install-salt-with-salt-ssh.html">
             
                     
                     SALT | install salt with salt-ssh
@@ -759,9 +757,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.6" data-path="salt-pillars.html">
+        <li class="chapter " data-level="3.1.6" data-path="../saltstack/salt-pillars.html">
             
-                <a href="salt-pillars.html">
+                <a href="../saltstack/salt-pillars.html">
             
                     
                     SALT | Pillars
@@ -977,7 +975,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >SALT | install salt with salt-ssh</a>
+        <a href=".." >Tunneling / Port Forwarding (EN)</a>
     </h1>
 </div>
 
@@ -992,10 +990,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="salt_salt_mit_salt-ssh_installieren">SALT | install salt with salt-ssh </h1>
-<h2 id="weblinks">Weblinks </h2>
+                                <h1 id="tunnelingport_forwarding_en">Tunneling / Port Forwarding (EN) </h1>
+<h2 id="introduction">Introduction </h2>
+<h3 id="local">1. local: </h3>
 <ul>
-<li><a href="http://bencane.com/2016/07/19/using-salt-ssh-to-install-salt/" target="_blank">http://bencane.com/2016/07/19/using-salt-ssh-to-install-salt/</a></li>
+<li><code>-L</code>Specifies that the given port on the local (client) host is to be forwarded to the given host and port on the remote side.</li>
+<li><code>ssh -L sourcePort:forwardToHost:onPort</code>connectToHost means: connect with ssh to<code>connectToHost</code>, and forward all connection attempts to the <strong>local </strong><code>sourcePort</code>to port<code>onPort</code>on the machine called<code>forwardToHost</code>, which can be reached from the<code>connectToHost</code>machine.</li>
+</ul>
+<p><code>ssh -L 123:localhost:456 remotehost</code></p>
+<pre><code> your host              remotehost
+&#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;           &#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;
+&#x2551;          &#x2551;           &#x2551;localhost &#x2551;
+&#x2551;          &#x2551;           &#x2551;          &#x2551;
+&#x2551;         L:123-------R:456       &#x2551;
+&#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;           &#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;
+</code></pre><p><code>ssh -L 123:faraway-host:456 remotehost</code></p>
+<pre><code> your host             remotehost             faraway-host
+&#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;          &#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;            &#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;
+&#x2551;          &#x2551;          &#x2551;          &#x2551;            &#x2551;          &#x2551;
+&#x2551;          &#x2551;          &#x2551;          &#x2551;            &#x2551;          &#x2551;
+&#x2551;         L:123------------------------------R:456       &#x2551;
+&#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;          &#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;            &#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;
+</code></pre><h3 id="remote">2. remote: </h3>
+<ul>
+<li><code>-R</code>Specifies that the given port on the remote (server) host is to be forwarded to the given host and port on the local side.</li>
+<li><code>ssh -R sourcePort:forwardToHost:onPort</code> <code>connectToHost</code> means: connect with ssh to<code>connectToHost</code>, and forward all connection attempts to the <strong>remote </strong><code>sourcePort</code>to port <code>onPort</code>on the machine called <code>forwardToHost</code>, which can be reached from your<code>local</code>machine.</li>
+</ul>
+<p><code>ssh -R 456:localhost:123 remotehost</code></p>
+<pre><code> your host              remotehost
+&#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;           &#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;
+&#x2551;localhost &#x2551;           &#x2551;          &#x2551;
+&#x2551;          &#x2551;           &#x2551;          &#x2551;
+&#x2551;         R:123-------L:456       &#x2551;
+&#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;           &#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;
+</code></pre><p><code>ssh -R 456:nearhost:123 remotehost</code></p>
+<pre><code> nearhost              your host               remotehost
+&#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;          &#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;            &#x2554;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2557;
+&#x2551;          &#x2551;          &#x2551;          &#x2551;            &#x2551;          &#x2551;
+&#x2551;          &#x2551;          &#x2551;          &#x2551;            &#x2551;          &#x2551;
+&#x2551;         R:123------------------------------L:456       &#x2551;
+&#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;          &#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;            &#x255A;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x255D;
+</code></pre><h2 id="examples">Examples </h2>
+<h3 id="example_for_1">Example for 1 </h3>
+<pre><code>ssh -L 80:localhost:80 SUPERSERVER
+</code></pre><p>You specify that a connection made to the local port 80 is to be forwarded to port 80 on SUPERSERVER. That means if someone connects to your computer with a webbrowser, he gets the response of the webserver running on SUPERSERVER. You, on your local machine, have no webserver running.</p>
+<h3 id="example_for_2">Example for 2 </h3>
+<pre><code>ssh -R 80:localhost:80 tinyserver
+</code></pre><p>You specify, that a connection made to the port 80 of tinyserver is to be forwarded to port 80 on your local machine. That means if someone connects to the small and slow server with a webbrowser, he gets the response of the webserver running on your local machine. The tinyserver, which has not enough diskspace for the big website, has no webserver running. But people connecting to tinyserver think so.</p>
+<h3 id="more_examples">More examples </h3>
+<p>Other things could be: The powerful machine has five webservers running on five different ports. If a user connects to one of the five tinyservers at port 80 with his webbrowser, the request is redirected to the corresponding webserver running on the powerful machine. That would be</p>
+<pre><code>ssh -R 80:localhost:30180 tinyserver1
+ssh -R 80:localhost:30280 tinyserver2
+etc.
+</code></pre><p>Or maybe your machine is only the connection between the powerful and the small servers. Then it would be (for one of the tinyservers that play to have their own webservers):</p>
+<pre><code>ssh -R 80:SUPERSERVER:30180 tinyserver1
+ssh -R 80:SUPERSERVER:30280 tinyserver2
+etc
+</code></pre><h2 id="links">Links </h2>
+<ul>
+<li><a href="http://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot" target="_blank">http://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot</a></li>
+<li><a href="http://www.rzg.mpg.de/services/network/secure-shell/ssh-tunnelling-port-forwarding" target="_blank">http://www.rzg.mpg.de/services/network/secure-shell/ssh-tunnelling-port-forwarding</a></li>
+<li><a href="https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding" target="_blank">https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding</a></li>
+<li><a href="https://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/" target="_blank">https://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/</a></li>
+<li><a href="http://www.mpcdf.mpg.de/services/network/secure-shell/ssh-tunnelling-port-forwarding" target="_blank">http://www.mpcdf.mpg.de/services/network/secure-shell/ssh-tunnelling-port-forwarding</a></li>
 </ul>
 
                                 
@@ -1024,14 +1081,10 @@
 
             
                 
-                <a href="salt-highstate-as-scheduled-job.html" class="navigation navigation-prev " aria-label="Previous page: SALT | Highstate as scheduled job">
+                <a href="proxies-und-jumphosts-en.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Proxies und Jumphosts (en)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="salt-pillars.html" class="navigation navigation-next " aria-label="Next page: SALT | Pillars">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1040,7 +1093,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SALT | install salt with salt-ssh","level":"3.1.5","depth":2,"next":{"title":"SALT | Pillars","level":"3.1.6","depth":2,"path":"saltstack/salt-pillars.md","ref":"saltstack/salt-pillars.md","articles":[]},"previous":{"title":"SALT | Highstate as scheduled job","level":"3.1.4","depth":2,"path":"saltstack/salt-highstate-as-scheduled-job.md","ref":"saltstack/salt-highstate-as-scheduled-job.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"saltstack/salt-install-salt-with-salt-ssh.md","mtime":"2017-09-17T13:08:13.568Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T17:41:34.732Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Tunneling / Port Forwarding (EN)","level":"1.5.2","depth":2,"next":{"title":"verschiedenes","level":"1.6","depth":1,"ref":"","articles":[{"title":"VM export on VMware Fusion (OSX)","level":"1.6.1","depth":2,"path":"devrandom/vm-export-on-vmware-fusion-osx.md","ref":"devrandom/vm-export-on-vmware-fusion-osx.md","articles":[]},{"title":"CJDNS | install on Debian 8","level":"1.6.2","depth":2,"path":"devrandom/cjdns-install-on-debian-8.md","ref":"devrandom/cjdns-install-on-debian-8.md","articles":[]}]},"previous":{"title":"Proxies und Jumphosts (en)","level":"1.5.1","depth":2,"path":"ssh/proxies-und-jumphosts-en.md","ref":"ssh/proxies-und-jumphosts-en.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ssh/tunneling-port-forwarding.md","mtime":"2018-03-10T17:41:05.179Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T17:41:34.732Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
