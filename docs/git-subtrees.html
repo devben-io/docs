@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · GitBook</title>
+        <title>GIT | Subtrees · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="docker.html" />
+    <link rel="next" href="raspberry-pi-and-co.html" />
     
+    
+    <link rel="prev" href="git.html" />
     
 
     </head>
@@ -89,7 +91,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -750,7 +752,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="git-subtrees.html">
+        <li class="chapter active" data-level="4.2" data-path="git-subtrees.html">
             
                 <a href="git-subtrees.html">
             
@@ -955,7 +957,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >GIT | Subtrees</a>
     </h1>
 </div>
 
@@ -970,8 +972,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cat-devrandom-wisdom--devbrain">cat /dev/random-wisdom &gt; /dev/brain</h1>
-<p>random IT Knowledge</p>
+                                <h1 id="git--subtrees">GIT | Subtrees</h1>
+<h2 id="setup">Setup</h2>
+<pre><code>git remote add &lt;MY-SUBTREE&gt; git@github.com:&lt;USER&gt;/&lt;SUBPOJECT&gt;.git
+git subtree add --prefix=&lt;MY-SUBTREE&gt;/ &lt;MY-SUBTREE&gt; master
+</code></pre><h2 id="pull-changes-from-sub-repo">Pull changes from sub-repo</h2>
+<pre><code>git subtree pull --prefix=&lt;MY-SUBTREE&gt; &lt;MY-SUBTREE&gt; master
+</code></pre><h2 id="push-changes-to-sub-repo">Push changes to sub-repo</h2>
+<pre><code>
+
+</code></pre><h2 id="links">Links:</h2>
+<ul>
+<li><a href="https://web.archive.org/web/20170211181913/https://medium.com/@v/git-subtrees-a-tutorial-6ff568381844" target="_blank">https://medium.com/@v/git-subtrees-a-tutorial-6ff568381844</a></li>
+</ul>
 
                                 
                                 </section>
@@ -999,8 +1012,12 @@
 
             
                 
+                <a href="git.html" class="navigation navigation-prev " aria-label="Previous page: Git">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="docker.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Docker">
+                
+                <a href="raspberry-pi-and-co.html" class="navigation navigation-next " aria-label="Next page: Raspberry Pi & Co">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1011,7 +1028,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Docker","level":"1.2","depth":1,"path":"docker.md","ref":"docker.md","articles":[{"title":"DOCKER | Cheatsheet","level":"1.2.1","depth":2,"path":"docker-cheatsheet.md","ref":"docker-cheatsheet.md","articles":[]},{"title":"DOCKER | save vs. export","level":"1.2.2","depth":2,"path":"docker-save-vs-export.md","ref":"docker-save-vs-export.md","articles":[]},{"title":"DOCKER | SSH and Gogs","level":"1.2.3","depth":2,"path":"docker-ssh-and-gogs.md","ref":"docker-ssh-and-gogs.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2018-03-10T15:13:02.163Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GIT | Subtrees","level":"4.2","depth":1,"next":{"title":"Raspberry Pi & Co","level":"5.1","depth":1,"path":"raspberry-pi-and-co.md","ref":"raspberry-pi-and-co.md","articles":[{"title":"RPI | synchroner Multiroom-Audio (DE)","level":"5.1.1","depth":2,"path":"raspberry-pi-and-co/rpi-multiroom-audio-synchron.md","ref":"raspberry-pi-and-co/rpi-multiroom-audio-synchron.md","articles":[{"title":"Server (DE)","level":"5.1.1.1","depth":3,"path":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md","ref":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md","articles":[]},{"title":"Client(s) (DE)","level":"5.1.1.2","depth":3,"path":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md","ref":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md","articles":[]}]},{"title":"RPI | Temperatur monitoren","level":"5.1.2","depth":2,"path":"raspberry-pi-and-co/rpi-temperatur-monitoren.md","ref":"raspberry-pi-and-co/rpi-temperatur-monitoren.md","articles":[{"title":"RPI | Sensoren","level":"5.1.2.1","depth":3,"path":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","ref":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","articles":[]}]}]},"previous":{"title":"Git","level":"4.1","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"git-subtrees.md","mtime":"2017-09-29T06:22:36.553Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>123 · GitBook</title>
+        <title>Client(s) (DE) · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../howtos/howto-gitbook-build-static-page.html" />
+    <link rel="next" href="../rpi-temperatur-monitoren.html" />
     
     
-    <link rel="prev" href="../zabbix.html" />
+    <link rel="prev" href="server.html" />
     
 
     </head>
@@ -786,9 +786,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.1" data-path="../../raspberry-pi-and-co/rpi-multiroom-audio-synchron.html">
+        <li class="chapter " data-level="5.1.1" data-path="../rpi-multiroom-audio-synchron.html">
             
-                <a href="../../raspberry-pi-and-co/rpi-multiroom-audio-synchron.html">
+                <a href="../rpi-multiroom-audio-synchron.html">
             
                     
                     RPI | synchroner Multiroom-Audio (DE)
@@ -800,9 +800,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.1.1" data-path="../../raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.html">
+        <li class="chapter " data-level="5.1.1.1" data-path="server.html">
             
-                <a href="../../raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.html">
+                <a href="server.html">
             
                     
                     Server (DE)
@@ -813,9 +813,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.1.2" data-path="../../raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.html">
+        <li class="chapter active" data-level="5.1.1.2" data-path="clients.html">
             
-                <a href="../../raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.html">
+                <a href="clients.html">
             
                     
                     Client(s) (DE)
@@ -831,9 +831,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.2" data-path="../../raspberry-pi-and-co/rpi-temperatur-monitoren.html">
+        <li class="chapter " data-level="5.1.2" data-path="../rpi-temperatur-monitoren.html">
             
-                <a href="../../raspberry-pi-and-co/rpi-temperatur-monitoren.html">
+                <a href="../rpi-temperatur-monitoren.html">
             
                     
                     RPI | Temperatur monitoren
@@ -845,9 +845,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.2.1" data-path="../../raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.html">
+        <li class="chapter " data-level="5.1.2.1" data-path="../rpi-temperatur-monitoren/rpi-sensoren.html">
             
-                <a href="../../raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.html">
+                <a href="../rpi-temperatur-monitoren/rpi-sensoren.html">
             
                     
                     RPI | Sensoren
@@ -875,9 +875,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../zabbix.html">
+        <li class="chapter " data-level="6.1" data-path="../../monitoring/zabbix.html">
             
-                <a href="../zabbix.html">
+                <a href="../../monitoring/zabbix.html">
             
                     
                     Zabbix
@@ -889,9 +889,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="6.1.1" data-path="123.html">
+        <li class="chapter " data-level="6.1.1" data-path="../../monitoring/zabbix/123.html">
             
-                <a href="123.html">
+                <a href="../../monitoring/zabbix/123.html">
             
                     
                     123
@@ -957,7 +957,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >123</a>
+        <a href="../.." >Client(s) (DE)</a>
     </h1>
 </div>
 
@@ -972,7 +972,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>123</p>
+                                <h1 id="clients">Client(s)</h1>
+<p><em>(die Dinger, wo die Musik rauskommen tut&#x2026;)</em></p>
+<h3 id="voraussetzung1">Voraussetzung </h3>
+<ul>
+<li>raspian (Debian 8 minimal)</li>
+<li>optional: Filesystem vergr&#xF6;&#xDF;ern:</li>
+</ul>
+<pre><code>apt-get install raspi-config
+raspi-config
+# Filesystem vergr&#xF6;&#xDF;ern...
+</code></pre><h3 id="software_nachinstallieren1">Software nachinstallieren </h3>
+<pre><code>sudo apt-get update
+sudo apt-get install libboost-dev libboost-system-dev libboost-program-options-dev libasound2-dev libvorbis-dev libflac-dev alsa-utils libavahi-client-dev avahi-daemon nano git gcc g++ make
+</code></pre><h3 id="snapcast_ausm_git_installieren1">snapcast ausm git installieren </h3>
+<p>Sourcen runterladen&#x2026;</p>
+<pre><code>git clone https://github.com/badaix/snapcast.git
+cd snapcast/externals/
+git submodule update --init --recursive
+cd ..
+</code></pre><p>compilieren&#x2026;</p>
+<pre><code>make all
+</code></pre><p><strong>nur </strong>Client installieren&#x2026;</p>
+<pre><code>sudo make installclient
+</code></pre><h3 id="wifi_einrichten">Wifi einrichten </h3>
+<p>Firmware installieren:</p>
+<pre><code>apt-get update
+apt-get install &lt;FIRMWARE&gt;
+</code></pre><p><strong>&lt;FIRMWARE&gt;</strong>-<code>firmware-realtek</code>;<code>firmware-atheros</code>;<code>firmware-ralink</code>; je nach verwendeteten WLAN-Adapter</p>
+<p>WPA-Supplicant installieren:</p>
+<pre><code>apt-get install wpasupplicant
+</code></pre><p>Interface anpassen (Inhalt hinzuf&#xFC;gen):</p>
+<p><code>/etc/network/interfaces</code></p>
+<pre><code>network={
+ssid=&quot;&lt;SSID&gt;&quot;
+psk=&quot;&lt;PASSWORT&gt;&quot;
+}
+</code></pre><p>rebooten</p>
+<h2 id="weblinks1">Weblinks </h2>
+<ul>
+<li><a href="https://volumio.org/forum/multiroom-audio-output-from-volumio-with-snapcast-t3217.html" target="_blank">https://volumio.org/forum/multiroom-audio-output-from-volumio-with-snapcast-t3217.html</a></li>
+<li><a href="https://github.com/badaix/snapcast" target="_blank">https://github.com/badaix/snapcast</a></li>
+<li><a href="https://minibianpi.wordpress.com/how-to/wifi/" target="_blank">https://minibianpi.wordpress.com/how-to/wifi/</a></li>
+<li><a href="https://hackerdads.wordpress.com/2016/05/07/multi-room-audio-with-open-source-software-and-cheap-hardware/" target="_blank">https://hackerdads.wordpress.com/2016/05/07/multi-room-audio-with-open-source-software-and-cheap-hardware/</a></li>
+<li><a href="http://powerpi.de/spotify-connect-auf-dem-raspberry-pi-2-installieren-dein-smartphone-ist-die-fernbedienung/" target="_blank">http://powerpi.de/spotify-connect-auf-dem-raspberry-pi-2-installieren-dein-smartphone-ist-die-fernbedienung/</a></li>
+<li><a href="http://www.redsilico.com/multiroom-audio-raspberry-pi" target="_blank">http://www.redsilico.com/multiroom-audio-raspberry-pi</a></li>
+</ul>
 
                                 
                                 </section>
@@ -1000,12 +1045,12 @@
 
             
                 
-                <a href="../zabbix.html" class="navigation navigation-prev " aria-label="Previous page: Zabbix">
+                <a href="server.html" class="navigation navigation-prev " aria-label="Previous page: Server (DE)">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../../howtos/howto-gitbook-build-static-page.html" class="navigation navigation-next " aria-label="Next page: HowTo |  Gitbook - build static page">
+                <a href="../rpi-temperatur-monitoren.html" class="navigation navigation-next " aria-label="Next page: RPI | Temperatur monitoren">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1016,7 +1061,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"123","level":"6.1.1","depth":2,"next":{"title":"HowTo |  Gitbook - build static page","level":"7.1","depth":1,"path":"howtos/howto-gitbook-build-static-page.md","ref":"howtos/howto-gitbook-build-static-page.md","articles":[]},"previous":{"title":"Zabbix","level":"6.1","depth":1,"path":"monitoring/zabbix.md","ref":"monitoring/zabbix.md","articles":[{"title":"123","level":"6.1.1","depth":2,"path":"monitoring/zabbix/123.md","ref":"monitoring/zabbix/123.md","articles":[]}]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"monitoring/zabbix/123.md","mtime":"2018-03-10T14:22:17.599Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Client(s) (DE)","level":"5.1.1.2","depth":3,"next":{"title":"RPI | Temperatur monitoren","level":"5.1.2","depth":2,"path":"raspberry-pi-and-co/rpi-temperatur-monitoren.md","ref":"raspberry-pi-and-co/rpi-temperatur-monitoren.md","articles":[{"title":"RPI | Sensoren","level":"5.1.2.1","depth":3,"path":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","ref":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","articles":[]}]},"previous":{"title":"Server (DE)","level":"5.1.1.1","depth":3,"path":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md","ref":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/server.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"raspberry-pi-and-co/rpi-multiroom-audio-synchron/clients.md","mtime":"2017-09-17T21:27:45.186Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

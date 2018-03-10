@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Zabbix · GitBook</title>
+        <title>SALT | Cheatsheet · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zabbix/123.html" />
+    <link rel="next" href="salt-header-in-managed-files.html" />
     
     
-    <link rel="prev" href="../raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.html" />
+    <link rel="prev" href="creating-hashed-passwords.html" />
     
 
     </head>
@@ -649,9 +649,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="../saltstack/creating-hashed-passwords.html">
+        <li class="chapter " data-level="3.1.1" data-path="creating-hashed-passwords.html">
             
-                <a href="../saltstack/creating-hashed-passwords.html">
+                <a href="creating-hashed-passwords.html">
             
                     
                     SALT | Creating hashed passwords
@@ -662,9 +662,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="../saltstack/salt-cheatsheet.html">
+        <li class="chapter active" data-level="3.1.2" data-path="salt-cheatsheet.html">
             
-                <a href="../saltstack/salt-cheatsheet.html">
+                <a href="salt-cheatsheet.html">
             
                     
                     SALT | Cheatsheet
@@ -675,9 +675,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="../saltstack/salt-header-in-managed-files.html">
+        <li class="chapter " data-level="3.1.3" data-path="salt-header-in-managed-files.html">
             
-                <a href="../saltstack/salt-header-in-managed-files.html">
+                <a href="salt-header-in-managed-files.html">
             
                     
                     SALT | Header in managed files
@@ -688,9 +688,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.4" data-path="../saltstack/salt-highstate-as-scheduled-job.html">
+        <li class="chapter " data-level="3.1.4" data-path="salt-highstate-as-scheduled-job.html">
             
-                <a href="../saltstack/salt-highstate-as-scheduled-job.html">
+                <a href="salt-highstate-as-scheduled-job.html">
             
                     
                     SALT | Highstate as scheduled job
@@ -701,9 +701,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.5" data-path="../saltstack/salt-install-salt-with-salt-ssh.html">
+        <li class="chapter " data-level="3.1.5" data-path="salt-install-salt-with-salt-ssh.html">
             
-                <a href="../saltstack/salt-install-salt-with-salt-ssh.html">
+                <a href="salt-install-salt-with-salt-ssh.html">
             
                     
                     SALT | install salt with salt-ssh
@@ -714,9 +714,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.6" data-path="../saltstack/salt-pillars.html">
+        <li class="chapter " data-level="3.1.6" data-path="salt-pillars.html">
             
-                <a href="../saltstack/salt-pillars.html">
+                <a href="salt-pillars.html">
             
                     
                     SALT | Pillars
@@ -875,9 +875,9 @@
         
         
     
-        <li class="chapter active" data-level="6.1" data-path="zabbix.html">
+        <li class="chapter " data-level="6.1" data-path="../monitoring/zabbix.html">
             
-                <a href="zabbix.html">
+                <a href="../monitoring/zabbix.html">
             
                     
                     Zabbix
@@ -889,9 +889,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="zabbix/123.html">
+        <li class="chapter " data-level="6.1.1" data-path="../monitoring/zabbix/123.html">
             
-                <a href="zabbix/123.html">
+                <a href="../monitoring/zabbix/123.html">
             
                     
                     123
@@ -957,7 +957,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Zabbix</a>
+        <a href=".." >SALT | Cheatsheet</a>
     </h1>
 </div>
 
@@ -972,7 +972,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="zabbix">Zabbix</h1>
+                                <h1 id="salt_cheatsheet">SALT | Cheatsheet </h1>
+<h2 id="daily-sysadmin-stuff">Daily Sysadmin Stuff</h2>
+<pre><code>salt &apos;minion-x-*&apos; system.reboot                        # reboot minions that match minion-x-*
+salt &apos;*&apos; status.uptime                                 # Get the uptime of all our minions
+salt -v -G owner:theo pkg.list_upgrades                # List available package updates for Theo&apos;s minions
+salt &apos;web*&apos; pkg.install dstat                          # Install a package on matching Salt Minions
+salt &apos;*&apos; ps.grep apache                                # Check if a specific application/process is running
+salt &apos;web*&apos; cp.push /var/log/dpkg.log                  # Gather/collect/pull files from Salt minions and upload them to the master
+salt &apos;*&apos; file.contains /etc/hosts.allow &apos;yber&apos;         # Check if a file on the Salt minions contains a certain string
+salt-cp &apos;*&apos; some_script.py /target-dir/some_script.py  # Push or upload or copy a file from the Salt master to the Salt minions
+</code></pre><h2 id="other-awesome-commands">Other Awesome Commands</h2>
+<pre><code>salt &apos;*&apos; cmd.run &apos;uname -a&apos;                  # Show running kernel and OS info on all minions
+salt &apos;*&apos; cmd.run &apos;df -h&apos;                     # Show Diskspace info on all minions
+</code></pre><h2 id="packages">Packages</h2>
+<pre><code>salt &apos;*&apos; pkg.list_upgrades                   # get a list of packages that need to be upgrade
+salt &apos;*&apos; pkg.refresh_db                      # refreshes package db (apt-get update)
+salt &apos;*&apos; pkg.upgrade                         # Upgrades all packages via apt-get dist-upgrade (or similar)
+salt &apos;*&apos; pkg.version bash                    # get current version of the bash package
+salt &apos;*&apos; pkg.install bash                    # install or upgrade bash package
+salt &apos;*&apos; pkg.install bash refresh=True       # install or upgrade bash package but
+                                                    # refresh the package database before installing.
+</code></pre><h2 id="system-services">System Services</h2>
+<pre><code>salt &apos;*&apos; service.status &lt;service name
+salt &apos;*&apos; service.available &lt;service name&gt;
+salt &apos;*&apos; service.start &lt;service name&gt;
+salt &apos;*&apos; service.restart &lt;service name&gt;
+salt &apos;*&apos; service.stop &lt;service name
+</code></pre><h2 id="network">Network</h2>
+<pre><code>salt &apos;minion1&apos; network.ping &lt;hostname&gt;       # Ping a host from your minion
+salt &apos;minion1&apos; network.traceroute &lt;hostname&gt; # Traceroute a host from your minion
+salt &apos;minion1&apos; network.get_hostname          # Get hostname
+salt &apos;minion1&apos; network.mod_hostname          # Modify hostname
+</code></pre><h2 id="states">States</h2>
+<pre><code>salt-run state.highstate                     # runs all states targetted for a minion, on a minion
+salt &apos;ns*&apos; state.highstate                   # runs all states targetted for a minion, from master
+salt &apos;web*&apos; state.sls settings.nginx         # runs settings/nginx/init.sls on web*
+</code></pre><h2 id="jobs">Jobs</h2>
+<pre><code>salt &lt;MINION&gt; saltutil.running                    # aktive Jobs finden, die auf&lt;MINION&gt;laufen
+salt &lt;MINION&gt; saltutil.kill_job &lt;JID&gt;             # Job mit&lt;JID&gt;auf&lt;MINION&gt;abbrechen
+</code></pre><h2 id="pillars">Pillars</h2>
+<pre><code>salt &apos;&lt;MINION&gt;&apos; pillar.ls                         # Pillars auflisten, die f&#xFC;r&lt;MINION&gt;g&#xFC;ltig sind
+salt &apos;&lt;MINION&gt;&apos; pillar.items                      # Inhalt der Pillars anzeigen, die f&#xFC;r&lt;MINION&gt;g&#xFC;ltig sind
+</code></pre><h2 id="weblinks">Weblinks </h2>
+<ul>
+<li><a href="https://cheatsheets.ciscodude.net/saltstack-sysadmin.html" target="_blank">https://cheatsheets.ciscodude.net/saltstack-sysadmin.html</a></li>
+</ul>
 
                                 
                                 </section>
@@ -1000,12 +1045,12 @@
 
             
                 
-                <a href="../raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.html" class="navigation navigation-prev " aria-label="Previous page: RPI | Sensoren">
+                <a href="creating-hashed-passwords.html" class="navigation navigation-prev " aria-label="Previous page: SALT | Creating hashed passwords">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="zabbix/123.html" class="navigation navigation-next " aria-label="Next page: 123">
+                <a href="salt-header-in-managed-files.html" class="navigation navigation-next " aria-label="Next page: SALT | Header in managed files">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1016,7 +1061,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Zabbix","level":"6.1","depth":1,"next":{"title":"123","level":"6.1.1","depth":2,"path":"monitoring/zabbix/123.md","ref":"monitoring/zabbix/123.md","articles":[]},"previous":{"title":"RPI | Sensoren","level":"5.1.2.1","depth":3,"path":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","ref":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"monitoring/zabbix.md","mtime":"2018-03-10T14:22:17.596Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SALT | Cheatsheet","level":"3.1.2","depth":2,"next":{"title":"SALT | Header in managed files","level":"3.1.3","depth":2,"path":"saltstack/salt-header-in-managed-files.md","ref":"saltstack/salt-header-in-managed-files.md","articles":[]},"previous":{"title":"SALT | Creating hashed passwords","level":"3.1.1","depth":2,"path":"saltstack/creating-hashed-passwords.md","ref":"saltstack/creating-hashed-passwords.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"saltstack/salt-cheatsheet.md","mtime":"2017-09-18T06:06:41.881Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

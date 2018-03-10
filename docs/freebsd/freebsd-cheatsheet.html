@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Zabbix · GitBook</title>
+        <title>FreeBSD | Cheatsheet · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="zabbix/123.html" />
+    <link rel="next" href="freebsd-tinc.html" />
     
     
-    <link rel="prev" href="../raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.html" />
+    <link rel="prev" href="freebsd-zfs.html" />
     
 
     </head>
@@ -176,9 +176,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../freebsd/freebsd-zfs.html">
+        <li class="chapter " data-level="1.3.1" data-path="freebsd-zfs.html">
             
-                <a href="../freebsd/freebsd-zfs.html">
+                <a href="freebsd-zfs.html">
             
                     
                     FreeBSD | ZFS Cheatsheet
@@ -189,9 +189,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../freebsd/freebsd-cheatsheet.html">
+        <li class="chapter active" data-level="1.3.2" data-path="freebsd-cheatsheet.html">
             
-                <a href="../freebsd/freebsd-cheatsheet.html">
+                <a href="freebsd-cheatsheet.html">
             
                     
                     FreeBSD | Cheatsheet
@@ -202,9 +202,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../freebsd/freebsd-tinc.html">
+        <li class="chapter " data-level="1.3.3" data-path="freebsd-tinc.html">
             
-                <a href="../freebsd/freebsd-tinc.html">
+                <a href="freebsd-tinc.html">
             
                     
                     FreeBSD | Tinc
@@ -229,9 +229,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.4.1" data-path="../freebsd/pfsense-lacp-and-jumbo-frames-de.html">
+        <li class="chapter " data-level="1.3.4.1" data-path="pfsense-lacp-and-jumbo-frames-de.html">
             
-                <a href="../freebsd/pfsense-lacp-and-jumbo-frames-de.html">
+                <a href="pfsense-lacp-and-jumbo-frames-de.html">
             
                     
                     pfSense | LACP & Jumbo Frames (DE)
@@ -247,9 +247,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../freebsd/freenas-docker.html">
+        <li class="chapter " data-level="1.3.5" data-path="freenas-docker.html">
             
-                <a href="../freebsd/freenas-docker.html">
+                <a href="freenas-docker.html">
             
                     
                     FreeNAS | Docker
@@ -875,9 +875,9 @@
         
         
     
-        <li class="chapter active" data-level="6.1" data-path="zabbix.html">
+        <li class="chapter " data-level="6.1" data-path="../monitoring/zabbix.html">
             
-                <a href="zabbix.html">
+                <a href="../monitoring/zabbix.html">
             
                     
                     Zabbix
@@ -889,9 +889,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="zabbix/123.html">
+        <li class="chapter " data-level="6.1.1" data-path="../monitoring/zabbix/123.html">
             
-                <a href="zabbix/123.html">
+                <a href="../monitoring/zabbix/123.html">
             
                     
                     123
@@ -957,7 +957,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Zabbix</a>
+        <a href=".." >FreeBSD | Cheatsheet</a>
     </h1>
 </div>
 
@@ -972,8 +972,146 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="zabbix">Zabbix</h1>
+                                <h1 id="freebsd--cheatsheet">FreeBSD | Cheatsheet</h1>
+<h2 id="general">General</h2>
+<h3 id="identifying-your-disks">Identifying your disks</h3>
+<pre><code>camcontrol devlist                      #
+glabel list                             ## show UUIDs from partitions
+</code></pre><h2 id="users">Users</h2>
+<pre><code>adduser                                 ## wrapper script to add users
+chsh                                    ## change user shell and other info
+pw groupadd teamtwo                     ## add a group to the system
+pw groupmod teamtwo -m &lt;username&gt;       ## add a user to a group
+/etc/group                              ## file to edit groups manually
+id                                      ## show group membership for current user
+</code></pre><h2 id="system-configuration">System Configuration</h2>
+<pre><code>cat /var/run/dmesg.boot                 ## show boot log with info about disks and pci devices
+kenv                                    ## show bios, board and chassi info (dump from kernel env)
+pciconf -l -cv                          ## show info about PCI devices of the machine
+camcontrol devlist -v                   ## list of attached ATA devices
+ifconfig                                ## show and configure network interface parameters
+sysctl                                  ## tool to show/set all system/kernel coniguration variables
+sysctl -a                               ## show all system/kernel configuration variables
+sysctl hw                               ## show hardware related info and settings
+sysctl net                              ## show all network related info and settings
+sysctl hw.model                         ## show CPU model
+sysctl net.inet.tcp.delayed_ack=0       ## disable delayed ack in tcp
+</code></pre><h2 id="system-statistics">System Statistics</h2>
+<pre><code>top                                     ## display and update information about the top cpu processes
+ps auxwww | grep &lt;processname&gt;          ## display process status
+CTRL-t                                  ## on running commands will output useful info
+systat -vmstat 1                        ## show general overview of load, memory, interrupts, disk io
+systat -iostat 1                        ## show disk throughput
+systat -ifstat 1                        ## show network throughput for all interfaces
+systat -netstat 1                       ## show netstat output but automatically refreshed
+systat -tcp 1                           ## show tcp statistics
+</code></pre><h2 id="zfs">ZFS</h2>
+<pre><code>zfs list                                ## list all zfs datasets (volumes)
+zfs snapshot &lt;pool&gt;/&lt;dataset&gt;@&lt;name&gt;    ## generic way of creating a snapshot of a dataset in a storage pool
+zfs snapshot -r tank@2014021301         ## create a snapshot of all datasets in the pool &quot;tank&quot;
+zfs create &lt;pool&gt;/&lt;dataset&gt;             ## create a new dataset
+zfs rollback &lt;pool&gt;/&lt;dataset&gt;@name      ## rollback of a dataset to a given snapshot
+zfs destroy &lt;pool&gt;/&lt;dataset&gt;            ## destroy a dataset / remove it from the pool
+zfs destroy &lt;pool&gt;/&lt;dataset&gt;@name       ## destroy a snapshot
+zfs set &lt;key&gt;=&lt;val&gt; &lt;pool&gt;/&lt;dataset&gt;    ## generic way of setting options on a given dataset
+zfs set compression=lz4 tank/var/log    ## enable LZ4 compression on /var/logs
+zfs get compressratio &lt;pool&gt;/&lt;dataset&gt;  ## show the current compression ratio of a dataset
+zfs send -R tank@snapshot | \           ## send all datasets@snapshot recursively to another host
+ssh root@[IP] zfs recv -F tank
+zfs unmount &lt;pool&gt;/&lt;dataset&gt;            ## unmount a zfs dataset
+zfs upgrade -r &lt;pool&gt;                   ## upgrade all volumes in the pool (technically its the root volume e.g. tank)
+zpool status                            ## show health info about currently imported ZFS storage pools
+zpool scrub                             ## check all written blocks for consistency
+zpool iostat -v tank                    ## show more information about the pool including log devices
+zpool add &lt;pool&gt; mirror &lt;dev1&gt; &lt;dev1&gt;   ## add two disks as mirror to a storage pool
+zpool remove &lt;pool&gt; &lt;device&gt;            ## remove single devices or mirror sets from the storage pool
+zpool upgrade &lt;pool&gt;                    ## upgrade the storage pool to latest version
+</code></pre><h2 id="software">Software</h2>
+<pre><code>## Ports
+portsnap fetch                          ## fetch the latest portfiles
+portsnap update                         ## update the portfiles on disk with the previously fetched portfiles
+portsnap update -p /usr/jails/basejail/usr/ports ## update ports tree for jails
+whereis &lt;portname&gt;                      ## show the directory of the portfile
+cd /usr/ports/*/&lt;portname&gt;              ## find the parent directory of a given portname
+locate &lt;portname&gt; | grep ports          ## manual way of searching for ports
+cd &lt;portdir&gt; &amp;&amp; make install            ## compile and install a port
+cd &lt;portdir&gt; &amp;&amp; make config             ## re-run configuration of a port when available
+cd &lt;portdir&gt; &amp;&amp; sudo make deinstall clean reinstall ## upgrade the port
 
+## Packages
+pkg search &lt;packagename&gt;                ## search for binary packages
+pkg install &lt;packagename&gt;               ## install binary package and its dependencies
+pkg delete  &lt;packagename&gt;               ## delete an installed package
+pkg automremove                         ## remove unneeded dependencies
+pkg info                                ## show list of currently installed ports/packages with version info
+pkg version                             ## show which ports/packages are outdated and need an update
+pkg upgrade &lt;packagename&gt;               ## upgrade a packages
+pkg which &lt;filename&gt;                    ## find out which package installed a given file
+
+## System
+freebsd-update fetch                    ## fetch updates from server
+freebsd-update -r &lt;target&gt; upgrade      ## fetch upgrades to specified version (e.g. &apos;10.1-RELEASE&apos;) from server
+freebsd-update install                  ## install downloaded updates/upgrades
+</code></pre><h2 id="services">Services</h2>
+<pre><code>service -l                              ## list all available services
+service -e                              ## list all enabled services
+service &lt;servicename&gt; status            ## show the status of the service with the given servicename
+service &lt;servicename&gt; start             ## start the service with the given servicename
+service &lt;servicename&gt; stop              ## stop the service with the given servicename
+service &lt;servicename&gt; restart           ## restart the service with the given servicename
+service &lt;servicename&gt; reload            ## reload the configuration of the service with the given servicename
+</code></pre><h2 id="network">Network</h2>
+<pre><code>ifconfig &lt;iface&gt; inet &lt;ip/mask&gt;         ## configure IP address on interface
+ifconfig &lt;iface&gt; inet &lt;ip/mask&gt; alias   ## configure IP address alias on interface
+ifconfig &lt;iface&gt; del &lt;ip&gt;               ## remove IP address from interface
+route add -net default &lt;gw_ip&gt;          ## add default route
+route add -net &lt;ip/mask&gt; &lt;gw_ip&gt;        ## add a custom route for given network
+/etc/rc.d/netif restart &amp;&amp; \            ## restart networking and routing after changing the configuration
+/etc/rc.d/routing restart                 without rebooting. Execute in tmux or screen session
+netstat -rn                             ## display routing table
+netstat -an                             ## display all connections
+netstat -m                              ## display buffer usage
+netstat -Lan                            ## display status of listen queues
+netstat -s                              ## display extensive statistics per protocol (use -p tcp to only show tcp)
+sockstat -l                             ## display listening sockets, process names and pids
+sysctl kern.ipc.numopensockets          ## display number of open sockets
+vmstat -z | egrep &quot;ITEM|tcpcb&quot;          ## number of hash table buckets to handle incoming tcp connections
+                                          increase net.inet.tcp.tcbhashsize if hitting the limit
+sysctl net.inet.tcp.hostcache.list      ## display current content of hostcache with its parameters per IP
+</code></pre><h2 id="firewall">Firewall</h2>
+<pre><code>pfctl -si                               ## show current state table and counters (useful for tuning)
+pfctl -s state                          ## show current content of state table
+</code></pre><h2 id="ipsec">IPsec</h2>
+<pre><code>ipsec start                             ## start VPN and establish (auto=start) VPN connections
+setkey -D                               ## show extensive Kernel information about current connections
+setkey -DP                              ## show more condensed connection information
+ipsec statusall [conn]                  ## show returns detailed status information either on connection or all 
+                                          connections if no name is provided
+ipsec leases                            ## show current leases from virtual IP address pool
+ipsec rereadsecrets                     ## flushes and rereads all secrets defined in ipsec.secrets
+ipsec rereadall                         ## flushes and rereads all secrets defined in ipsec.secrets as well as all 
+                                          certificates and and certificate revocation lists
+ipsec update                            ## sends a HUP signal to the daemon that determines any changes in ipsec.conf 
+                                          and updates the configuration on the running IKE daemon charon
+ipsec reload                            ## sends a USR1 signal to the daemon that reloads the whole configuration 
+                                          on the running IKE daemon charon based on the actual ipsec.conf
+ipsec restart                           ## terminates all ipsec connections, sends a TERM signal to the daemon and     
+                                          restarts it afterwards
+ipsec stroke up [conn]                  ## initiate connection [conn]
+ipsec stroke down [conn]                ## terminate connection [conn]
+</code></pre><h2 id="ezjail">ezjail</h2>
+<pre><code>ezjail-admin start|stop                        ## start and stop all the jails
+ezjail-admin start|stop &lt;JID&gt;|&lt;hostname&gt;       ## start and stop individual jail
+ezjail-admin list                              ## list all the jails on the host system
+ezjail-admin console &lt;JID&gt;|&lt;hostname&gt;          ## open root shell into jail
+ezjail-admin create -f exmaple &lt;hostname&gt; &lt;IP&gt; ## create a new jail
+ezjail-admin delete -w hostname                ## delete the jail (in case you use zfs also delete the volume)
+</code></pre><h2 id="common-sysctls-to-set">Common sysctl&apos;s to set</h2>
+<pre><code>hw.usb.no_shutdown_wait=1               ## don&apos;t wait for USB devices when shutting down (if your system hangs when rebooting)
+
+kern.maxfiles=204800                    ## Increase file descriptor limits                       
+kern.maxfilesperproc=200000
+</code></pre>
                                 
                                 </section>
                             
@@ -1000,12 +1138,12 @@
 
             
                 
-                <a href="../raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.html" class="navigation navigation-prev " aria-label="Previous page: RPI | Sensoren">
+                <a href="freebsd-zfs.html" class="navigation navigation-prev " aria-label="Previous page: FreeBSD | ZFS Cheatsheet">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="zabbix/123.html" class="navigation navigation-next " aria-label="Next page: 123">
+                <a href="freebsd-tinc.html" class="navigation navigation-next " aria-label="Next page: FreeBSD | Tinc">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1016,7 +1154,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Zabbix","level":"6.1","depth":1,"next":{"title":"123","level":"6.1.1","depth":2,"path":"monitoring/zabbix/123.md","ref":"monitoring/zabbix/123.md","articles":[]},"previous":{"title":"RPI | Sensoren","level":"5.1.2.1","depth":3,"path":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","ref":"raspberry-pi-and-co/rpi-temperatur-monitoren/rpi-sensoren.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"monitoring/zabbix.md","mtime":"2018-03-10T14:22:17.596Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"FreeBSD | Cheatsheet","level":"1.3.2","depth":2,"next":{"title":"FreeBSD | Tinc","level":"1.3.3","depth":2,"path":"freebsd/freebsd-tinc.md","ref":"freebsd/freebsd-tinc.md","articles":[]},"previous":{"title":"FreeBSD | ZFS Cheatsheet","level":"1.3.1","depth":2,"path":"freebsd/freebsd-zfs.md","ref":"freebsd/freebsd-zfs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"freebsd/freebsd-cheatsheet.md","mtime":"2017-09-20T20:43:43.184Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-10T15:19:11.393Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
