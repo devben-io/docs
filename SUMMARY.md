@@ -16,6 +16,11 @@
   * [FreeNAS \| Docker](freebsd/freenas-docker.md)
 * [Linux](linux.md)
   * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
+* [SSH](ssh.md)
+  * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
+  * Tunneling / Port Forwarding \(EN\)
+* Verschiedenes
+  * [1](1.md)
 
 ## CLI Magic
 
