@@ -1,8 +1,6 @@
-# Introduction
+# README
 
-this is:
 
-* "random" IT knowledge
 
 
 
