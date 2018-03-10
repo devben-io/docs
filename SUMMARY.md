@@ -19,8 +19,6 @@
 * [SSH](ssh.md)
   * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
   * Tunneling / Port Forwarding \(EN\)
-* [Verschiedenes](verschiedenes.md)
-  * [1](1.md)
 
 ## CLI Magic
 
