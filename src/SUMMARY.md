@@ -40,6 +40,8 @@
     * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
 * [Git-Magic](git.md)
   * [GIT \| Subtrees](git-subtrees.md)
+  * [GIT \| Travis CI](git-travis-ci.md)
+    * [GIT \| Publish to Github Pages](git-travis-ci/git-publish-to-githubpages.md)
 * [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
 * [OS-Magic](os-magic.md)
