@@ -1,0 +1,12 @@
+{
+	"root": "src",
+	"plugins": [
+		"collapsible-chapters",
+		"-lunr",
+		"-search",
+		"search-plus-mod"
+	],
+	"pluginsConfig": {
+		"collapsible-chapters":{}
+	}
+}
