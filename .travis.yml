@@ -1,9 +1,12 @@
 dist: trusty
+rvm:
+- 2.0.0
 
 sudo: required
 language: node_js
 node_js:
   - "6.9.1"
+
 cache:
   directories:
     - node_modules # NPM packages
@@ -16,10 +19,8 @@ install:
   - npm install gitbook
   - npm install gitbook-cli
 script:
-  - ls -lha
   - npm run docs:build
-  - git add *
-  - ls -lha
+
 
 branches:
   only:
@@ -36,7 +37,7 @@ deploy:
   repo: dtnpnk/docs-gitbook
 #  target_branch: master
 #  fqdn: takuti.me
-#  local-dir: "_book"
+  local-dir: "_book"
   verbose: true
 
 notifications:
