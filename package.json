@@ -4,7 +4,7 @@
   "description": "Rusoto GitBook documentation",
   "main": "index.js",
   "dependencies": {
-    "gitbook-cli": "^2.3.0"
+    "gitbook-cli": "^2.3.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rusoto/rusoto.github.io.git"
+    "url": "git+https://github.com/dtnpnk/docs-gitbook.git"
   },
   "author": "Rusoto Project Developers (https://github.com/rusoto)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rusoto/rusoto.github.io/issues"
+    "url": "https://github.com/dtnpnk/docs-gitbook/issues"
   },
   "homepage": "https://github.com/rusoto/rusoto.github.io#readme"
 }
