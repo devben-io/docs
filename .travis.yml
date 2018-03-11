@@ -29,6 +29,7 @@ deploy:
 #  repo: takuti/takuti.github.io
 #  target_branch: master
 #  fqdn: takuti.me
+  local-dir: "_book"
   verbose: true
 
 notifications:
