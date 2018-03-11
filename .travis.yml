@@ -38,7 +38,7 @@ deploy:
   keep-history: false
   on:
     branch: source
-  repo: dtnpnk/docs-gitbook
+#  repo: dtnpnk/docs-gitbook
 #  target_branch: master
 #  fqdn: takuti.me
 #  local-dir: "_book"
