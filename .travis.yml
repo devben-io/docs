@@ -25,16 +25,16 @@ script:
 #      fi
 branches:
   only:
-    - source
+    - master
     - auto
 
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-#  keep-history: true
-#  on:
-#    branch: master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: gh-pages
 
 notifications:
   email: false
