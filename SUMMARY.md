@@ -40,7 +40,7 @@
     * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
 * [Git-Magic](git.md)
   * [GIT \| Subtrees](git-subtrees.md)
-* Monitoring-Magic
+* [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
 * OS-Magic
   * [FreeBSD](freebsd.md)
