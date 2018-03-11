@@ -1,6 +1,8 @@
-# cat /dev/random-knowledge &gt; /dev/brain
+# random IT Knowledge
 
-random IT Knowledge
+```
+cat /dev/random-knowledge > /dev/brain
+```
 
 ## Info
 
