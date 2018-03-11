@@ -23,13 +23,13 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
-  target-branch: gh-pages
+#  target-branch: gh-pages
   on:
     branch: source
 #  repo: takuti/takuti.github.io
 #  target_branch: master
 #  fqdn: takuti.me
-#  local-dir: "_book"
+  local-dir: "_book"
   verbose: true
 
 notifications:
