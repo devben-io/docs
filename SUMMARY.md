@@ -3,7 +3,7 @@
 ## Spellbook & Hidden Knowledge
 
 * [Introduction](README.md)
-* Auto-Magic
+* [Auto-Magic](auto-magic.md)
   * Ansible
   * [SaltStack](saltstack.md)
     * [SALT \| Creating hashed passwords](saltstack/creating-hashed-passwords.md)
@@ -33,7 +33,7 @@
   * [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
   * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
-* Container-Magic
+* [Container-Magic](container-magic.md)
   * [Docker](docker.md)
     * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
     * [DOCKER \| save vs. export](docker-save-vs-export.md)
