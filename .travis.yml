@@ -29,6 +29,7 @@ deploy:
 #  repo: takuti/takuti.github.io
 #  target_branch: master
 #  fqdn: takuti.me
+  verbose: true
 
 notifications:
   email: false
