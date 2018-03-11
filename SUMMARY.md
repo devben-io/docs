@@ -50,8 +50,8 @@
   * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
   * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
 * [Zabbix](monitoring/zabbix.md)
-* verschiedenes
-  * [VM export on VMware Fusion \(OSX\)](devrandom/vm-export-on-vmware-fusion-osx.md)
+* [verschiedenes](verschiedenes.md)
+  * [VM export on VMware Fusion \(OSX\)](verschiedenes/vm-export-on-vmware-fusion-osx.md)
   * [CJDNS \| install on Debian 8](devrandom/cjdns-install-on-debian-8.md)
 
 ## HowTos
