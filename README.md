@@ -1,4 +1,4 @@
-# random IT Knowledge
+# Spellbook & Hidden Knowledge
 
 ```
 cat /dev/random-knowledge > /dev/brain

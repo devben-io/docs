@@ -1,6 +1,6 @@
 # Summary
 
-## \(Black\)Magical Wisdom
+## Spellbook & Hidden Knowledge
 
 * [Introduction](README.md)
 * Auto-Magic
