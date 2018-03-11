@@ -58,5 +58,3 @@
 
 * [HowTo \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
 
-## FAQs
-
