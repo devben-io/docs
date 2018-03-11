@@ -54,7 +54,7 @@
   * [VM export on VMware Fusion \(OSX\)](verschiedenes/vm-export-on-vmware-fusion-osx.md)
   * [CJDNS \| install on Debian 8](verschiedenes/cjdns-install-on-debian-8.md)
 
-## HowTos
+## HowTos, FAQs
 
 * [HowTo \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
 
