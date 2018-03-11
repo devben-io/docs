@@ -1,8 +1,8 @@
 sudo: required
 language: node_js
 node_js:
-#  - "6.9.1"
-  - stable
+  - "6.9.1"
+#  - stable
 cache:
   directories:
     - node_modules # NPM packages
@@ -29,7 +29,7 @@ deploy:
   repo: dtnpnk/docs-gitbook
 #  target_branch: master
 #  fqdn: takuti.me
-  local-dir: "_book"
+#  local-dir: "_book"
   verbose: true
 
 notifications:
