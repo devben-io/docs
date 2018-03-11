@@ -8,6 +8,7 @@ cache:
 install:
   - npm install
   - npm install gitbook
+  - npm install gitbook-cli
 #  - sudo pip install awscli
 script:
 #  - gitbook install
