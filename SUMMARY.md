@@ -22,20 +22,19 @@
 * verschiedenes
   * [VM export on VMware Fusion \(OSX\)](devrandom/vm-export-on-vmware-fusion-osx.md)
   * [CJDNS \| install on Debian 8](devrandom/cjdns-install-on-debian-8.md)
-
-## CLI Magic
-
 * [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
   * [Grundlagen \(DE\)](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
-* [CLI \| dd progressbar \(DE\)](cli_magic/dd-progressbar.md)
-* [CLI \| nur Dateinamen ausgeben \(DE\)](cli_magic/nur-dateinamen-ausgeben.md)
-* [CLI \| Logging im bash skript \(DE\)](cli_magic/logging-im-bash-skript.md)
-* [CLI \| dmesg fortlaufend anzeigen lassen \(DE\)](cli_magic/dmesg-fortlaufend-anzeigen-lassen.md)
-* [CLI \| live ssh network throughput test](cli_magic/live-ssh-network-throughput-test.md)
-* [CLI \| create LVM thinprovisioned Volumes](cli_magic/lvm-thinprovisioned-volume-erstellen.md)
-* [CLI \| OS Version anzeigen](cli_magic/os-version-anzeigen.md)
-* [CLI \| pbzip2 parallel packen \(DE\)](cli_magic/pbzip2-parallel-packen.md)
-* [CLI \| Schreibmaschine simulieren](cli_magic/schreibmaschine-simulieren.md)
+* [CLI Magic](cli-magic.md)
+  * 1111
+  * [CLI \| dd progressbar \(DE\)](cli_magic/dd-progressbar.md)
+  * [CLI \| nur Dateinamen ausgeben \(DE\)](cli_magic/nur-dateinamen-ausgeben.md)
+  * [CLI \| Logging im bash skript \(DE\)](cli_magic/logging-im-bash-skript.md)
+  * [CLI \| dmesg fortlaufend anzeigen lassen \(DE\)](cli_magic/dmesg-fortlaufend-anzeigen-lassen.md)
+  * [CLI \| live ssh network throughput test](cli_magic/live-ssh-network-throughput-test.md)
+  * [CLI \| create LVM thinprovisioned Volumes](cli_magic/lvm-thinprovisioned-volume-erstellen.md)
+  * [CLI \| OS Version anzeigen](cli_magic/os-version-anzeigen.md)
+  * [CLI \| pbzip2 parallel packen \(DE\)](cli_magic/pbzip2-parallel-packen.md)
+  * [CLI \| Schreibmaschine simulieren](cli_magic/schreibmaschine-simulieren.md)
 * [CLI \| PDFs scannen \(DE\)](cli_magic/pdfs-scannen.md)
 * [CLI \| SSH Key löschen \(DE\)](cli_magic/ssh-key-loschen.md)
 * [CLI \| Suchen in mehreren Dateien \(DE\)](cli_magic/suchen-in-mehreren-dateien.md)
@@ -45,7 +44,6 @@
 * [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
 * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
 * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
-* [CLI \| Zeile mit sed löschen \(DE\)](cli_magic/cli-zeile-mit-sed-loschen-de.md)
 
 ## Config Management
 
