@@ -42,7 +42,7 @@
   * [GIT \| Subtrees](git-subtrees.md)
 * [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
-* OS-Magic
+* [OS-Magic](os-magic.md)
   * [FreeBSD](freebsd.md)
     * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
     * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
