@@ -1,0 +1,15 @@
+
+{
+	"plugins": [
+		"collapsible-chapters",
+		"-lunr",
+		"-search",
+		"search-plus-mod",
+		"theme-faq",
+        	"-fontsettings",
+        	"-sharing"
+	],
+	"pluginsConfig": {
+		"collapsible-chapters":{}
+	}
+}
