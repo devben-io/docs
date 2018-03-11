@@ -1,6 +1,6 @@
 # Summary
 
-## Knowledge Base
+## DevOps Spellbook \(Blackmagic\)
 
 * [Introduction](README.md)
 * Auto-Magic
@@ -33,25 +33,28 @@
   * [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
   * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
-* [Docker](docker.md)
-  * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
-  * [DOCKER \| save vs. export](docker-save-vs-export.md)
-  * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
-* [FreeBSD](freebsd.md)
-  * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
-  * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
-  * [FreeBSD \| Tinc](freebsd/freebsd-tinc.md)
-  * pfSense
-    * [pfSense \| LACP & Jumbo Frames \(DE\)](freebsd/pfsense-lacp-and-jumbo-frames-de.md)
-  * [FreeNAS \| Docker](freebsd/freenas-docker.md)
-* [Git](git.md)
+* Container-Magic
+  * [Docker](docker.md)
+    * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
+    * [DOCKER \| save vs. export](docker-save-vs-export.md)
+    * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
+* [Git-Magic](git.md)
   * [GIT \| Subtrees](git-subtrees.md)
-* [Linux](linux.md)
-  * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
-* [SSH](ssh.md)
-  * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
-  * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
-* [Zabbix](monitoring/zabbix.md)
+* Monitoring-Magic
+  * [Zabbix](monitoring/zabbix.md)
+* OS-Magic
+  * [FreeBSD](freebsd.md)
+    * [FreeBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
+    * [FreeBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
+    * [FreeBSD \| Tinc](freebsd/freebsd-tinc.md)
+    * pfSense
+      * [pfSense \| LACP & Jumbo Frames \(DE\)](freebsd/pfsense-lacp-and-jumbo-frames-de.md)
+    * [FreeNAS \| Docker](freebsd/freenas-docker.md)
+  * [Linux](linux.md)
+    * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
+  * [SSH](ssh.md)
+    * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
+    * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
 
 ## HowTos, FAQs
 
