@@ -1,4 +1,5 @@
 dist: trusty
+rvm: stable
 sudo: required
 language: node_js
 node_js:
