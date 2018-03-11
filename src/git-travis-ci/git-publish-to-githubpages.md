@@ -7,7 +7,8 @@
 * [https://travis-ci.org/&lt;me&gt;/&lt;myrepo&gt;/settings](https://docs.travis-ci.com/user/deployment/pages/)
 * [https://takuti.me/note/travis-gh-pages-deployment/](https://takuti.me/note/travis-gh-pages-deployment/)
 * [https://devhints.io/travis-gh-pages](https://devhints.io/travis-gh-pages)
-* https://djw8605.github.io/2017/02/08/deploying-docs-on-github-with-travisci/
+* [https://djw8605.github.io/2017/02/08/deploying-docs-on-github-with-travisci/](https://djw8605.github.io/2017/02/08/deploying-docs-on-github-with-travisci/)
+* https://takuti.me/note/travis-gh-pages-deployment/
 
 
 
