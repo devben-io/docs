@@ -4,10 +4,7 @@
 		"collapsible-chapters",
 		"-lunr",
 		"-search",
-		"search-plus-mod",
-		"theme-faq",
-        	"-fontsettings",
-        	"-sharing"
+		"search-plus-mod"
 	],
 	"pluginsConfig": {
 		"collapsible-chapters":{}
