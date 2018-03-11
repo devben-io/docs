@@ -3,6 +3,15 @@
 ## Knowledge Base
 
 * [Introduction](README.md)
+* Auto-Magic
+  * Ansible
+  * [SaltStack](saltstack.md)
+    * [SALT \| Creating hashed passwords](saltstack/creating-hashed-passwords.md)
+    * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
+    * [SALT \| Header in managed files](saltstack/salt-header-in-managed-files.md)
+    * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
+    * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
+    * [SALT \| Pillars](saltstack/salt-pillars.md)
 * [CLI Magic](cli-magic.md)
   * [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
     * [Grundlagen \(DE\)](cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md)
@@ -39,20 +48,10 @@
   * [GIT \| Subtrees](git-subtrees.md)
 * [Linux](linux.md)
   * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
-* [SaltStack](saltstack.md)
-  * [SALT \| Creating hashed passwords](saltstack/creating-hashed-passwords.md)
-  * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
-  * [SALT \| Header in managed files](saltstack/salt-header-in-managed-files.md)
-  * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
-  * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
-  * [SALT \| Pillars](saltstack/salt-pillars.md)
 * [SSH](ssh.md)
   * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
   * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
 * [Zabbix](monitoring/zabbix.md)
-* [verschiedenes](verschiedenes.md)
-  * [VM export on VMware Fusion \(OSX\)](verschiedenes/vm-export-on-vmware-fusion-osx.md)
-  * [CJDNS \| install on Debian 8](verschiedenes/cjdns-install-on-debian-8.md)
 
 ## HowTos, FAQs
 
