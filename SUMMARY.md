@@ -1,6 +1,6 @@
 # Summary
 
-## DevOps Spellbook \(Blackmagic\)
+## \(Black\)Magical Wisdom
 
 * [Introduction](README.md)
 * Auto-Magic
@@ -56,7 +56,7 @@
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
 
-## HowTos, FAQs
+## Spells \(HowTos, FAQs\)
 
 * HowTos
   * [HOWTO \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
