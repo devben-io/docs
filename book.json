@@ -1,8 +1,15 @@
 {
   "root": "src",
   "title": "Docs",
-  "language": "en",
-  "plugins": ["-sharing", "edit-link"],
+  "language": "en",	
+  "plugins": [
+		"collapsible-chapters",
+		"-lunr",
+		"-search",
+		"search-plus-mod",
+    "-sharing", 
+    "edit-link"
+  ],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/rusoto/rusoto.github.io/tree/source/src",
