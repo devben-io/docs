@@ -12,7 +12,10 @@ install:
   - npm install gitbook
   - npm install gitbook-cli
 script:
+  - ls -lha
   - npm run docs:build
+  - ls -lha
+  - tree
 
 branches:
   only:
