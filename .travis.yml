@@ -20,8 +20,11 @@ install:
   - npm install gitbook-cli
 script:
   - npm run docs:build
-  - git add *
 
+before_deploy:
+script:
+  - rm -Rfv node_modules
+  - git add *
 
 branches:
   only:
