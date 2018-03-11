@@ -1,10 +1,10 @@
 dist: trusty
-rvm: stable
+
 sudo: required
 language: node_js
 node_js:
-  - "6.9.1"
-#  - stable
+#  - "6.9.1"
+  - "stable"
 cache:
   directories:
     - node_modules # NPM packages
