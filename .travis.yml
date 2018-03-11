@@ -17,7 +17,6 @@ script:
   - npm run docs:build
   - git add *
   - ls -lha
-  - tree
 
 branches:
   only:
