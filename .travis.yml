@@ -15,6 +15,7 @@ install:
 script:
   - ls -lha
   - npm run docs:build
+  - git add *
   - ls -lha
   - tree
 
