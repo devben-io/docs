@@ -29,8 +29,10 @@ script:
   - gitbook build
 
 before_deploy:
-  script:
-    - ls -lha
+script:
+  - |
+  ls -lha
+  ls -lha */
 
 deploy:
 
