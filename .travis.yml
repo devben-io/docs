@@ -29,7 +29,7 @@ install:
 
 script:
   - |
-    echo "Starting to update gh-pages\n"
+    # Starting to update gh-pages
     cp -R _book $HOME/_book
     
     #go to home and setup git
