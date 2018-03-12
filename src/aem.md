@@ -1,6 +1,6 @@
-## AEM - Adobe Experience Manager
+# AEM - Adobe Experience Manager
 
-CLI-Magic:
+## Links:
 
 * [https://web.archive.org/web/20170719150428/http://www.aemcq5tutorials.com/tutorials/adobe-cq5-aem-curl-commands/](https://web.archive.org/web/20170719150428/http://www.aemcq5tutorials.com/tutorials/adobe-cq5-aem-curl-commands/)
 * [https://gist.github.com/joemaffia/dd55e4c43a24c4948e8d](https://gist.github.com/joemaffia/dd55e4c43a24c4948e8d)
