@@ -27,9 +27,9 @@ before_install:
 
 install:
   - gitbook install  
-  - gitbook pdf ./ _book/book.pdf &
-  - gitbook epub ./ _book/book.epub &
-  - gitbook mobi ./ _book/book.mobi &
+#  - gitbook pdf ./ _book/book.pdf
+#  - gitbook epub ./ _book/book.epub
+#  - gitbook mobi ./ _book/book.mobi
   - gitbook build
   - ls -lha
 deploy:
