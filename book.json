@@ -12,7 +12,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/rusoto/rusoto.github.io/tree/source/src",
+      "base": "https://github.com/dtnpnk/docs/tree/source/src",
       "label": "EDIT"
     }
   },
@@ -20,6 +20,6 @@
     "summary": "SUMMARY.md"
   },
   "variables": {
-    "domain": "http://rusoto.org"
+    "domain": "https://dtnpnk.github.io/docs"
   }
 }
