@@ -27,7 +27,7 @@ install:
   - gitbook build
   - ls -lha
 
-before_deploy:
+script:
   - |
     echo "Starting to update gh-pages\n"
     cp -R _book $HOME/_book
