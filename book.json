@@ -8,13 +8,18 @@
 	"-search",
 	"search-plus-mod",
 	"-sharing", 
-	"edit-link"
+	"edit-link",
+	"page-toc-button"
   ],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/dtnpnk/docs/tree/source/src",
       "label": "EDIT"
-    }
+    },
+    "page-toc-button": {
+      "maxTocDepth": 2,
+      "minTocSize": 2
+     }
   },
   "structure": {
     "summary": "SUMMARY.md"
