@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/dtnpnk/docs.svg?branch=source)](https://travis-ci.org/dtnpnk/docs)
 
+## Info
+
+The [GitBook](https://www.gitbook.com/ "GitBook") is automaticaly build with the [TravisCI](https://travis-ci.org/ "TravisCI") from the source branch. The static site is pushed to te gh-pages branch.
+
 ## Branches
 
 ### **source**
@@ -12,7 +16,7 @@
 ### **gh-pages**
 
 * contains the static site, that was built with the TravisCI
-* Website: https://dtnpnk.github.io/docs/
+* Website: [https://dtnpnk.github.io/docs/](https://dtnpnk.github.io/docs/)
 
 
 
