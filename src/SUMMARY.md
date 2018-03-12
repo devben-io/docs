@@ -3,6 +3,7 @@
 ## Codex Informatica
 
 * [Introduction](README.md)
+* Changes
 * [Auto-Magic](auto-magic.md)
   * Ansible
   * [SaltStack](saltstack.md)
