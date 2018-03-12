@@ -47,10 +47,9 @@ before_deploy:
 
 
 deploy:
-  - |
-    cd $HOME
-    git add -f .
-    git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
-    git push -fq origin gh-pages > /dev/null
+  - cd $HOME/gh-pages
+  - git add -f .
+  - git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
+  - git push -fq origin gh-pages > /dev/null
 
 
