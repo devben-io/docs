@@ -44,6 +44,7 @@
   * [GIT \| Travis CI](git-travis-ci.md)
     * [GIT \| Publish to Github Pages](git-travis-ci/git-publish-to-githubpages.md)
   * [GIT \| alle remote Branches holen](git-alle-remote-branches-holen.md)
+  * [GIT \| Cherry-Pick](git-cherry-pick.md)
 * [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
 * [OS-Magic](os-magic.md)
