@@ -46,6 +46,7 @@
   * [GIT \| Cherry-Pick](git-cherry-pick.md)
 * [Maker-Magic](maker-magic.md)
   * [RPI \| Sensoren](maker-magic/rpi-sensoren.md)
+  * [RPI \| Multiroom Audio](maker-magic/rpi-multiroom-audio.md)
 * [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
 * [OS-Magic](os-magic.md)
