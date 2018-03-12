@@ -21,6 +21,7 @@ node_js:
 before_install:
   - npm install gitbook
   - npm install gitbook-cli
+  - npm install ebook-convert
 
 install:
   - gitbook install
