@@ -31,8 +31,8 @@ script:
 before_deploy:
 script:
   - |
-  ls -lha
-  ls -lha */
+    ls -lha
+    ls -lha */
 
 deploy:
 
