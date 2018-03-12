@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dtnpnk/docs-gitbook.git"
+    "url": "git+https://github.com/dtnpnk/docs.git"
   },
-  "author": "Rusoto Project Developers (https://github.com/rusoto)",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/dtnpnk/docs-gitbook/issues"
+    "url": "https://github.com/dtnpnk/docs/issues"
   },
-  "homepage": "https://github.com/dtnpnk/docs-gitbook#readme"
+  "homepage": "https://github.com/dtnpnk/docs#readme"
 }
