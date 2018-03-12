@@ -9,7 +9,8 @@
 * [https://devhints.io/travis-gh-pages](https://devhints.io/travis-gh-pages)
 * [https://djw8605.github.io/2017/02/08/deploying-docs-on-github-with-travisci/](https://djw8605.github.io/2017/02/08/deploying-docs-on-github-with-travisci/)
 * [https://takuti.me/note/travis-gh-pages-deployment/](https://takuti.me/note/travis-gh-pages-deployment/)
-* https://github.com/billryan/algorithm-exercise/blob/master/.travis.yml
+* [https://github.com/billryan/algorithm-exercise/blob/master/.travis.yml](https://github.com/billryan/algorithm-exercise/blob/master/.travis.yml)
+* https://github.com/steveklabnik/automatically\_update\_github\_pages\_with\_travis\_example
 
 
 
