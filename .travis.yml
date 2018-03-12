@@ -19,16 +19,18 @@ cache:
 
 ######################
 before_install:
+  script:
+    - npm install gitbook gitbook-cli
 
 install:
+  script:
+    - gitbook install
+    - gitbook build
 
 before_deploy:
+  script:
+    - ls -lha
 
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  keep-history: true
-  on:
-    branch: source
+
 
