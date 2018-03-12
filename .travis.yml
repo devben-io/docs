@@ -27,7 +27,7 @@ install:
   - gitbook install
   - gitbook build
   - ls -lha
-  - gitbook pdf ./ _book/book.pdf
+#  - gitbook pdf ./ _book/book.pdf
   - gitbook epub ./ _book/book.epub
   - gitbook mobi ./ _book/book.mobi
 
