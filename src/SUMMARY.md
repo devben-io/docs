@@ -71,8 +71,8 @@
 * [HowTos](spells-howtos-faqs/howtos.md)
   * [HOWTO \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
 * [Spell Scroll \(Cheatsheets\)](spells-howtos-faqs/cheatsheets.md)
-  * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
+  * [AEM \| Cheatsheet](aem.md)
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
-  * [FREEBSD \| ZFS Cheatsheet](freebsd/freebsd-zfs.md)
   * [FREEBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
+  * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
 
