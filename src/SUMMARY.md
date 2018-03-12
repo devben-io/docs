@@ -44,6 +44,8 @@
     * [GIT \| Publish to Github Pages](git-travis-ci/git-publish-to-githubpages.md)
   * [GIT \| alle remote Branches holen](git-alle-remote-branches-holen.md)
   * [GIT \| Cherry-Pick](git-cherry-pick.md)
+* [Maker-Magic](maker-magic.md)
+  * [RPI \| Sensoren](maker-magic/rpi-sensoren.md)
 * [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
 * [OS-Magic](os-magic.md)
