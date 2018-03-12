@@ -29,11 +29,11 @@ script:
   - gitbook build
 
 before_deploy:
+
+
+deploy:
 script:
   - |
     ls -lha
     ls -lha */
-
-deploy:
-
 
