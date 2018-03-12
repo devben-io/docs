@@ -69,4 +69,5 @@
 
 * [HowTos](spells-howtos-faqs/howtos.md)
   * [HOWTO \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
+* Spell Scroll \(Cheatsheets\)
 
