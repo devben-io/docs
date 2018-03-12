@@ -33,7 +33,7 @@ branches:
 
 deploy:
   provider: pages
-  skip-cleanup: true
+  skip-cleanup: false
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: false
   on:
@@ -41,7 +41,7 @@ deploy:
 #  repo: dtnpnk/docs-gitbook
 #  target_branch: master
 #  fqdn: takuti.me
-#  local-dir: "_book"
+ local-dir: "_book"
   verbose: true
 
 notifications:
