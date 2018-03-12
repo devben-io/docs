@@ -59,6 +59,7 @@
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
 * Random-Magic
   * [ZSH for Mac](zsh-for-mac.md)
+  * [Podcasts](podcasts.md)
 
 ## Spells \(HowTos, FAQs\)
 
