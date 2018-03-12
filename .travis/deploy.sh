@@ -2,9 +2,7 @@
 GH_USER="dtnpnk"
 GH_REPO="docs-gitbook"
 
-pwd
-
-cd ../
+ls -lha
 
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis"
