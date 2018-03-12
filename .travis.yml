@@ -19,12 +19,10 @@ cache:
 
 ######################
 before_install:
-script:
   - npm install gitbook
   - npm install gitbook-cli
 
 install:
-script:
   - gitbook install
   - gitbook build
   - ls -lha
