@@ -11,7 +11,8 @@
 
 ### **gh-pages**
 
-contains the static site, that was built with the TravisCI
+* contains the static site, that was built with the TravisCI
+* Website: https://dtnpnk.github.io/docs/
 
 
 
