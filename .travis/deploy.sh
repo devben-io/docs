@@ -1,4 +1,7 @@
 #!/bin/sh
+GH_USER="dtnpnk"
+GH_REPO="docs-gitbook"
+
 cd $TRAVIS_BUILD_DIR
 
 git config --global user.email "travis@travis-ci.org"
