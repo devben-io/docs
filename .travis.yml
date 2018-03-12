@@ -1,15 +1,13 @@
 dist: trusty
 language: node_js
+sudo: required
+notifications:
+  email: false
 
 branches:
   only:
     - source
     - auto
-
-rvm:
-- 2.0.0
-
-sudo: required
 
 node_js:
   - "6.9.1"
@@ -18,34 +16,13 @@ cache:
   directories:
     - node_modules # NPM packages
 
+
+######################
 before_install:
-  - sudo apt-get update -qq
-  - git config --global user.email "travis@travis-ci.org"
-  - git config --global user.name "Travis CI"
-  - git clone https://github.com/dtnpnk/docs-gitbook SOURCE
-  - git clone https://github.com/dtnpnk/docs GH-PAGE
 
 install:
-  - cd SOURCE
-  - git checkout source
-  - npm install
-  - npm install gitbook
-  - npm install gitbook-cli
-script:
-#  - npm run docs:build
-  - gitbook install
-  - gitbook build ./ ./docs
-  - rsync -harP ./docs/ ../GH-PAGE/
 
 before_deploy:
-script:
-  - cd ../GH-PAGE
 
 deploy:
-script:
-  - git commit -am "gitbook build"
-  - git push
 
-
-notifications:
-  email: false
