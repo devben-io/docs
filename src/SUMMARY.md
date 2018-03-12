@@ -60,6 +60,7 @@
 * Random-Magic
   * [ZSH for Mac](zsh-for-mac.md)
   * [Podcasts](podcasts.md)
+  * [Bücher](bucher.md)
 
 ## Spells \(HowTos, FAQs\)
 
