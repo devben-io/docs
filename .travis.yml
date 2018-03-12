@@ -27,13 +27,11 @@ install:
 script:
   - gitbook install
   - gitbook build
+  - ls -lha
 
 before_deploy:
 
 
 deploy:
-script:
-  - |
-    ls -lha
-    ls -lha */
+
 
