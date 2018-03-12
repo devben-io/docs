@@ -27,6 +27,9 @@ install:
   - gitbook build
   - ls -lha
 
-script:
-  - bash .travis/deploy.sh
+deploy:
+  provider: script
+  script: bash .travis/deploy.sh
+  on:
+    branch: source
 
