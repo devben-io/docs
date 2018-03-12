@@ -3,7 +3,6 @@
   "title": "Docs",
   "language": "en",	
   "plugins": [
-	"recently-updated",
 	"collapsible-chapters",
 	"-lunr",
 	"-search",
