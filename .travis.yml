@@ -1,9 +1,16 @@
 dist: trusty
+language: node_js
+
+branches:
+  only:
+    - source
+    - auto
+
 rvm:
 - 2.0.0
 
 sudo: required
-language: node_js
+
 node_js:
   - "6.9.1"
 
@@ -13,36 +20,29 @@ cache:
 
 before_install:
   - sudo apt-get update -qq
+  - git clone https://github.com/dtnpnk/docs-gitbook SOURCE
+  - git clone https://github.com/dtnpnk/docs GH-PAGE
 
 install:
+  - cd SOURCE
+  - git checkout source
   - npm install
   - npm install gitbook
   - npm install gitbook-cli
 script:
-  - npm run docs:build
+#  - npm run docs:build
+  - gitbook build ./ ./docs
+  - rsync -harP ./docs/ ../GH-PAGE/
 
 before_deploy:
 script:
-  - rm -Rf node_modules
-#  - git add *
-
-branches:
-  only:
-    - source
-    - auto
+  - cd ../GH-PAGE
 
 deploy:
-  provider: pages
-  skip-cleanup: false
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  keep-history: false
-  on:
-    branch: source
-#  repo: dtnpnk/docs-gitbook
-#  target_branch: master
-#  fqdn: takuti.me
-  local-dir: "_book"
-  verbose: true
+script:
+  - git commit -am "gitbook build"
+  - git push
+
 
 notifications:
   email: false
