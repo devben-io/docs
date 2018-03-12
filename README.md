@@ -1,2 +1,2 @@
 # README
-[![Build Status](https://travis-ci.org/dtnpnk/docs-gitbook.svg?branch=source)](https://travis-ci.org/dtnpnk/docs-gitbook)
+[![Build Status](https://travis-ci.org/dtnpnk/docs.svg?branch=source)](https://travis-ci.org/dtnpnk/docs)
