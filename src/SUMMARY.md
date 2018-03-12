@@ -2,7 +2,7 @@
 
 ## Spellbook & Hidden Knowledge
 
-* [Introduction](README.md)
+* [Codex Informatica](README.md)
 * [Auto-Magic](auto-magic.md)
   * Ansible
   * [SaltStack](saltstack.md)
