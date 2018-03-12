@@ -3,12 +3,12 @@
   "title": "Docs",
   "language": "en",	
   "plugins": [
-		"collapsible-chapters",
-		"-lunr",
-		"-search",
-		"search-plus-mod",
-    "-sharing", 
-    "edit-link"
+	"collapsible-chapters",
+	"-lunr",
+	"-search",
+	"search-plus-mod",
+	"-sharing", 
+	"edit-link"
   ],
   "pluginsConfig": {
     "edit-link": {
