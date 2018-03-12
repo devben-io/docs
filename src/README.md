@@ -4,3 +4,5 @@ This is the book of the long forgotten and dangerous arcane and blackmagic wisdo
 
 **Use it wisely and only for good.**
 
+![](https://upload.wikimedia.org/wikipedia/commons/1/13/Magic_Square_Durer.jpg)
+
