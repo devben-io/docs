@@ -20,7 +20,7 @@ node_js:
 ######################
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -qq -y calibre
+#  - sudo apt-get install -qq -y calibre    # for "gitbook {pdf,epub,mobi}"
   - npm install gitbook
   - npm install gitbook-cli
   - npm install ebook-convert
