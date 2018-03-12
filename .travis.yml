@@ -42,14 +42,12 @@ before_deploy:
     
     #go into directory and copy data we're interested in to that directory
     cd gh-pages
-    cp -Rf $HOME/_book/* .    
+    cp -Rf $HOME/_book/* .   
     
-
-
-deploy:
-  - cd $HOME/gh-pages
-  - git add -f .
-  - git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
-  - git push -fq origin gh-pages > /dev/null
+    # deploy 
+    git add -f .
+    git commit -m "Travis build $TRAVIS_BUILD_NUMBER"
+    git push -fq origin gh-pages > /dev/null
+    
 
 
