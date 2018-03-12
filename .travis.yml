@@ -20,6 +20,8 @@ cache:
 
 before_install:
   - sudo apt-get update -qq
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
   - git clone https://github.com/dtnpnk/docs-gitbook SOURCE
   - git clone https://github.com/dtnpnk/docs GH-PAGE
 
