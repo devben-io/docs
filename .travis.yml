@@ -31,6 +31,7 @@ install:
   - npm install gitbook-cli
 script:
 #  - npm run docs:build
+  - gitbook install
   - gitbook build ./ ./docs
   - rsync -harP ./docs/ ../GH-PAGE/
 
