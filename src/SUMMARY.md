@@ -57,6 +57,8 @@
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
+* Random-Magic
+  * [ZSH for Mac](zsh-for-mac.md)
 
 ## Spells \(HowTos, FAQs\)
 
