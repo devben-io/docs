@@ -4,7 +4,7 @@
 
 ## Info
 
-The [GitBook](https://www.gitbook.com/ "GitBook") is automaticaly build with the [TravisCI](https://travis-ci.org/ "TravisCI") from the source branch. The static site is pushed to te gh-pages branch.
+The [GitBook](https://www.gitbook.com/ "GitBook") is automaticaly built with the [TravisCI](https://travis-ci.org/ "TravisCI") from the `source` branch. The static site is pushed to the `gh-pages` branch.
 
 ## Branches
 
