@@ -1,6 +1,6 @@
 # Codex Informatica
 
-### Spellbook & Hidden Knowledge
+### Spellbook, Recipes & Hidden Knowledge
 
 This is the book of the long forgotten and dangerous arcane and blackmagic wisdom of Dev and Ops.
 
