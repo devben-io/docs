@@ -1,8 +1,8 @@
 # Summary
 
-## Spellbook & Hidden Knowledge
+## Codex Informatica
 
-* [Codex Informatica](README.md)
+* [Introduction](README.md)
 * [Auto-Magic](auto-magic.md)
   * Ansible
   * [SaltStack](saltstack.md)
