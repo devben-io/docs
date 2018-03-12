@@ -71,7 +71,7 @@
 
 ## Spells \(HowTos, FAQs\)
 
-* [HowTos](spells-howtos-faqs/howtos.md)
+* [Modus Operandi \(HowTos\)](spells-howtos-faqs/howtos.md)
   * [HOWTO \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
 * [Spell Scroll \(Cheatsheets\)](spells-howtos-faqs/cheatsheets.md)
   * [AEM \| Cheatsheet](aem.md)
