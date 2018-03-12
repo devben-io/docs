@@ -26,13 +26,12 @@ before_install:
   - npm install ebook-convert
 
 install:
-  - gitbook install
+  - gitbook install  
+  - gitbook pdf ./ _book/book.pdf &
+  - gitbook epub ./ _book/book.epub &
+  - gitbook mobi ./ _book/book.mobi &
   - gitbook build
   - ls -lha
-#  - gitbook pdf ./ _book/book.pdf
-  - gitbook epub ./ _book/book.epub
-  - gitbook mobi ./ _book/book.mobi
-
 deploy:
   provider: script
   skip_cleanup: true
