@@ -4,14 +4,15 @@
 
 ## Info
 
-The [GitBook](https://www.gitbook.com/ "GitBook") is automaticaly built with the [TravisCI](https://travis-ci.org/ "TravisCI") from the `source` branch. The static site is pushed to the `gh-pages` branch.
+The [GitBook](https://www.gitbook.com/ "GitBook") is automaticaly built with the [TravisCI](https://travis-ci.org/ "TravisCI") from the 
+`master` branch. The static site is pushed to the `gh-pages` branch.
 ## Editor
 A WYSIWG Editor for editing the GitBook can be found [here](https://www.gitbook.com/editor).
 ## Branches
 
-### **source**
+### **master**
 
-* contains the gitbook \(`src/`\), config files \(`.travis.yml`\) and scripts for TravisCI \(`.travis/deploy.sh`\)
+* contains the gitbook, config files \(`.travis.yml`\) and scripts for TravisCI \(`.travis/deploy.sh`\)
 * configs for the gitbook: `book.json`
 
 ### **gh-pages**

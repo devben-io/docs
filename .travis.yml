@@ -6,8 +6,7 @@ notifications:
 
 branches:
   only:
-    - source
-    - auto
+    - master
 
 node_js:
   - "6.9.1"
