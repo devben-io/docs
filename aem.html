@@ -1220,8 +1220,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="aem---adobe-experience-manager-63">AEM - Adobe Experience Manager (6.3)</h1>
-<h2 id="curl-commands">curl Commands:</h2>
-<h3 id="change-admin-password">Change (Admin-)Password:</h3>
+<p>Collection of curl commands.</p>
+<h3 id=""> </h3>
+<h3 id="user-management">User Management</h3>
+<h4 id="change-admin-password">Change (Admin-)Password:</h4>
 <p>you&apos;ll need <code>jq</code> for this...</p>
 <pre><code>#!/bin/sh
 
@@ -1231,7 +1233,8 @@ USER_PATH=$(/usr/bin/curl --connect-timeout 10 -s -u admin:&lt;OLD-PW&gt; -X GET
 
 # change PW
 /usr/bin/curl --connect-timeout 10 -s -u admin:&lt;OLD-PW&gt; -Fplain=&lt;NEW-PW&gt; -Fverify=&lt;NEW-PW&gt;  -Fold=&lt;OLD-PW&gt; -FPath=&quot;${USER_PATH}&quot; http://&lt;AUTHOR&gt;:&lt;PORT&gt;/crx/explorer/ui/setpassword.jsp
-</code></pre><h3 id="replication-agents">Replication Agents:</h3>
+</code></pre><h3 id="agents">Agents</h3>
+<h4 id="replication-agents">Replication Agents:</h4>
 <p>configures the Replication Agent on the <code>&lt;AUTHOR&gt;</code> to publish the content to the <code>&lt;PUBLISHER&gt;</code></p>
 <pre><code>/usr/bin/curl --connect-timeout 10 -u admin:&lt;ADMIN-PW&gt; -FtransportUri=&quot;http://&lt;PUBLISHER&gt;:&lt;PORT&gt;/bin/receive?sling:authRequestLogin=1&quot; &quot;http://&lt;AUTHOR&gt;:&lt;PORT&gt;/etc/replication/agents.author/publish/jcr:content&quot;
 </code></pre><h2 id=""> </h2>
@@ -1286,7 +1289,7 @@ USER_PATH=$(/usr/bin/curl --connect-timeout 10 -s -u admin:&lt;OLD-PW&gt; -X GET
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AEM","level":"1.9.5","depth":2,"next":{"title":"RPG - Online Char Sheet","level":"1.9.6","depth":2,"path":"rpg-online-char-sheet.md","ref":"rpg-online-char-sheet.md","articles":[]},"previous":{"title":"Tools","level":"1.9.4","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/source/src"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"aem.md","mtime":"2018-03-13T11:08:09.469Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T11:10:01.732Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AEM","level":"1.9.5","depth":2,"next":{"title":"RPG - Online Char Sheet","level":"1.9.6","depth":2,"path":"rpg-online-char-sheet.md","ref":"rpg-online-char-sheet.md","articles":[]},"previous":{"title":"Tools","level":"1.9.4","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button"],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/source/src"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"aem.md","mtime":"2018-03-13T11:22:10.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T11:24:25.685Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
