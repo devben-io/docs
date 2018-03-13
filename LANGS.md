@@ -1,4 +1,4 @@
 # Languages
 
-* [(d)english (mixed)](en/)
+* [(d)English](en/)
 * [Deutsch](de/)
