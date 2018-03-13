@@ -14,7 +14,7 @@ USER_PATH=$(/usr/bin/curl --connect-timeout 10 -s -u admin:<OLD-PW> -X GET "http
 
 
 # change PW
-/usr/bin/curl --connect-timeout 10 -s -u admin:$2 -Fplain=<NEW-PW> -Fverify=<NEW-PW>  -Fold=<OLD-PW> -FPath="${USER_PATH}" http://<AUTHOR>:<PORT>/crx/explorer/ui/setpassword.jsp 
+/usr/bin/curl --connect-timeout 10 -s -u admin:$2 -Fplain=<NEW-PW> -Fverify=<NEW-PW>  -Fold=<OLD-PW> -FPath="${USER_PATH}" http://<AUTHOR>:<PORT>/crx/explorer/ui/setpassword.jsp
 ```
 
 ### Replication Agents:
@@ -24,6 +24,8 @@ configures the Replication Agent on the `<AUTHOR>` to publish the content to the
 ```
 /usr/bin/curl --connect-timeout 10 -u admin:<ADMIN-PW> -FtransportUri="http://<PUBLISHER>:<PORT>/bin/receive?sling:authRequestLogin=1" "http://<AUTHOR>:<PORT>/etc/replication/agents.author/publish/jcr:content"
 ```
+
+## 
 
 ## Links:
 
