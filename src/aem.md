@@ -1,8 +1,10 @@
 # AEM - Adobe Experience Manager \(6.3\)
 
-## curl Commands:
+Collection of curl commands.
 
-### Change \(Admin-\)Password:
+### User Management
+
+#### Change \(Admin-\)Password:
 
 you'll need `jq` for this...
 
@@ -17,7 +19,9 @@ USER_PATH=$(/usr/bin/curl --connect-timeout 10 -s -u admin:<OLD-PW> -X GET "http
 /usr/bin/curl --connect-timeout 10 -s -u admin:<OLD-PW> -Fplain=<NEW-PW> -Fverify=<NEW-PW>  -Fold=<OLD-PW> -FPath="${USER_PATH}" http://<AUTHOR>:<PORT>/crx/explorer/ui/setpassword.jsp
 ```
 
-### Replication Agents:
+### Agents
+
+#### Replication Agents:
 
 configures the Replication Agent on the `<AUTHOR>` to publish the content to the `<PUBLISHER>`
 
