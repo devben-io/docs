@@ -2,6 +2,21 @@
 
 ## curl Commands:
 
+### Change \(Admin-\)Password:
+
+you'll need `jq` for this...
+
+```
+#!/bin/sh
+
+# get USER_PATH from specific user - this different on every System
+USER_PATH=$(/usr/bin/curl --connect-timeout 10 -s -u admin:<OLD-PW> -X GET "http://<AUTHOR>:<PORT>/bin/querybuilder.json?path=/home/users&1_property=rep:authorizableId&1_property.value=admin&p.limit=-1" | jq . | cat | grep path | cut -d'"' -f4)
+
+
+# change PW
+/usr/bin/curl --connect-timeout 10 -s -u admin:$2 -Fplain=<NEW-PW> -Fverify=<NEW-PW>  -Fold=<OLD-PW> -FPath="${USER_PATH}" http://<AUTHOR>:<PORT>/crx/explorer/ui/setpassword.jsp 
+```
+
 ### Replication Agents:
 
 configures the Replication Agent on the `<AUTHOR>` to publish the content to the `<PUBLISHER>`
