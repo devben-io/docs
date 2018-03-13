@@ -4,6 +4,8 @@
 
 ### Replication Agents:
 
+configures the Replication Agent on the `<AUTHOR>` to publish the content to the `<PUBLISHER>`
+
 ```
 /usr/bin/curl --connect-timeout 10 -u admin:<ADMIN-PW> -FtransportUri="http://<PUBLISHER>:<PORT>/bin/receive?sling:authRequestLogin=1" "http://<AUTHOR>:<PORT>/etc/replication/agents.author/publish/jcr:content"
 ```
