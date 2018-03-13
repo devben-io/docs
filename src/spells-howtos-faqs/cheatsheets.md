@@ -1,4 +1,4 @@
-# Spell Scroll \(Cheatsheets\)
+# Spell Scrolls \(Cheatsheets\)
 
 
 
