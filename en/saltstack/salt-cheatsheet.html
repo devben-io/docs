@@ -1,0 +1,1377 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SALT | Cheatsheet · Docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus-mod/search-mod.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="salt-header-in-managed-files.html" />
+    
+    
+    <link rel="prev" href="creating-hashed-passwords.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Codex Informatica</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../auto-magic.html">
+            
+                <a href="../auto-magic.html">
+            
+                    
+                    Auto-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    Ansible
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../saltstack.html">
+            
+                <a href="../saltstack.html">
+            
+                    
+                    SaltStack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="creating-hashed-passwords.html">
+            
+                <a href="creating-hashed-passwords.html">
+            
+                    
+                    SALT | Creating hashed passwords
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.2" data-path="salt-cheatsheet.html">
+            
+                <a href="salt-cheatsheet.html">
+            
+                    
+                    SALT | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="salt-header-in-managed-files.html">
+            
+                <a href="salt-header-in-managed-files.html">
+            
+                    
+                    SALT | Header in managed files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="salt-highstate-as-scheduled-job.html">
+            
+                <a href="salt-highstate-as-scheduled-job.html">
+            
+                    
+                    SALT | Highstate as scheduled job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="salt-install-salt-with-salt-ssh.html">
+            
+                <a href="salt-install-salt-with-salt-ssh.html">
+            
+                    
+                    SALT | install salt with salt-ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="salt-pillars.html">
+            
+                <a href="salt-pillars.html">
+            
+                    
+                    SALT | Pillars
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../cli-magic.html">
+            
+                <a href="../cli-magic.html">
+            
+                    
+                    CLI Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../cli_magic/cli-bash-skripting.html">
+            
+                <a href="../cli_magic/cli-bash-skripting.html">
+            
+                    
+                    CLI | Bash Skripting (DE)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.html">
+            
+                <a href="../cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.html">
+            
+                    
+                    Grundlagen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../cli_magic/dd-progressbar.html">
+            
+                <a href="../cli_magic/dd-progressbar.html">
+            
+                    
+                    CLI | dd progressbar (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../cli_magic/nur-dateinamen-ausgeben.html">
+            
+                <a href="../cli_magic/nur-dateinamen-ausgeben.html">
+            
+                    
+                    CLI | nur Dateinamen ausgeben (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../cli_magic/logging-im-bash-skript.html">
+            
+                <a href="../cli_magic/logging-im-bash-skript.html">
+            
+                    
+                    CLI | Logging im bash skript (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../cli_magic/dmesg-fortlaufend-anzeigen-lassen.html">
+            
+                <a href="../cli_magic/dmesg-fortlaufend-anzeigen-lassen.html">
+            
+                    
+                    CLI | dmesg fortlaufend anzeigen lassen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../cli_magic/live-ssh-network-throughput-test.html">
+            
+                <a href="../cli_magic/live-ssh-network-throughput-test.html">
+            
+                    
+                    CLI | live ssh network throughput test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../cli_magic/lvm-thinprovisioned-volume-erstellen.html">
+            
+                <a href="../cli_magic/lvm-thinprovisioned-volume-erstellen.html">
+            
+                    
+                    CLI | create LVM thinprovisioned Volumes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../cli_magic/os-version-anzeigen.html">
+            
+                <a href="../cli_magic/os-version-anzeigen.html">
+            
+                    
+                    CLI | OS Version anzeigen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../cli_magic/pbzip2-parallel-packen.html">
+            
+                <a href="../cli_magic/pbzip2-parallel-packen.html">
+            
+                    
+                    CLI | pbzip2 parallel packen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../cli_magic/schreibmaschine-simulieren.html">
+            
+                <a href="../cli_magic/schreibmaschine-simulieren.html">
+            
+                    
+                    CLI | Schreibmaschine simulieren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../cli_magic/pdfs-scannen.html">
+            
+                <a href="../cli_magic/pdfs-scannen.html">
+            
+                    
+                    CLI | PDFs scannen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../cli_magic/ssh-key-loschen.html">
+            
+                <a href="../cli_magic/ssh-key-loschen.html">
+            
+                    
+                    CLI | SSH Key löschen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../cli_magic/suchen-in-mehreren-dateien.html">
+            
+                <a href="../cli_magic/suchen-in-mehreren-dateien.html">
+            
+                    
+                    CLI | Suchen in mehreren Dateien (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../cli_magic/suchen-und-entpacken.html">
+            
+                <a href="../cli_magic/suchen-und-entpacken.html">
+            
+                    
+                    CLI | Suchen und Entpacken (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../cli_magic/suchen-und-ersetzen-in-mehreren-dateien.html">
+            
+                <a href="../cli_magic/suchen-und-ersetzen-in-mehreren-dateien.html">
+            
+                    
+                    CLI | Suchen und Ersetzen in mehreren Dateien (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../cli_magic/suchen-und-loschen.html">
+            
+                <a href="../cli_magic/suchen-und-loschen.html">
+            
+                    
+                    CLI | Suchen und Löschen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../cli_magic/tar-mit-progressbar.html">
+            
+                <a href="../cli_magic/tar-mit-progressbar.html">
+            
+                    
+                    CLI | tar mit Progressbar (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../cli_magic/top-10-prozesse-anzeigen-lassen.html">
+            
+                <a href="../cli_magic/top-10-prozesse-anzeigen-lassen.html">
+            
+                    
+                    CLI | Top 10 Prozesse anzeigen lassen (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.19" data-path="../cli_magic/zufallszahlen-in-der-shell.html">
+            
+                <a href="../cli_magic/zufallszahlen-in-der-shell.html">
+            
+                    
+                    CLI | Zufallszahlen in der Shell (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../container-magic.html">
+            
+                <a href="../container-magic.html">
+            
+                    
+                    Container-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../docker.html">
+            
+                <a href="../docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../docker-cheatsheet.html">
+            
+                <a href="../docker-cheatsheet.html">
+            
+                    
+                    DOCKER | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../docker-save-vs-export.html">
+            
+                <a href="../docker-save-vs-export.html">
+            
+                    
+                    DOCKER | save vs. export
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../docker-ssh-and-gogs.html">
+            
+                <a href="../docker-ssh-and-gogs.html">
+            
+                    
+                    DOCKER | SSH and Gogs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../git.html">
+            
+                <a href="../git.html">
+            
+                    
+                    Git-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../git-subtrees.html">
+            
+                <a href="../git-subtrees.html">
+            
+                    
+                    GIT | Subtrees
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../git-travis-ci.html">
+            
+                <a href="../git-travis-ci.html">
+            
+                    
+                    GIT | Travis CI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../git-travis-ci/git-publish-to-githubpages.html">
+            
+                <a href="../git-travis-ci/git-publish-to-githubpages.html">
+            
+                    
+                    GIT | Publish to Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../git-alle-remote-branches-holen.html">
+            
+                <a href="../git-alle-remote-branches-holen.html">
+            
+                    
+                    GIT | alle remote Branches holen
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../git-cherry-pick.html">
+            
+                <a href="../git-cherry-pick.html">
+            
+                    
+                    GIT | Cherry-Pick
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../git-create-a-new-branch-with-no-history.html">
+            
+                <a href="../git-create-a-new-branch-with-no-history.html">
+            
+                    
+                    GIT | Create a new Branch with no history
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../maker-magic.html">
+            
+                <a href="../maker-magic.html">
+            
+                    
+                    Maker-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../maker-magic/rpi-sensoren.html">
+            
+                <a href="../maker-magic/rpi-sensoren.html">
+            
+                    
+                    RPI | Sensoren
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../maker-magic/rpi-multiroom-audio.html">
+            
+                <a href="../maker-magic/rpi-multiroom-audio.html">
+            
+                    
+                    RPI | Multiroom Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../monitoring-magic.html">
+            
+                <a href="../monitoring-magic.html">
+            
+                    
+                    Monitoring-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../monitoring/zabbix.html">
+            
+                <a href="../monitoring/zabbix.html">
+            
+                    
+                    Zabbix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../os-magic.html">
+            
+                <a href="../os-magic.html">
+            
+                    
+                    OS-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../freebsd.html">
+            
+                <a href="../freebsd.html">
+            
+                    
+                    FreeBSD
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="../freebsd/freebsd-zfs.html">
+            
+                <a href="../freebsd/freebsd-zfs.html">
+            
+                    
+                    FreeBSD | ZFS Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="../freebsd/freebsd-cheatsheet.html">
+            
+                <a href="../freebsd/freebsd-cheatsheet.html">
+            
+                    
+                    FreeBSD | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="../freebsd/freebsd-tinc.html">
+            
+                <a href="../freebsd/freebsd-tinc.html">
+            
+                    
+                    FreeBSD | Tinc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.4" >
+            
+                <span>
+            
+                    
+                    pfSense
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.4.1" data-path="../freebsd/pfsense-lacp-and-jumbo-frames-de.html">
+            
+                <a href="../freebsd/pfsense-lacp-and-jumbo-frames-de.html">
+            
+                    
+                    pfSense | LACP & Jumbo Frames (DE)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.5" data-path="../freebsd/freenas-docker.html">
+            
+                <a href="../freebsd/freenas-docker.html">
+            
+                    
+                    FreeNAS | Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../linux.html">
+            
+                <a href="../linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="../linux/linux-perfomanceanalyse.html">
+            
+                <a href="../linux/linux-perfomanceanalyse.html">
+            
+                    
+                    Linux Perfomanceanalyse
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../ssh.html">
+            
+                <a href="../ssh.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="../ssh/proxies-und-jumphosts-en.html">
+            
+                <a href="../ssh/proxies-und-jumphosts-en.html">
+            
+                    
+                    Proxies und Jumphosts (en)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="../ssh/tunneling-port-forwarding.html">
+            
+                <a href="../ssh/tunneling-port-forwarding.html">
+            
+                    
+                    Tunneling / Port Forwarding (EN)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../random-magic.html">
+            
+                <a href="../random-magic.html">
+            
+                    
+                    Random-Magic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../zsh-for-mac.html">
+            
+                <a href="../zsh-for-mac.html">
+            
+                    
+                    ZSH for Mac
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../podcasts.html">
+            
+                <a href="../podcasts.html">
+            
+                    
+                    Podcasts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../bucher.html">
+            
+                <a href="../bucher.html">
+            
+                    
+                    Bücher
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    Tools
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../aem.html">
+            
+                <a href="../aem.html">
+            
+                    
+                    AEM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Spells, Recipes (HowTos, FAQs)</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../spells-howtos-faqs/howtos.html">
+            
+                <a href="../spells-howtos-faqs/howtos.html">
+            
+                    
+                    Potion Recipes (HowTos)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../howtos/howto-gitbook-build-static-page.html">
+            
+                <a href="../howtos/howto-gitbook-build-static-page.html">
+            
+                    
+                    HOWTO |  Gitbook - build static page
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../spells-howtos-faqs/cheatsheets.html">
+            
+                <a href="../spells-howtos-faqs/cheatsheets.html">
+            
+                    
+                    Spell Scrolls (Cheatsheets)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../aem.html">
+            
+                <a href="../aem.html">
+            
+                    
+                    AEM | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../docker-cheatsheet.html">
+            
+                <a href="../docker-cheatsheet.html">
+            
+                    
+                    DOCKER | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../freebsd/freebsd-cheatsheet.html">
+            
+                <a href="../freebsd/freebsd-cheatsheet.html">
+            
+                    
+                    FREEBSD | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.4" data-path="salt-cheatsheet.html">
+            
+                <a href="salt-cheatsheet.html">
+            
+                    
+                    SALT | Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Thesaurus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Cyclopedia (Glossary)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SALT | Cheatsheet</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="salt_cheatsheet">SALT | Cheatsheet </h1>
+<h2 id="daily-sysadmin-stuff">Daily Sysadmin Stuff</h2>
+<pre><code>salt &apos;minion-x-*&apos; system.reboot                        # reboot minions that match minion-x-*
+salt &apos;*&apos; status.uptime                                 # Get the uptime of all our minions
+salt -v -G owner:theo pkg.list_upgrades                # List available package updates for Theo&apos;s minions
+salt &apos;web*&apos; pkg.install dstat                          # Install a package on matching Salt Minions
+salt &apos;*&apos; ps.grep apache                                # Check if a specific application/process is running
+salt &apos;web*&apos; cp.push /var/log/dpkg.log                  # Gather/collect/pull files from Salt minions and upload them to the master
+salt &apos;*&apos; file.contains /etc/hosts.allow &apos;yber&apos;         # Check if a file on the Salt minions contains a certain string
+salt-cp &apos;*&apos; some_script.py /target-dir/some_script.py  # Push or upload or copy a file from the Salt master to the Salt minions
+</code></pre><h2 id="other-awesome-commands">Other Awesome Commands</h2>
+<pre><code>salt &apos;*&apos; cmd.run &apos;uname -a&apos;                  # Show running kernel and OS info on all minions
+salt &apos;*&apos; cmd.run &apos;df -h&apos;                     # Show Diskspace info on all minions
+</code></pre><h2 id="packages">Packages</h2>
+<pre><code>salt &apos;*&apos; pkg.list_upgrades                   # get a list of packages that need to be upgrade
+salt &apos;*&apos; pkg.refresh_db                      # refreshes package db (apt-get update)
+salt &apos;*&apos; pkg.upgrade                         # Upgrades all packages via apt-get dist-upgrade (or similar)
+salt &apos;*&apos; pkg.version bash                    # get current version of the bash package
+salt &apos;*&apos; pkg.install bash                    # install or upgrade bash package
+salt &apos;*&apos; pkg.install bash refresh=True       # install or upgrade bash package but
+                                                    # refresh the package database before installing.
+</code></pre><h2 id="system-services">System Services</h2>
+<pre><code>salt &apos;*&apos; service.status &lt;service name
+salt &apos;*&apos; service.available &lt;service name&gt;
+salt &apos;*&apos; service.start &lt;service name&gt;
+salt &apos;*&apos; service.restart &lt;service name&gt;
+salt &apos;*&apos; service.stop &lt;service name
+</code></pre><h2 id="network">Network</h2>
+<pre><code>salt &apos;minion1&apos; network.ping &lt;hostname&gt;       # Ping a host from your minion
+salt &apos;minion1&apos; network.traceroute &lt;hostname&gt; # Traceroute a host from your minion
+salt &apos;minion1&apos; network.get_hostname          # Get hostname
+salt &apos;minion1&apos; network.mod_hostname          # Modify hostname
+</code></pre><h2 id="states">States</h2>
+<pre><code>salt-run state.highstate                     # runs all states targetted for a minion, on a minion
+salt &apos;ns*&apos; state.highstate                   # runs all states targetted for a minion, from master
+salt &apos;web*&apos; state.sls settings.nginx         # runs settings/nginx/init.sls on web*
+</code></pre><h2 id="jobs">Jobs</h2>
+<pre><code>salt &lt;MINION&gt; saltutil.running                    # aktive Jobs finden, die auf&lt;MINION&gt;laufen
+salt &lt;MINION&gt; saltutil.kill_job &lt;JID&gt;             # Job mit&lt;JID&gt;auf&lt;MINION&gt;abbrechen
+</code></pre><h2 id="pillars">Pillars</h2>
+<pre><code>salt &apos;&lt;MINION&gt;&apos; pillar.ls                         # Pillars auflisten, die f&#xFC;r&lt;MINION&gt;g&#xFC;ltig sind
+salt &apos;&lt;MINION&gt;&apos; pillar.items                      # Inhalt der Pillars anzeigen, die f&#xFC;r&lt;MINION&gt;g&#xFC;ltig sind
+</code></pre><h2 id="weblinks">Weblinks </h2>
+<ul>
+<li><a href="https://cheatsheets.ciscodude.net/saltstack-sysadmin.html" target="_blank">https://cheatsheets.ciscodude.net/saltstack-sysadmin.html</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="creating-hashed-passwords.html" class="navigation navigation-prev " aria-label="Previous page: SALT | Creating hashed passwords">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="salt-header-in-managed-files.html" class="navigation navigation-next " aria-label="Next page: SALT | Header in managed files">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SALT | Cheatsheet","level":"1.2.2.2","depth":3,"next":{"title":"SALT | Header in managed files","level":"1.2.2.3","depth":3,"path":"saltstack/salt-header-in-managed-files.md","ref":"saltstack/salt-header-in-managed-files.md","articles":[]},"previous":{"title":"SALT | Creating hashed passwords","level":"1.2.2.1","depth":3,"path":"saltstack/creating-hashed-passwords.md","ref":"saltstack/creating-hashed-passwords.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/source/src"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"saltstack/salt-cheatsheet.md","mtime":"2018-03-13T19:48:06.904Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-13T19:50:19.591Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus-mod/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus-mod/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
