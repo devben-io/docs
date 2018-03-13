@@ -69,11 +69,11 @@
   * Tools
   * [AEM](aem.md)
 
-## Spells \(HowTos, FAQs\)
+## Spells, Recipes \(HowTos, FAQs\)
 
-* [Modus Operandi \(HowTos\)](spells-howtos-faqs/howtos.md)
+* [Potion Recipes \(HowTos\)](spells-howtos-faqs/howtos.md)
   * [HOWTO \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
-* [Spell Scroll \(Cheatsheets\)](spells-howtos-faqs/cheatsheets.md)
+* [Spell Scrolls \(Cheatsheets\)](spells-howtos-faqs/cheatsheets.md)
   * [AEM \| Cheatsheet](aem.md)
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [FREEBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
