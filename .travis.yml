@@ -1,0 +1,41 @@
+dist: trusty
+language: node_js
+sudo: required
+notifications:
+  email: false
+
+branches:
+  only:
+    - source
+    - auto
+
+node_js:
+  - "6.9.1"
+
+#cache:
+#  directories:
+#    - node_modules # NPM packages
+
+
+######################
+before_install:
+  - sudo apt-get -qq update
+#  - sudo apt-get install -qq -y calibre    # for "gitbook {pdf,epub,mobi}"
+  - npm install gitbook
+  - npm install gitbook-cli
+  - npm install ebook-convert
+
+install:
+  - gitbook install  
+#  - gitbook pdf ./ _book/book.pdf
+#  - gitbook epub ./ _book/book.epub
+#  - gitbook mobi ./ _book/book.mobi
+  - gitbook build
+  - ls -lha
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash .travis/deploy.sh
+  on:
+    branch: source
+

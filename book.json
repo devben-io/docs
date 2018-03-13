@@ -1,0 +1,33 @@
+{
+  "title": "Docs",
+  "language": "en",	
+  "plugins": [
+	"collapsible-chapters",
+	"-lunr",
+	"-search",
+	"search-plus-mod",
+	"-sharing", 
+	"edit-link",
+	"page-toc-button",
+	"language-picker"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/dtnpnk/docs/tree/source/src",
+      "label": "EDIT"
+    },
+    "page-toc-button": {
+      "maxTocDepth": 2,
+      "minTocSize": 2
+     },
+    "language-picker": {
+      "grid-columns": 3
+    }
+  },
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "variables": {
+    "domain": "https://dtnpnk.github.io/docs"
+  }
+}
