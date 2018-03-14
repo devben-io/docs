@@ -44,6 +44,7 @@
   * [GIT \| alle remote Branches holen](git-alle-remote-branches-holen.md)
   * [GIT \| Cherry-Pick](git-cherry-pick.md)
   * [GIT \| Create a new Branch with no history](git-create-a-new-branch-with-no-history.md)
+  * [GIT \| Forking](git-forking.md)
 * [Maker-Magic](maker-magic.md)
   * [RPI \| Sensoren](maker-magic/rpi-sensoren.md)
   * [RPI \| Multiroom Audio](maker-magic/rpi-multiroom-audio.md)
