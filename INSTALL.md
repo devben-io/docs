@@ -27,7 +27,7 @@ gitbook serve --port 4000./
 ```
 
 
-## export as {pdf,epub,mobi}
+## export as {pdf,epub,mobi} ebook
 ```
 gitbook pdf ./
 gitbook epub ./
