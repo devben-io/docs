@@ -5,6 +5,9 @@
 * [Introduction](README.md)
 * [Auto-Magic](auto-magic.md)
   * Ansible
+  * CI/CD Magic
+    * [CI \| Travis CI](git-travis-ci.md)
+      * [CI \| Publish to Github Pages](git-travis-ci/git-publish-to-githubpages.md)
   * [SaltStack](saltstack.md)
     * [SALT \| Creating hashed passwords](saltstack/creating-hashed-passwords.md)
     * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
@@ -39,8 +42,6 @@
   * [DOCKER \| save vs. export](docker-save-vs-export.md)
 * [Git-Magic](git.md)
   * [GIT \| Subtrees](git-subtrees.md)
-  * [GIT \| Travis CI](git-travis-ci.md)
-    * [GIT \| Publish to Github Pages](git-travis-ci/git-publish-to-githubpages.md)
   * [GIT \| alle remote Branches holen](git-alle-remote-branches-holen.md)
   * [GIT \| Cherry-Pick](git-cherry-pick.md)
   * [GIT \| Create a new Branch with no history](git-create-a-new-branch-with-no-history.md)
@@ -64,14 +65,7 @@
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
-* [Random-Magic](random-magic.md)
-  * [ZSH for Mac](zsh-for-mac.md)
-  * [Podcasts](podcasts.md)
-  * [Bücher](bucher.md)
-  * Tools
-  * [AEM](aem.md)
-  * [RPG - Online Char Sheet](rpg-online-charsheet.md)
-  * [VM export on VMware Fusion \(OSX\)](vm-export-on-vmware-fusion-osx.md)
+* CI/CD Magic
 
 ## Spells, Recipes \(HowTos, FAQs\)
 
