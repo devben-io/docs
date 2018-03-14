@@ -30,7 +30,7 @@ install:
 #  - gitbook epub ./ _book/book.epub
 #  - gitbook mobi ./ _book/book.mobi
   - gitbook build
-  - ls -lha
+#  - ls -lha
 deploy:
   provider: script
   skip_cleanup: true
