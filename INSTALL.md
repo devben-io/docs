@@ -15,7 +15,7 @@ ebook-convert
 gitbook install         # installs Plugins and dependencies from the book.json
 ```
 ```
-cd docs                 # change into the dir of the gitbook
+cd docs/                # change into the dir of the gitbook
 ```
 
 ## static site 
