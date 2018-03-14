@@ -13,7 +13,7 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/dtnpnk/docs/tree/source/",
+      "base": "https://github.com/dtnpnk/docs/tree/master/",
       "label": "EDIT"
     },
     "page-toc-button": {
