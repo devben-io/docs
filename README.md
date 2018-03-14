@@ -15,7 +15,8 @@ A WYSIWG Editor for editing the GitBook can be found [here](https://www.gitbook.
 
 ### **master**
 
-* contains the gitbook, config files \(`.travis.yml`\) and scripts for TravisCI \(`.travis/deploy.sh`\)
+* contains the gitbook
+* config files \(`.travis.yml`\) and scripts for TravisCI \(`.travis/deploy.sh`\)
 * configs for the gitbook: `book.json`
 
 ### **gh-pages**
