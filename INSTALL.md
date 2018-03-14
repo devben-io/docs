@@ -14,6 +14,9 @@ npm install gitbook-cli
 ebook-convert
 gitbook install         # installs Plugins and dependencies from the book.json
 ```
+```
+cd docs                 # change into the dir of the gitbook
+```
 
 ## static site 
 - build static site to `_book` as source for a webroot
@@ -23,7 +26,7 @@ gitbook build
 
 ## run locally 
 ```
-gitbook serve --port 4000./
+gitbook serve --port 4000 ./
 ```
 
 
