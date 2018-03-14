@@ -59,6 +59,7 @@
     * [FreeNAS \| Docker](freebsd/freenas-docker.md)
   * [Linux](linux.md)
     * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
+    * [CJDNS \| install on Debian 8](linux/cjdns-install-on-debian-8.md)
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
@@ -69,6 +70,7 @@
   * Tools
   * [AEM](aem.md)
   * [RPG - Online Char Sheet](rpg-online-charsheet.md)
+  * [VM export on VMware Fusion \(OSX\)](vm-export-on-vmware-fusion-osx.md)
 
 ## Spells, Recipes \(HowTos, FAQs\)
 
