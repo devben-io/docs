@@ -65,7 +65,6 @@
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
-* CI/CD Magic
 
 ## Spells, Recipes \(HowTos, FAQs\)
 
