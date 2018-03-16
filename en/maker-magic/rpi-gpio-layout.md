@@ -1,6 +1,6 @@
 # RPI \| GPIO Layout
 
-![](https://web.archive.org/web/20171024190332im_/https://cdn.shopify.com/s/files/1/0176/3274/files/Pins_Only_grande.png?2408547127755526599)
+![abc](https://web.archive.org/web/20171024190332im_/https://cdn.shopify.com/s/files/1/0176/3274/files/Pins_Only_grande.png?2408547127755526599)
 
 ## Links
 
