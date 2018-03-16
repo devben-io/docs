@@ -1,6 +1,6 @@
 # RPI \|  Breadboard
 
-![](https://web.archive.org/web/20170610173539if_/http://www.datenreise.de/wp-content/uploads/2015/05/breadboard_aufbau.jpg =400px)
+![](https://web.archive.org/web/20170610173539if_/http://www.datenreise.de/wp-content/uploads/2015/05/breadboard_aufbau.jpg)
 
 ## Links
 
