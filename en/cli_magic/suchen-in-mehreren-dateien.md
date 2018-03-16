@@ -1,5 +1,15 @@
 # CLI \| Suchen in mehreren Dateien {#suchen_in_mehreren_dateien}
 
+### mit grep:
+
+```
+grep -r "<SUCHBEGRIFF-IN-DEN-DATEIEN>" /<PFAD-DER-DURCHSUCHT-WERDEN-SOLL>
+```
+
+`-r` - recursive
+
+### mit find:
+
 ```
 find /<PFAD-DER-DURCHSUCHT-WERDEN-SOLL> -type f -exec grep -l '<SUCHBEGRIFF-IN-DEN-DATEIEN>' {} \;
 ```
