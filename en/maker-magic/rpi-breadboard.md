@@ -1,13 +1,11 @@
 # RPI \|  Breadboard
 
-![](https://web.archive.org/web/20170610173539if_/http://www.datenreise.de/wp-content/uploads/2015/05/breadboard_aufbau.jpg)
+![](https://web.archive.org/web/20180316084257im_/https://www.w3schools.com/nodejs/img_breadboard_connections.png)
 
 ## Links
 
-* https://tutorials-raspberrypi.de/raspberry-pi-gpio-erklaerung-beginner-programmierung-lernen/
-* https://www.datenreise.de/raspberry-pi-wie-verwendet-man-ein-breadboard-steckplatine-anleitung/
+* [https://tutorials-raspberrypi.de/raspberry-pi-gpio-erklaerung-beginner-programmierung-lernen/](https://tutorials-raspberrypi.de/raspberry-pi-gpio-erklaerung-beginner-programmierung-lernen/)
+* [https://www.datenreise.de/raspberry-pi-wie-verwendet-man-ein-breadboard-steckplatine-anleitung/](https://www.datenreise.de/raspberry-pi-wie-verwendet-man-ein-breadboard-steckplatine-anleitung/)
 * 
-
-
 
 
