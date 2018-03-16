@@ -76,6 +76,7 @@
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [FREEBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
   * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
+  * [YAML \| Cheatsheet](yaml-cheatsheet.md)
 
 ## Thesaurus
 
