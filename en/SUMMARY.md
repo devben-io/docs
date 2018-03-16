@@ -50,6 +50,7 @@
 * [Maker-Magic](maker-magic.md)
   * [RPI \| Multiroom Audio](maker-magic/rpi-multiroom-audio.md)
   * [RPI \| Sensoren](maker-magic/rpi-sensoren.md)
+  * [RPI \|  Breadboard](maker-magic/rpi-breadboard.md)
 * [Monitoring-Magic](monitoring-magic.md)
   * [Zabbix](monitoring/zabbix.md)
 * [OS-Magic](os-magic.md)
