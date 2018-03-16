@@ -1,6 +1,6 @@
 # DOCKER \| Cheatsheet
 
-## docker cleanup oneliner:
+## docker cleanup one-liner:
 
 deletes old containers  and images
 
