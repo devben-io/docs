@@ -50,6 +50,7 @@
 * [Maker-Magic](maker-magic.md)
   * [RPI \| Accessoires](maker-magic/rpi-accessoires.md)
   * [RPI \|  Breadboard](maker-magic/rpi-breadboard.md)
+  * [RPI \| GPIO Layout](maker-magic/rpi-gpio-layout.md)
   * [RPI \| Multiroom Audio](maker-magic/rpi-multiroom-audio.md)
   * [RPI \| Sensoren](maker-magic/rpi-sensoren.md)
 * [Monitoring-Magic](monitoring-magic.md)
