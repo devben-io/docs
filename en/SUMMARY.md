@@ -36,6 +36,7 @@
   * [CLI \| tar mit Progressbar \(DE\)](cli_magic/tar-mit-progressbar.md)
   * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
+  * [CLI \| GPG](cli_magic/cli-gpg.md)
 * [Docker-Magic](container-magic.md)
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
@@ -72,6 +73,7 @@
 * [Web-Magic](web-magic.md)
   * [Java-Script](web-magic/java-script.md)
     * [JS \| DOM](web-magic/java-script/js-dom.md)
+* [Random-Magic](random-magic.md)
 
 ## Spells, Recipes \(HowTos, FAQs\)
 
