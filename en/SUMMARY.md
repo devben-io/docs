@@ -67,6 +67,8 @@
   * [Linux](linux.md)
     * [Linux Perfomanceanalyse](linux/linux-perfomanceanalyse.md)
     * [CJDNS \| install on Debian 8](linux/cjdns-install-on-debian-8.md)
+  * [NixOS](nixos.md)
+    * [NIX \| install on Mac](nixos/nix-install-on-mac.md)
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
