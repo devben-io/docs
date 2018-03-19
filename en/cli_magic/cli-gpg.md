@@ -1,18 +1,18 @@
 # CLI \| GPG
 
-## Encrypt Text in a file
+## Encrypt text in a file
 
 ```
 echo "<CLEAR-TEXT>" | gpg --encrypt --sign --armor -r <EMAIL/ID> > <PATH-TO-FILE>.gpg
 ```
 
-## Encrypt Text to STOUT
+## Encrypt text to STOUT
 
 ```
 echo "<CLEAR-TEXT>" | gpg --encrypt --sign --armor -r <EMAIL/ID>
 ```
 
-## Decrypt Text from a file
+## Decrypt text from a file
 
 ```
 cat <PATH-TO-FILE>.gpg | gpg -d
@@ -24,6 +24,7 @@ cat <PATH-TO-FILE>.gpg | gpg -d
 cat << EOF | gpg -d
 
 # paste in the GPG block
+
 > -----BEGIN PGP MESSAGE-----
 >
 > hQIMA+bj+i0euKn+ARAAi5SPV1IobB1kgBSuOKqI3fJRZWhojFMb2RPq4JwqpYlF
