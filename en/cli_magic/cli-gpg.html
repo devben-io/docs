@@ -1330,11 +1330,32 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="cli--gpg">CLI | GPG</h1>
-<h2 id="encrypt-text-in-a-file">Encrypt Text in a file</h2>
+<h2 id="encrypt-text-in-a-file">Encrypt text in a file</h2>
 <pre><code>echo &quot;&lt;CLEAR-TEXT&gt;&quot; | gpg --encrypt --sign --armor -r &lt;EMAIL/ID&gt; &gt; &lt;PATH-TO-FILE&gt;.gpg
-</code></pre><h2 id="decrypt-text-from-a-file">Decrypt Text from a file</h2>
+</code></pre><h2 id="encrypt-text-to-stout">Encrypt text to STOUT</h2>
+<pre><code>echo &quot;&lt;CLEAR-TEXT&gt;&quot; | gpg --encrypt --sign --armor -r &lt;EMAIL/ID&gt;
+</code></pre><h2 id="decrypt-text-from-a-file">Decrypt text from a file</h2>
 <pre><code>cat &lt;PATH-TO-FILE&gt;.gpg | gpg -d
-</code></pre>
+</code></pre><h2 id="decrypt-text-direct-from-stdin">Decrypt text direct from STDIN</h2>
+<pre><code>cat &lt;&lt; EOF | gpg -d
+
+# paste in the GPG block
+
+&gt; -----BEGIN PGP MESSAGE-----
+&gt;
+&gt; hQIMA+bj+i0euKn+ARAAi5SPV1IobB1kgBSuOKqI3fJRZWhojFMb2RPq4JwqpYlF
+&gt; N/TZiow8dhmtjEI2dEXNh7spM/DR0b//IwKqtV9FKgXHGHIQB/WIhW0MeAA238a8
+&gt; Miwf0mJcgkSvJ4OLRJDZ735xMeUj5nMIOcz7WcKIrgV4I6PtbkegfUwucZcIzqZ9
+[...]
+&gt; Mkquxb8R+Jc3J9+0l9Clj/W2PbvGEWoQTaHQcwE8VUDviHHb8tAvrIheWpDQPsvI
+&gt; a6i+uE0drHJo3tFQ4cbswJf28gtvQ+QjO6MH8addiVmnyx0dDYP6ErbpepWoXsY0
+&gt; kXiS3VmZKkWFie1jpshPBRWvCbh2cHF/1ZebMretjx9IToRNJ4FPw5yhhoYPmdmO
+&gt; oCtgRaZlAN/yRxjtqFTzwriyymY00ShiBPo=
+&gt; =KU/Y
+&gt; -----END PGP MESSAGE-----
+&gt; EOF
+</code></pre><p>don&apos;t forget the <code>EOF</code> at the end and hit <strong>[ENTER]</strong>.</p>
+
                                 
                                 </section>
                             
@@ -1377,7 +1398,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CLI | GPG","level":"1.3.20","depth":2,"next":{"title":"Docker-Magic","level":"1.4","depth":1,"path":"container-magic.md","ref":"container-magic.md","articles":[{"title":"DOCKER | Cheatsheet","level":"1.4.1","depth":2,"path":"docker-cheatsheet.md","ref":"docker-cheatsheet.md","articles":[]},{"title":"DOCKER | SSH and Gogs","level":"1.4.2","depth":2,"path":"docker-ssh-and-gogs.md","ref":"docker-ssh-and-gogs.md","articles":[]},{"title":"DOCKER | save vs. export","level":"1.4.3","depth":2,"path":"docker-save-vs-export.md","ref":"docker-save-vs-export.md","articles":[]}]},"previous":{"title":"CLI | Zufallszahlen in der Shell (DE)","level":"1.3.19","depth":2,"path":"cli_magic/zufallszahlen-in-der-shell.md","ref":"cli_magic/zufallszahlen-in-der-shell.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"cli_magic/cli-gpg.md","mtime":"2018-03-19T12:36:53.057Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-19T12:39:32.473Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"CLI | GPG","level":"1.3.20","depth":2,"next":{"title":"Docker-Magic","level":"1.4","depth":1,"path":"container-magic.md","ref":"container-magic.md","articles":[{"title":"DOCKER | Cheatsheet","level":"1.4.1","depth":2,"path":"docker-cheatsheet.md","ref":"docker-cheatsheet.md","articles":[]},{"title":"DOCKER | SSH and Gogs","level":"1.4.2","depth":2,"path":"docker-ssh-and-gogs.md","ref":"docker-ssh-and-gogs.md","articles":[]},{"title":"DOCKER | save vs. export","level":"1.4.3","depth":2,"path":"docker-save-vs-export.md","ref":"docker-save-vs-export.md","articles":[]}]},"previous":{"title":"CLI | Zufallszahlen in der Shell (DE)","level":"1.3.19","depth":2,"path":"cli_magic/zufallszahlen-in-der-shell.md","ref":"cli_magic/zufallszahlen-in-der-shell.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"cli_magic/cli-gpg.md","mtime":"2018-03-19T12:44:03.169Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-19T12:46:39.501Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
