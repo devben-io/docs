@@ -6,13 +6,17 @@
 echo "<CLEAR-TEXT>" | gpg --encrypt --sign --armor -r <EMAIL/ID> > <PATH-TO-FILE>.gpg
 ```
 
+## Encrypt Text to STOUT
+
+```
+echo "<CLEAR-TEXT>" | gpg --encrypt --sign --armor -r <EMAIL/ID>
+```
+
 ## Decrypt Text from a file
 
 ```
 cat <PATH-TO-FILE>.gpg | gpg -d
 ```
-
-
 
 ## Decrypt text direct from STDIN
 
@@ -35,5 +39,5 @@ cat << EOF | gpg -d
 > EOF
 ```
 
-don't forget the **`EOF`** at the end and hit **\[ENTER\]**.
+don't forget the `EOF` at the end and hit **\[ENTER\]**.
 
