@@ -72,6 +72,8 @@
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
+  * [Shells](shells.md)
+    * [ZSH](shells/zsh.md)
 * [Web-Magic](web-magic.md)
   * [Java-Script](web-magic/java-script.md)
     * [JS \| DOM](web-magic/java-script/js-dom.md)
