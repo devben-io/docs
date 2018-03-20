@@ -70,7 +70,7 @@
   * [NixOS](nixos.md)
     * [NIX \| install on Mac](nixos/nix-install-on-mac.md)
   * [OSX](osx.md)
-    * OSX \| install on a bootable USB Stick
+    * [OSX \| install on a bootable USB Stick](osx/osx-install-on-a-bootable-usb-stick.md)
   * [SSH](ssh.md)
     * [Proxies und Jumphosts \(en\)](ssh/proxies-und-jumphosts-en.md)
     * [Tunneling / Port Forwarding \(EN\)](ssh/tunneling-port-forwarding.md)
