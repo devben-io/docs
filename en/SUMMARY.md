@@ -37,6 +37,7 @@
   * [CLI \| Top 10 Prozesse anzeigen lassen \(DE\)](cli_magic/top-10-prozesse-anzeigen-lassen.md)
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
   * [CLI \| GPG](cli_magic/cli-gpg.md)
+  * [Explain Shell](cli_magic/explain-shell.md)
 * [Docker-Magic](container-magic.md)
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
