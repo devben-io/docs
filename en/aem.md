@@ -39,7 +39,11 @@ configures the Replication Agent on the `<AUTHOR>` to publish the content to the
 
 ### Package Management
 
-...
+#### Download Package
+
+```
+curl -u admin:<PASSWORD> https://<SERVER>/etc/packages/<FOLDER>/<PACKAGENAME>.zip > <LOCAL-FILE-PATH><PACKAGENAME>.zip
+```
 
 ## 
 
