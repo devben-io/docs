@@ -42,7 +42,7 @@ configures the Replication Agent on the `<AUTHOR>` to publish the content to the
 #### Download Package
 
 ```
-curl -u admin:<PASSWORD> https://<SERVER>/etc/packages/<PATH>/<PACKAGENAME>.zip > <LOCAL-PATH>/<PACKAGENAME>.zip
+curl -u admin:<PASSWORD> https://<SERVER>:<PORT>/etc/packages/<PATH>/<PACKAGENAME>.zip > <LOCAL-PATH>/<PACKAGENAME>.zip
 ```
 
 #### Upload Package \(w/o install\)
