@@ -42,10 +42,14 @@ configures the Replication Agent on the `<AUTHOR>` to publish the content to the
 #### Download Package
 
 ```
-curl -u admin:<PASSWORD> https://<SERVER>/etc/packages/<FOLDER>/<PACKAGENAME>.zip > <LOCAL-FILE-PATH><PACKAGENAME>.zip
+curl -u admin:<PASSWORD> https://<SERVER>/etc/packages/<PATH>/<PACKAGENAME>.zip > <LOCAL-PATH>/<PACKAGENAME>.zip
 ```
 
-## 
+#### Upload Package \(w/o install\)
+
+```
+curl -u admin:<PASSWORD> -F file=@"<PATH>/<PACKAGENAME>.zip" -F name="<PACKAGENAME>" -F force=true -F install=false http://<SERVER>:<PORT>/crx/packmgr/service.jsp
+```
 
 ## Links:
 
