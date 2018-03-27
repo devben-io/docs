@@ -42,14 +42,22 @@ configures the Replication Agent on the `<AUTHOR>` to publish the content to the
 #### Download Package
 
 ```
-curl -u admin:<PASSWORD> https://<SERVER>:<PORT>/etc/packages/<PATH>/<PACKAGENAME>.zip > <LOCAL-PATH>/<PACKAGENAME>.zip
+curl -u admin:<PASSWORD> https://<SERVER>:<PORT>/etc/packages/<PKG-GROUP>/<PACKAGENAME>.zip > <LOCAL-PATH>/<PACKAGENAME>.zip
 ```
 
 #### Upload Package \(w/o install\)
 
 ```
-curl -u admin:<PASSWORD> -F file=@"<PATH>/<PACKAGENAME>.zip" -F name="<PACKAGENAME>" -F force=true -F install=false http://<SERVER>:<PORT>/crx/packmgr/service.jsp
+curl -u admin:<PASSWORD> -F file=@"<PKG-GROUP>/<PACKAGENAME>.zip" -F name="<PACKAGENAME>" -F force=true -F install=false http://<SERVER>:<PORT>/crx/packmgr/service.jsp
 ```
+
+#### \(Re\)Build existing package
+
+```
+curl -u admin:<PASSWORD> -X POST http://<SERVER>:<PORT>/crx/packmgr/service/.json/etc/packages/<PKG-GROUP>/<PACKAGENAME>.zip?cmd=build 
+```
+
+
 
 ## Links:
 
