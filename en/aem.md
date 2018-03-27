@@ -54,10 +54,8 @@ curl -u admin:<PASSWORD> -F file=@"<PKG-GROUP>/<PACKAGENAME>.zip" -F name="<PACK
 #### \(Re\)Build existing package
 
 ```
-curl -u admin:<PASSWORD> -X POST http://<SERVER>:<PORT>/crx/packmgr/service/.json/etc/packages/<PKG-GROUP>/<PACKAGENAME>.zip?cmd=build 
+curl -u admin:<PASSWORD> -X POST http://<SERVER>:<PORT>/crx/packmgr/service/.json/etc/packages/<PKG-GROUP>/<PACKAGENAME>.zip?cmd=build
 ```
-
-
 
 ## Links:
 
