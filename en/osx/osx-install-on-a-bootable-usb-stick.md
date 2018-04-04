@@ -5,7 +5,8 @@
 * Start Installation process - choose a drive with enough space for the install data \(~5GB\)
 
 * **don't** restart the Computer after the download has finished
-* move the downloaded data into the "**Install macOS High Sierra.app**"
+
+* move the downloaded data into the "**Install macOS High Sierra.app**" Folder
 
 ```
 sudo mkdir -p "/Applications/Install macOS High Sierra.app/Contents/SharedSupport/"
