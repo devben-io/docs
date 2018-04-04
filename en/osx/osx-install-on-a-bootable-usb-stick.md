@@ -16,7 +16,7 @@ sudo rsync -harP "/Volumes/<ABC>/macOS Install Data/" "/Applications/Install mac
 * Create Boot Medium:
 
 ```
-sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia
+sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/<USB-STICK>
 ```
 
 * \(if needed\) confirm questions with `y` \(yes\)
