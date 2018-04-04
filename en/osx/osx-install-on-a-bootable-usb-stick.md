@@ -2,7 +2,8 @@
 
 * Download "**Install macOS High Sierra.app**" from Appstore.
   * it's Stub File that must download the install data during the install process
-* Start Installation process - choose a drive with enough space  \(~5GB\)
+* Start Installation process - choose a drive with enough space for the install data \(~5GB\)
+
 * **don't** restart the Computer after the download has finished
 * move the downloaded data into the "**Install macOS High Sierra.app**"
 
