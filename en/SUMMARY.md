@@ -82,6 +82,9 @@
   * [Java-Script](web-magic/java-script.md)
     * [JS \| DOM](web-magic/java-script/js-dom.md)
 * [Random-Magic](random-magic.md)
+  * [Tools](random-magic/tools.md)
+  * [VirtualBox](random-magic/virtualbox.md)
+    * [VBOX \| use a physical harddrive as disk](random-magic/virtualbox/vbox-use-a-physical-harddrive-as-disk.md)
 
 ## Spells, Recipes \(HowTos, FAQs\)
 
