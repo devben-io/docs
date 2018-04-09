@@ -46,6 +46,7 @@
     * [DOCKER \| save vs. export](docker-save-vs-export.md)
   * [OpenShift](openshift.md)
     * [Minishift](openshift/minishift.md)
+    * [OC \| Cheat-Sheet](openshift/oc-cheat-sheet.md)
 * [Git-Magic](git.md)
   * [GIT \| Subtrees](git-subtrees.md)
   * [GIT \| alle remote Branches holen](git-alle-remote-branches-holen.md)
