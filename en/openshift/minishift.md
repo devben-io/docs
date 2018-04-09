@@ -11,3 +11,11 @@ minishift [start|stop]
 
 
 
+
+
+## Links
+
+* https://docs.openshift.org/latest/minishift/using/addons.html
+
+
+
