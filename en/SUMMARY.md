@@ -39,6 +39,7 @@
   * [CLI \| Zufallszahlen in der Shell \(DE\)](cli_magic/zufallszahlen-in-der-shell.md)
   * [CLI \| GPG](cli_magic/cli-gpg.md)
   * [CLI \| Renice Process and all child processes](cli_magic/cli-renice-process-and-all-child-processes.md)
+  * [CLI \| Weather Report in terminal](cli_magic/cli-weather-report-in-terminal.md)
 * [Container-Magic](container-magic.md)
   * [Docker](docker.md)
     * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
