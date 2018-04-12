@@ -11,7 +11,12 @@
   * [http://www.xmind.net/de/xmind8-pro/](http://www.xmind.net/de/xmind8-pro/)
 
 * CloudCraft - isometric Cloud visualization
-  * https://cloudcraft.co
+
+  * [https://cloudcraft.co](https://cloudcraft.co)
+
+* snallygaster - Tool to scan for secret files on HTTP servers
+
+  * https://github.com/hannob/snallygaster
 
 
 
