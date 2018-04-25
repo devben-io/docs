@@ -86,6 +86,8 @@
   * [Shells](shells.md)
     * [ZSH](shells/zsh.md)
 * [Web-Magic](web-magic.md)
+  * [Apache](web-magic/apache.md)
+    * [Apache Cheatsheet](web-magic/apache-cheatsheet.md)
   * [Java-Script](web-magic/java-script.md)
     * [JS \| DOM](web-magic/java-script/js-dom.md)
 * [Random-Magic](random-magic.md)
