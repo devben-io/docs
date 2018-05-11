@@ -1,4 +1,4 @@
-# Encrypt remote Backups with LUKS
+# Encrypted remote backups with SSHFS and LUKS
 
 ## Links
 
