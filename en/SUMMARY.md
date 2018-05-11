@@ -96,6 +96,7 @@
     * [VBOX \| use a physical harddrive as disk](random-magic/virtualbox/vbox-use-a-physical-harddrive-as-disk.md)
   * [Hacks, Hacks](random-magic/hacks-hacks.md)
     * [Data exfiltration over powerline](random-magic/hacks-hacks/data-exfiltration-over-powerline.md)
+    * [encrypt remote backups](random-magic/hacks-hacks/encrypt-remote-backups.md)
   * [bind mount](random-magic/bind-mount.md)
 
 ## Spells, Recipes \(HowTos, FAQs\)
