@@ -88,6 +88,7 @@
 * [Web-Magic](web-magic.md)
   * [Apache](web-magic/apache.md)
     * [Apache Cheatsheet](web-magic/apache-cheatsheet.md)
+    * [Apache \| Language based content](web-magic/apache-language-based-content.md)
   * [Java-Script](web-magic/java-script.md)
     * [JS \| DOM](web-magic/java-script/js-dom.md)
 * [Random-Magic](random-magic.md)
