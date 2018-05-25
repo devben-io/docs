@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Proxies und Jumphosts (en) · Docs</title>
+        <title>nginx · Docs</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="tunneling-port-forwarding.html" />
+    <link rel="next" href="nginx/nginx-random.html" />
     
     
-    <link rel="prev" href="../ssh.html" />
+    <link rel="prev" href="java-script/js-dom.html" />
     
 
     </head>
@@ -1234,9 +1234,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.8.5.1" data-path="proxies-und-jumphosts-en.html">
+        <li class="chapter " data-level="1.8.5.1" data-path="../ssh/proxies-und-jumphosts-en.html">
             
-                <a href="proxies-und-jumphosts-en.html">
+                <a href="../ssh/proxies-und-jumphosts-en.html">
             
                     
                     Proxies und Jumphosts (en)
@@ -1247,9 +1247,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.5.2" data-path="tunneling-port-forwarding.html">
+        <li class="chapter " data-level="1.8.5.2" data-path="../ssh/tunneling-port-forwarding.html">
             
-                <a href="tunneling-port-forwarding.html">
+                <a href="../ssh/tunneling-port-forwarding.html">
             
                     
                     Tunneling / Port Forwarding (EN)
@@ -1316,9 +1316,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../web-magic/apache.html">
+        <li class="chapter " data-level="1.9.1" data-path="apache.html">
             
-                <a href="../web-magic/apache.html">
+                <a href="apache.html">
             
                     
                     Apache
@@ -1330,9 +1330,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1.1" data-path="../web-magic/apache-cheatsheet.html">
+        <li class="chapter " data-level="1.9.1.1" data-path="apache-cheatsheet.html">
             
-                <a href="../web-magic/apache-cheatsheet.html">
+                <a href="apache-cheatsheet.html">
             
                     
                     Apache Cheatsheet
@@ -1343,9 +1343,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.1.2" data-path="../web-magic/apache-language-based-content.html">
+        <li class="chapter " data-level="1.9.1.2" data-path="apache-language-based-content.html">
             
-                <a href="../web-magic/apache-language-based-content.html">
+                <a href="apache-language-based-content.html">
             
                     
                     Apache | Language based content
@@ -1361,9 +1361,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../web-magic/java-script.html">
+        <li class="chapter " data-level="1.9.2" data-path="java-script.html">
             
-                <a href="../web-magic/java-script.html">
+                <a href="java-script.html">
             
                     
                     Java-Script
@@ -1375,9 +1375,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.2.1" data-path="../web-magic/java-script/js-dom.html">
+        <li class="chapter " data-level="1.9.2.1" data-path="java-script/js-dom.html">
             
-                <a href="../web-magic/java-script/js-dom.html">
+                <a href="java-script/js-dom.html">
             
                     
                     JS | DOM
@@ -1393,9 +1393,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../web-magic/nginx.html">
+        <li class="chapter active" data-level="1.9.3" data-path="nginx.html">
             
-                <a href="../web-magic/nginx.html">
+                <a href="nginx.html">
             
                     
                     nginx
@@ -1407,9 +1407,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.3.1" data-path="../web-magic/nginx/nginx-random.html">
+        <li class="chapter " data-level="1.9.3.1" data-path="nginx/nginx-random.html">
             
-                <a href="../web-magic/nginx/nginx-random.html">
+                <a href="nginx/nginx-random.html">
             
                     
                     NGINX | random
@@ -1725,7 +1725,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Proxies und Jumphosts (en)</a>
+        <a href=".." >nginx</a>
     </h1>
 </div>
 
@@ -1740,29 +1740,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="proxies_und_jumphosts_en">Proxies und Jumphosts (en) </h1>
-<p><em>Passing through a gateway or two</em>  </p>
-<hr>
-<p>A useful trick is &#x201E;ssh -tt&#x201C; which forces tty allocation, so instead of the above you can do the following, connecting to server2 via firewall as the jump host:</p>
-<pre><code>ssh -tt firewall.example.com ssh -tt server2.example.org
-</code></pre><p>This opens an ssh terminal to the remote machine. You can also pass commands. For example, to reattach to a remote screen session using screen you can do the following:</p>
-<pre><code>ssh -tt firewall.example.com ssh -tt server2.example.org screen -dR
-</code></pre><p>The chain can be arbitrarily long and is not limited to just two hosts.</p>
-<p>Bearbeiten</p>
-<h2 id="port_forwarding_via_an_intermediate_host">Port Forwarding via an Intermediate Host </h2>
-<p>Tunneling, also called port forwarding, is when a port on one machine mapped to a connection to a port on another machine. In that way remote services can be accessed as if they were local. Or in the case of reverse port forwarding, vice verse. Forwarding can be done directly from one machine to another or via a machine in the middle.</p>
-<p>Below we are setting up a tunnel from the localhost to machine2, which is behind a firewall, machine1. The tunnel will be via machine1 which is publicly accessible and also has access to machine2.</p>
-<pre><code>ssh -L 2222:machine2.example.org:22 machine1.example.org
-</code></pre><p>Next connecting to the tunnel will actually connect to the second host, machine2.</p>
-<pre><code>ssh -p 2222 remoteuser@localhost
-</code></pre><p>That&apos;s it.</p>
-<p>It is possible to use all the options in this way, such as -X for X11 forwarding. Here is an example of running rsync between the two hosts using machine1 as an intermediary with the above setup.</p>
-<pre><code>rsync -av -e &quot;ssh -p 2222&quot;  /path/to/some/dir/   localhost:/path/to/some/dir/
-</code></pre><h2 id="links">Links </h2>
-<ul>
-<li><a href="https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts" target="_blank">https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts</a></li>
-</ul>
-
+                                
                                 
                                 </section>
                             
@@ -1789,12 +1767,12 @@
 
             
                 
-                <a href="../ssh.html" class="navigation navigation-prev " aria-label="Previous page: SSH">
+                <a href="java-script/js-dom.html" class="navigation navigation-prev " aria-label="Previous page: JS | DOM">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="tunneling-port-forwarding.html" class="navigation navigation-next " aria-label="Next page: Tunneling / Port Forwarding (EN)">
+                <a href="nginx/nginx-random.html" class="navigation navigation-next " aria-label="Next page: NGINX | random">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1805,7 +1783,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Proxies und Jumphosts (en)","level":"1.8.5.1","depth":3,"next":{"title":"Tunneling / Port Forwarding (EN)","level":"1.8.5.2","depth":3,"path":"ssh/tunneling-port-forwarding.md","ref":"ssh/tunneling-port-forwarding.md","articles":[]},"previous":{"title":"SSH","level":"1.8.5","depth":2,"path":"ssh.md","ref":"ssh.md","articles":[{"title":"Proxies und Jumphosts (en)","level":"1.8.5.1","depth":3,"path":"ssh/proxies-und-jumphosts-en.md","ref":"ssh/proxies-und-jumphosts-en.md","articles":[]},{"title":"Tunneling / Port Forwarding (EN)","level":"1.8.5.2","depth":3,"path":"ssh/tunneling-port-forwarding.md","ref":"ssh/tunneling-port-forwarding.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"ssh/proxies-und-jumphosts-en.md","mtime":"2018-05-25T21:01:55.769Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-25T21:04:20.271Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"nginx","level":"1.9.3","depth":2,"next":{"title":"NGINX | random","level":"1.9.3.1","depth":3,"path":"web-magic/nginx/nginx-random.md","ref":"web-magic/nginx/nginx-random.md","articles":[]},"previous":{"title":"JS | DOM","level":"1.9.2.1","depth":3,"path":"web-magic/java-script/js-dom.md","ref":"web-magic/java-script/js-dom.md","articles":[]},"dir":"neutral"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"web-magic/nginx.md","mtime":"2018-05-25T21:01:55.769Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-25T21:04:20.271Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
