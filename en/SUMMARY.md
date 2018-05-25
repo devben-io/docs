@@ -91,6 +91,8 @@
     * [Apache \| Language based content](web-magic/apache-language-based-content.md)
   * [Java-Script](web-magic/java-script.md)
     * [JS \| DOM](web-magic/java-script/js-dom.md)
+  * [nginx](web-magic/nginx.md)
+    * [NGINX \| random](web-magic/nginx/nginx-random.md)
 * [Random-Magic](random-magic.md)
   * [Tools](random-magic/tools.md)
   * [VirtualBox](random-magic/virtualbox.md)
