@@ -6,7 +6,7 @@
 git remote add upstream [Upstream git URL]
 ```
 
-#### Fetch the Upstream Branches {#bf46}
+#### Fetch the Upstream Branches {#bf46}
 
 ```
 git fetch upstream
@@ -18,13 +18,13 @@ git fetch upstream
 git merge upstream/master
 ```
 
-#### Create a New Branch for Work {#e236}
+#### Create a New Branch for Work {#e236}
 
 ```
 git checkout -b "feature-new-stuff"
 ```
 
-#### Perform Your Local Work {#c5f0}
+#### Perform Your Local Work {#c5f0}
 
 ...
 
@@ -34,7 +34,7 @@ git checkout -b "feature-new-stuff"
 git push origin feature-new-stuff
 ```
 
-
+#### Repeat {#f152}
 
 
 
