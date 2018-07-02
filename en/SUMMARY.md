@@ -59,6 +59,7 @@
   * [GIT \| Forking](git-forking.md)
   * [GITHUB \| Pages](github-pages.md)
   * [GIT \| Sync Fork from upstream Repo](git-sync-fork-from-upstream-repo.md)
+  * [GIT \| force pull to overwrite local files](git-force-pull-to-overwrite-local-files.md)
 * [Maker-Magic](maker-magic.md)
   * [RPI \| Accessoires](maker-magic/rpi-accessoires.md)
   * [RPI \|  Breadboard](maker-magic/rpi-breadboard.md)
@@ -116,7 +117,7 @@
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [FREEBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
   * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
-  * [SSH | Cheatsheet](cli_magic/cli-ssh-cheatsheet.md)
+  * [SSH \| Cheatsheet](cli_magic/cli-ssh-cheatsheet.md)
   * [YAML \| Cheatsheet](yaml-cheatsheet.md)
 
 ## Thesaurus
