@@ -112,9 +112,11 @@
   * [HOWTO \|  Gitbook - build static page](howtos/howto-gitbook-build-static-page.md)
 * [Spell Scrolls \(Cheatsheets\)](spells-howtos-faqs/cheatsheets.md)
   * [AEM \| Cheatsheet](aem.md)
+  * [BASH \| Cheatsheet](cli_magic/cli-bash-cheatsheet.md)
   * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
   * [FREEBSD \| Cheatsheet](freebsd/freebsd-cheatsheet.md)
   * [SALT \| Cheatsheet](saltstack/salt-cheatsheet.md)
+  * [SSH | Cheatsheet](cli_magic/cli-ssh-cheatsheet.md)
   * [YAML \| Cheatsheet](yaml-cheatsheet.md)
 
 ## Thesaurus
