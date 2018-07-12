@@ -47,6 +47,7 @@
     * [DOCKER \| Cheatsheet](docker-cheatsheet.md)
     * [DOCKER \| SSH and Gogs](docker-ssh-and-gogs.md)
     * [DOCKER \| save vs. export](docker-save-vs-export.md)
+    * [DOCKER \| minimum image](docker-minimum-image.md)
   * [OpenShift](openshift.md)
     * [Minishift](openshift/minishift.md)
     * [OC \| Cheat-Sheet](openshift/oc-cheat-sheet.md)
