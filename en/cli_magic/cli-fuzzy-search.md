@@ -18,11 +18,11 @@ ssh $target
 this provides following functions in the terminal:
 
 * with `ssh2` you can search hosts of your ssh config and connect directly to it
-* with **`[ctrl]`** + **`[R]`** you can do reverse search of command with fuzzy finder
+* with `[ctrl]` + `[R]` you can do reverse search of command with fuzzy finder
 
 ## Links:
 
-* https://github.com/junegunn/fzf
+* [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
 
 
 
