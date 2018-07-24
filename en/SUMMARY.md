@@ -40,6 +40,7 @@
   * [CLI \| GPG](cli_magic/cli-gpg.md)
   * [CLI \| Renice Process and all child processes](cli_magic/cli-renice-process-and-all-child-processes.md)
   * [CLI \| Weather Report in terminal](cli_magic/cli-weather-report-in-terminal.md)
+  * [CLI \| fuzzy finder](cli_magic/cli-fuzzy-search.md)
   * [CLI \| Bash cheatsheet](cli_magic/cli-bash-cheatsheet.md)
   * [CLI \| SSH Cheatsheet](cli_magic/cli-ssh-cheatsheet.md)
 * [Container-Magic](container-magic.md)
