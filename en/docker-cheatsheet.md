@@ -1,6 +1,6 @@
 # DOCKER \| Cheatsheet
 
-## docker cleanup one-liner:
+
 
 docker stats with container names instead of IDs
 
