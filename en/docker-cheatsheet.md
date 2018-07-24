@@ -2,6 +2,12 @@
 
 ## docker cleanup one-liner:
 
+docker stats with container names instead of IDs
+
+```
+docker stats $(docker ps --format={{.Names}})
+```
+
 deletes old containers  and images
 
 ```
