@@ -62,6 +62,7 @@
   * [GITHUB \| Pages](github-pages.md)
   * [GIT \| Sync Fork from upstream Repo](git-sync-fork-from-upstream-repo.md)
   * [GIT \| force pull to overwrite local files](git-force-pull-to-overwrite-local-files.md)
+  * GIT \| Rebase \(squashing\)
 * [Maker-Magic](maker-magic.md)
   * [RPI \| Accessoires](maker-magic/rpi-accessoires.md)
   * [RPI \|  Breadboard](maker-magic/rpi-breadboard.md)
