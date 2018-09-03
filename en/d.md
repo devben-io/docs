@@ -33,5 +33,58 @@ e892cf4  Tue Jul 3 20:33:04 2018 +0200 (9 weeks ago)     User 3: sort reference 
 8aeec86  Tue Jun 26 07:31:37 2018 +0200 (10 weeks ago)   User 3: added accept attribute to file uploads
 ```
 
+Starting from HEAD \(the last commit, index 0\) we want to squash the commits HEAD-7:
+
+```
+git rebase -i head~7
+
+pick a937e70 env created
+pick 07da457 fix "window.location.href"
+pick 8b3f8fa fix login url
+pick c0e059f "some" fixes :P
+pick 88e6aeb change README.md
+pick 7362bfe change README.dm
+pick 328dd76 Update docker build steps
+
+# Rebase 5276ee2..328dd76 onto 5276ee2 (7 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+Change the lines from bottom to top:
+
+```
+r a937e70 env created
+s 07da457 fix "window.location.href"
+s 8b3f8fa fix login url
+s c0e059f "some" fixes :P
+s 88e6aeb change README.md
+s 7362bfe change README.dm
+s 328dd76 Update docker build steps
+```
+
+Change the commit message, save and clean up the rest of the commit messages.
+
+Then forcely push the "new" feature-branch to server via:
+
+```
+git push --force
+```
+
 
 
