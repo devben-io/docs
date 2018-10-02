@@ -1,6 +1,6 @@
 # README
 
-[![Build Status](https://travis-ci.org/dtnpnk/docs.svg?branch=source)](https://travis-ci.org/dtnpnk/docs)
+[![Build Status](https://travis-ci.org/dtpnk/docs.svg?branch=master)](https://travis-ci.org/dtpnk/docs)
 
 ## Info
 
