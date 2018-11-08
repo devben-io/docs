@@ -15,6 +15,7 @@
     * [SALT \| Highstate as scheduled job](saltstack/salt-highstate-as-scheduled-job.md)
     * [SALT \| install salt with salt-ssh](saltstack/salt-install-salt-with-salt-ssh.md)
     * [SALT \| Pillars](saltstack/salt-pillars.md)
+  * [Terrform](terrform.md)
 * [CLI Magic](cli-magic.md)
   * [Explain Shell](cli_magic/explain-shell.md)
   * [CLI \| Bash Skripting \(DE\)](cli_magic/cli-bash-skripting.md)
