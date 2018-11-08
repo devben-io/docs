@@ -291,6 +291,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.4" data-path="terrform.html">
+            
+                <a href="terrform.html">
+            
+                    
+                    Terrform
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1887,76 +1900,75 @@
 <h2 id="yaml-11-reference-card">YAML 1.1: Reference card</h2>
 <hr>
 <h3 id="collection-indicators">Collection indicators:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;? &apos;</span> : Key indicator.
-    <span class="hljs-string">&apos;: &apos;</span> : Value indicator.
-    <span class="hljs-string">&apos;- &apos;</span> : Nested series entry indicator.
-    <span class="hljs-string">&apos;, &apos;</span> : Separate in-line branch entries.
-    <span class="hljs-string">&apos;[]&apos;</span> : Surround in-line series branch.
-    <span class="hljs-string">&apos;{}&apos;</span> : Surround in-line keyed branch.
+<pre><code class="lang-yml">    &apos;? &apos; : Key indicator.
+    &apos;: &apos; : Value indicator.
+    &apos;- &apos; : Nested series entry indicator.
+    &apos;, &apos; : Separate in-line branch entries.
+    &apos;[]&apos; : Surround in-line series branch.
+    &apos;{}&apos; : Surround in-line keyed branch.
 </code></pre>
 <h3 id="scalar-indicators">Scalar indicators:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;&apos;</span><span class="hljs-string">&apos;&apos;</span> : Surround in-line unescaped scalar (<span class="hljs-string">&apos;&apos;</span> escaped <span class="hljs-string">&apos;).
-    &apos;</span><span class="hljs-string">&quot;&apos;  : Surround in-line escaped scalar (see escape codes below).
+<pre><code class="lang-yml">    &apos;&apos;&apos;&apos; : Surround in-line unescaped scalar (&apos;&apos; escaped &apos;).
+    &apos;&quot;&apos;  : Surround in-line escaped scalar (see escape codes below).
     &apos;|&apos;  : Block scalar indicator.
     &apos;&gt;&apos;  : Folded scalar indicator.
     &apos;-&apos;  : Strip chomp modifier (&apos;|-&apos; or &apos;&gt;-&apos;).
     &apos;+&apos;  : Keep chomp modifier (&apos;|+&apos; or &apos;&gt;+&apos;).
     1-9  : Explicit indentation modifier (&apos;|1&apos; or &apos;&gt;2&apos;).
            # Modifiers can be combined (&apos;|2-&apos;, &apos;&gt;+1&apos;).
-</span></code></pre>
+</code></pre>
 <h3 id="alias-indicators">Alias indicators:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;&amp;&apos;</span>  : Anchor property.
-    <span class="hljs-string">&apos;*&apos;</span>  : Alias indicator.
+<pre><code class="lang-yml">    &apos;&amp;&apos;  : Anchor property.
+    &apos;*&apos;  : Alias indicator.
 </code></pre>
 <h3 id="tag-property--usually-unspecified">Tag property: # Usually unspecified.</h3>
 <pre><code class="lang-yml">    none    : Unspecified tag (automatically resolved by application).
-    <span class="hljs-string">&apos;!&apos;</span>     : Non-specific tag (by default, <span class="hljs-string">&quot;!!map&quot;</span>/<span class="hljs-string">&quot;!!seq&quot;</span>/<span class="hljs-string">&quot;!!str&quot;</span>).
-    <span class="hljs-string">&apos;!foo&apos;</span>  : Primary (by convention, means a local <span class="hljs-string">&quot;!foo&quot;</span> tag).
-    <span class="hljs-string">&apos;!!foo&apos;</span> : Secondary (by convention, means <span class="hljs-string">&quot;tag:yaml.org,2002:foo&quot;</span>).
-    <span class="hljs-string">&apos;!h!foo&apos;</span>: Requires <span class="hljs-string">&quot;%TAG !h! &lt;prefix&gt;&quot;</span> (and then means <span class="hljs-string">&quot;&lt;prefix&gt;foo&quot;</span>).
-    <span class="hljs-string">&apos;!&lt;foo&gt;&apos;</span>: Verbatim tag (always means <span class="hljs-string">&quot;foo&quot;</span>).
-</code></pre>
+    &apos;!&apos;     : Non-specific tag (by default, &quot;!!map&quot;/&quot;!!seq&quot;/&quot;!!str&quot;).
+    &apos;!foo&apos;  : Primary (by convention, means a local &quot;!foo&quot; tag).
+    &apos;!!foo&apos; : Secondary (by convention, means &quot;tag:yaml.org,2002:foo&quot;).
+    &apos;!h!foo&apos;: Requires &quot;%TAG !h! <prefix>&quot; (and then means &quot;<prefix>foo&quot;).
+    &apos;!<foo>&apos;: Verbatim tag (always means &quot;foo&quot;).
+</foo></prefix></prefix></code></pre>
 <h3 id="document-indicators">Document indicators:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;%&apos;</span>  : Directive indicator.
-    <span class="hljs-string">&apos;---&apos;</span>: Document header.
-    <span class="hljs-string">&apos;...&apos;</span>: Document terminator.
+<pre><code class="lang-yml">    &apos;%&apos;  : Directive indicator.
+    &apos;---&apos;: Document header.
+    &apos;...&apos;: Document terminator.
 </code></pre>
 <h3 id="misc-indicators">Misc indicators:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos; #&apos;</span> : Throwaway comment indicator.
-    <span class="hljs-string">&apos;`@&apos;</span> : Both reserved for future use.
+<pre><code class="lang-yml">    &apos; #&apos; : Throwaway comment indicator.
+    &apos;`@&apos; : Both reserved for future use.
 </code></pre>
 <h3 id="special-keys">Special keys:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;=&apos;</span>  : Default <span class="hljs-string">&quot;value&quot;</span> mapping key.
-    <span class="hljs-string">&apos;&lt;&lt;&apos;</span> : Merge keys from another mapping.
-</code></pre>
+<pre><code class="lang-yml">    &apos;=&apos;  : Default &quot;value&quot; mapping key.
+    &apos;&lt;</code></pre>
 <h3 id="core-types--default-automatic-tags">Core types: # Default automatic tags.</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;!!map&apos;</span> : { Hash table, dictionary, mapping }
-    <span class="hljs-string">&apos;!!seq&apos;</span> : { List, array, tuple, vector, sequence }
-    <span class="hljs-string">&apos;!!str&apos;</span> : Unicode string
+<pre><code class="lang-yml">    &apos;!!map&apos; : { Hash table, dictionary, mapping }
+    &apos;!!seq&apos; : { List, array, tuple, vector, sequence }
+    &apos;!!str&apos; : Unicode string
 </code></pre>
 <h3 id="more-types">More types:</h3>
-<pre><code class="lang-yml">    <span class="hljs-string">&apos;!!set&apos;</span> : { cherries, plums, apples }
-    <span class="hljs-string">&apos;!!omap&apos;</span>: [ one: <span class="hljs-number">1</span>, two: <span class="hljs-number">2</span> ]
+<pre><code class="lang-yml">    &apos;!!set&apos; : { cherries, plums, apples }
+    &apos;!!omap&apos;: [ one: 1, two: 2 ]
 </code></pre>
 <h3 id="language-independent-scalar-types">Language Independent Scalar types:</h3>
-<pre><code class="lang-yml">    { ~, <span class="hljs-literal">null</span> }              : <span class="hljs-literal">Null</span> (<span class="hljs-literal">no</span> value).
-    [ <span class="hljs-number">1234</span>, <span class="hljs-number">0x4D2</span>, <span class="hljs-number">02333</span> ]   : [ Decimal int, Hexadecimal int, Octal int ]
-    [ <span class="hljs-number">1</span>_230<span class="hljs-number">.15</span>, <span class="hljs-number">12.3015e+02</span> ]: [ Fixed float, Exponential float ]
+<pre><code class="lang-yml">    { ~, null }              : Null (no value).
+    [ 1234, 0x4D2, 02333 ]   : [ Decimal int, Hexadecimal int, Octal int ]
+    [ 1_230.15, 12.3015e+02 ]: [ Fixed float, Exponential float ]
     [ .inf, -.Inf, .NAN ]    : [ Infinity (float), Negative, Not a number ]
-    { Y, <span class="hljs-literal">true</span>, <span class="hljs-literal">Yes</span>, ON  }    : Boolean <span class="hljs-literal">true</span>
-    { n, <span class="hljs-literal">FALSE</span>, <span class="hljs-literal">No</span>, off }    : Boolean <span class="hljs-literal">false</span>
-    ? <span class="hljs-type">!!binary</span> <span class="hljs-string">&gt;
+    { Y, true, Yes, ON  }    : Boolean true
+    { n, FALSE, No, off }    : Boolean false
+    ? !!binary &gt;
         R0lG...BADS=
     : &gt;-
         Base 64 binary value.
-</span></code></pre>
+</code></pre>
 <h3 id="escape-codes">Escape codes:</h3>
-<pre><code class="lang-yml"> Numeric   : { <span class="hljs-string">&quot;\x12&quot;</span>: <span class="hljs-number">8</span>-bit, <span class="hljs-string">&quot;\u1234&quot;</span>: <span class="hljs-number">16</span>-bit, <span class="hljs-string">&quot;\U00102030&quot;</span>: <span class="hljs-number">32</span>-bit }
-<span class="hljs-attr"> Protective:</span> { <span class="hljs-string">&quot;\\&quot;</span>: <span class="hljs-string">&apos;\&apos;, &quot;\&quot;&quot;: &apos;</span><span class="hljs-string">&quot;&apos;, &quot;</span>\ <span class="hljs-string">&quot;: &apos; &apos;, &quot;</span>\&lt;TAB&gt;<span class="hljs-string">&quot;: TAB }
- C         : { &quot;</span>\<span class="hljs-number">0</span><span class="hljs-string">&quot;: NUL, &quot;</span>\a<span class="hljs-string">&quot;: BEL, &quot;</span>\b<span class="hljs-string">&quot;: BS, &quot;</span>\f<span class="hljs-string">&quot;: FF, &quot;</span>\n<span class="hljs-string">&quot;: LF, &quot;</span>\r<span class="hljs-string">&quot;: CR,
-               &quot;</span>\t<span class="hljs-string">&quot;: TAB, &quot;</span>\v<span class="hljs-string">&quot;: VTAB }
- Additional: { &quot;</span>\e<span class="hljs-string">&quot;: ESC, &quot;</span>\_<span class="hljs-string">&quot;: NBSP, &quot;</span>\N<span class="hljs-string">&quot;: NEL, &quot;</span>\L<span class="hljs-string">&quot;: LS, &quot;</span>\P<span class="hljs-string">&quot;: PS }
-</span></code></pre>
+<pre><code class="lang-yml"> Numeric   : { &quot;\x12&quot;: 8-bit, &quot;\u1234&quot;: 16-bit, &quot;\U00102030&quot;: 32-bit }
+ Protective: { &quot;\\&quot;: &apos;\&apos;, &quot;\&quot;&quot;: &apos;&quot;&apos;, &quot;\ &quot;: &apos; &apos;, &quot;\<tab>&quot;: TAB }
+ C         : { &quot;\0&quot;: NUL, &quot;\a&quot;: BEL, &quot;\b&quot;: BS, &quot;\f&quot;: FF, &quot;\n&quot;: LF, &quot;\r&quot;: CR,
+               &quot;\t&quot;: TAB, &quot;\v&quot;: VTAB }
+ Additional: { &quot;\e&quot;: ESC, &quot;\_&quot;: NBSP, &quot;\N&quot;: NEL, &quot;\L&quot;: LS, &quot;\P&quot;: PS }
+</tab></code></pre>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://gist.github.com/jonschlinkert/5170877#file-yaml-cheatsheet-md" target="_blank">https://gist.github.com/jonschlinkert/5170877#file-yaml-cheatsheet-md</a></li>
@@ -2005,7 +2017,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"YAML | Cheatsheet","level":"2.2.7","depth":2,"next":{"title":"Cyclopedia (Glossary)","level":"3.1","depth":1,"path":"GLOSSARY.md","ref":"GLOSSARY.md","articles":[]},"previous":{"title":"SSH | Cheatsheet","level":"2.2.6","depth":2,"path":"cli_magic/cli-ssh-cheatsheet.md","ref":"cli_magic/cli-ssh-cheatsheet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"yaml-cheatsheet.md","mtime":"2018-10-02T14:25:14.623Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-02T14:27:37.949Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"YAML | Cheatsheet","level":"2.2.7","depth":2,"next":{"title":"Cyclopedia (Glossary)","level":"3.1","depth":1,"path":"GLOSSARY.md","ref":"GLOSSARY.md","articles":[]},"previous":{"title":"SSH | Cheatsheet","level":"2.2.6","depth":2,"path":"cli_magic/cli-ssh-cheatsheet.md","ref":"cli_magic/cli-ssh-cheatsheet.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"yaml-cheatsheet.md","mtime":"2018-11-08T14:40:52.697Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-08T14:43:08.257Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -2039,7 +2051,7 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
         
     
 

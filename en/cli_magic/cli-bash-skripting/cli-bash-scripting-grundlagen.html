@@ -291,6 +291,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.4" data-path="../../terrform.html">
+            
+                <a href="../../terrform.html">
+            
+                    
+                    Terrform
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1888,7 +1901,7 @@
 <p>Hier findet Ihr einige Skriptbeispiele aus unseren Trainings und Projekterfahrungen.</p>
 <p>Mit Bash-Skripten kann man fast alles realisieren, was ein Netzwerkadministrator f&#xFC;r den Hausgebrauch ben&#xF6;tigt, sei es das automatische Setzen von Berechtigungen f&#xFC;r Samba-Freigaben oder das Pr&#xFC;fen einer eingebundene Netzwerkressource.</p>
 <h2 id="skript-mit-parametern-aufrufen-und-auswerten">Skript mit Parametern aufrufen und auswerten</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash</span>
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash</span>
   <span class="hljs-comment"># Skriptname: parameter.sh</span>
 
 
@@ -1904,12 +1917,12 @@
 <p><code># parameter.sh wert1 wert2</code><br>so erh&#xE4;lt man die Ausgabe:</p>
 <p><code>wert1</code> <code>wert2</code></p>
 <h2 id="ip-adresse-default-gateway-und-dns-server-manuell-&#xE4;ndern">IP-Adresse, default Gateway und DNS-Server manuell &#xE4;ndern</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
   netzkarte=eth0
-  ip=192.168.1.99
-  nm=255.255.255.0
-  gw=192.168.1.1
+  ip=<span class="hljs-number">192.168</span>.<span class="hljs-number">1.99</span>
+  nm=<span class="hljs-number">255.255</span>.<span class="hljs-number">255.0</span>
+  gw=<span class="hljs-number">192.168</span>.<span class="hljs-number">1.1</span>
 
   <span class="hljs-comment"># ip adresse einstellen</span>
   ifconfig <span class="hljs-variable">$netzkarte</span> <span class="hljs-variable">$ip</span> netmask <span class="hljs-variable">$nm</span>         <span class="hljs-comment"># Hier wird das Netzwerkger&#xE4;t (eth0) manuell auf eine andere IP-Adresse eingestellt.</span>
@@ -1922,12 +1935,12 @@
   <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;nameserver <span class="hljs-variable">$gw</span>&quot;</span> &gt; /etc/resolv.conf    <span class="hljs-comment"># Schreibt den DNS-Server (in diesem Fall gleich dem Standardgateway) in die Datei /etc/resolv.conf</span>
 </code></pre>
 <h2 id="if-beispiel-mit-eingabe-einer-zahl">IF-Beispiel mit Eingabe einer Zahl</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
   <span class="hljs-built_in">read</span> -p <span class="hljs-string">&quot;Gib eine Zahl ein: &quot;</span> antwort
 
   <span class="hljs-comment"># pr&#xFC;fe ob antwort 1 ist</span>
-  <span class="hljs-keyword">if</span> [ <span class="hljs-variable">$antwort</span> = 1 ] ; <span class="hljs-keyword">then</span>
+  <span class="hljs-keyword">if</span> [ <span class="hljs-variable">$antwort</span> = <span class="hljs-number">1</span> ] ; <span class="hljs-keyword">then</span>
 
       <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Die Antwort ist 1&quot;</span>
 
@@ -1939,12 +1952,12 @@
 </code></pre>
 <p>In diesem Beispiel wird die Variable <code>$antwort</code><strong> </strong>abgefragt und mit der Testanweisung &#xFC;berpr&#xFC;ft.</p>
 <h2 id="if-beispiel-&#xFC;berpr&#xFC;fung-ob-ein-verzeichnis-vorhanden-ist">IF-Beispiel! &#xDC;berpr&#xFC;fung, ob ein Verzeichnis vorhanden ist</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
   CHECKDIR=<span class="hljs-string">&quot;/mnt/sicherung&quot;</span>
 
   <span class="hljs-comment"># pr&#xFC;fe ob /mnt/sicherung vorhanden ist</span>
-  <span class="hljs-keyword">if</span> [ <span class="hljs-_">-d</span> <span class="hljs-variable">$CHECKDIR</span> ]; <span class="hljs-keyword">then</span>
+  <span class="hljs-keyword">if</span> [ <span class="hljs-operator">-d</span> <span class="hljs-variable">$CHECKDIR</span> ]; <span class="hljs-keyword">then</span>
 
       <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Ja das Verzeichnis ist da&quot;</span>
 
@@ -1957,7 +1970,7 @@
 <p>Eine weitere Variante ist das &#xDC;berpr&#xFC;fen von Dateien und Verzeichnissen.</p>
 <p>Im vorliegenden Fall wird gepr&#xFC;ft, ob das Verzeichnis <code>/mnt/sicherung</code><strong> </strong>existiert, im Nein-Fall wird das Verzeichnis angelegt.</p>
 <h2 id="mehrfachselektion">Mehrfachselektion</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
   <span class="hljs-built_in">read</span> -p <span class="hljs-string">&quot;Soll ich weitermachen? (j/n) &quot;</span> antwort
 
@@ -1994,7 +2007,7 @@ banane
 alles obst
 ende gel&#xE4;nde
 </code></pre><p>Mit dem nachfolgenden Shellskript wird diese Datei zeilenweise durchlaufen. Jeder Wert steht somit in der Variable <code>$daten</code> und kann entsprechend weiterverarbeitet werden.</p>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
   <span class="hljs-keyword">for</span> daten <span class="hljs-keyword">in</span> $(cat liste1.txt); <span class="hljs-keyword">do</span>
 
@@ -2004,9 +2017,9 @@ ende gel&#xE4;nde
 </code></pre>
 <h2 id="z&#xE4;hlerschleifen">Z&#xE4;hlerschleifen</h2>
 <p>Z&#xE4;hlerschleifen wie man sie von anderen Programmiersprachen kennt, sind bei Bash Scripting nat&#xFC;rlich auch m&#xF6;glich</p>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
-<span class="hljs-keyword">for</span> (( i=10; i &gt; 0; i-- )) ; <span class="hljs-keyword">do</span>
+<span class="hljs-keyword">for</span> (( i=<span class="hljs-number">10</span>; i &gt; <span class="hljs-number">0</span>; i-- )) ; <span class="hljs-keyword">do</span>
 
       <span class="hljs-built_in">echo</span> <span class="hljs-variable">$i</span>;
 
@@ -2014,25 +2027,25 @@ ende gel&#xE4;nde
 </code></pre>
 <h2 id="lustiges-beispiel-mit-akustischem-signal">Lustiges Beispiel mit akustischem Signal</h2>
 <p>Bei diesem Beispiel muss das Paket <strong><code>beep</code> </strong>installiert sein! </p>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
   <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;A C H T U N G ...&quot;</span>
 
-  <span class="hljs-keyword">for</span> (( i=10; i &gt; 0; i-- )) ; <span class="hljs-keyword">do</span>
+  <span class="hljs-keyword">for</span> (( i=<span class="hljs-number">10</span>; i &gt; <span class="hljs-number">0</span>; i-- )) ; <span class="hljs-keyword">do</span>
 
-      <span class="hljs-built_in">let</span> sound=(<span class="hljs-variable">$i</span>*250)
+      <span class="hljs-built_in">let</span> sound=(<span class="hljs-variable">$i</span>*<span class="hljs-number">250</span>)
       <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Frequenz: <span class="hljs-variable">$sound</span>&quot;</span>
-      beep <span class="hljs-_">-f</span> <span class="hljs-variable">$sound</span>
+      beep <span class="hljs-operator">-f</span> <span class="hljs-variable">$sound</span>
 
-      sleep 0.3
+      sleep <span class="hljs-number">0.3</span>
 
   <span class="hljs-keyword">done</span>
 
-  beep <span class="hljs-_">-f</span> 100 <span class="hljs-_">-l</span> 800 
+  beep <span class="hljs-operator">-f</span> <span class="hljs-number">100</span> <span class="hljs-operator">-l</span> <span class="hljs-number">800</span> 
   <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;E N D E !!!&quot;</span>
 </code></pre>
 <h2 id="jedes-zeichen-einer-zeichenkette-abarbeiten">Jedes Zeichen einer Zeichenkette abarbeiten</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#! /bin/bash
+<pre><code class="lang-bash"><span class="hljs-shebang">#! /bin/bash
 </span>
 <span class="hljs-comment">#</span>
 <span class="hljs-comment"># Diese Schleife durchl&#xE4;uft den String</span>
@@ -2040,12 +2053,12 @@ ende gel&#xE4;nde
 <span class="hljs-comment">#</span>
 
 S=<span class="hljs-string">&quot;abcdefg123456789&quot;</span>;
-n=0;
+n=<span class="hljs-number">0</span>;
 
-<span class="hljs-keyword">while</span> [ <span class="hljs-variable">$n</span> <span class="hljs-_">-lt</span> <span class="hljs-variable">${#S}</span> ]; <span class="hljs-keyword">do</span>
+<span class="hljs-keyword">while</span> [ <span class="hljs-variable">$n</span> <span class="hljs-operator">-lt</span> <span class="hljs-variable">${#S}</span> ]; <span class="hljs-keyword">do</span>
 
     <span class="hljs-built_in">echo</span> <span class="hljs-variable">${S:n:1}</span>
-    n=$(( <span class="hljs-variable">$n</span> + 1 ))
+    n=$(( <span class="hljs-variable">$n</span> + <span class="hljs-number">1</span> ))
 
 <span class="hljs-keyword">done</span>;
 </code></pre>
@@ -2127,7 +2140,7 @@ fi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Grundlagen (DE)","level":"1.3.2.1","depth":3,"next":{"title":"CLI | dd progressbar (DE)","level":"1.3.3","depth":2,"path":"cli_magic/dd-progressbar.md","ref":"cli_magic/dd-progressbar.md","articles":[]},"previous":{"title":"CLI | Bash Skripting (DE)","level":"1.3.2","depth":2,"path":"cli_magic/cli-bash-skripting.md","ref":"cli_magic/cli-bash-skripting.md","articles":[{"title":"Grundlagen (DE)","level":"1.3.2.1","depth":3,"path":"cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md","ref":"cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md","mtime":"2018-10-02T14:25:14.615Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-02T14:27:37.949Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Grundlagen (DE)","level":"1.3.2.1","depth":3,"next":{"title":"CLI | dd progressbar (DE)","level":"1.3.3","depth":2,"path":"cli_magic/dd-progressbar.md","ref":"cli_magic/dd-progressbar.md","articles":[]},"previous":{"title":"CLI | Bash Skripting (DE)","level":"1.3.2","depth":2,"path":"cli_magic/cli-bash-skripting.md","ref":"cli_magic/cli-bash-skripting.md","articles":[{"title":"Grundlagen (DE)","level":"1.3.2.1","depth":3,"path":"cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md","ref":"cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters","-lunr","-search","search-plus-mod","-sharing","edit-link","page-toc-button","language-picker"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"edit-link":{"label":"EDIT","base":"https://github.com/dtnpnk/docs/tree/master/"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"language-picker":{"grid-columns":3},"collapsible-chapters":{},"search-plus-mod":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"domain":"https://dtnpnk.github.io/docs"},"title":"Docs","language":"en","gitbook":"*"},"file":{"path":"cli_magic/cli-bash-skripting/cli-bash-scripting-grundlagen.md","mtime":"2018-11-08T14:40:52.689Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-08T14:43:08.257Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -2161,7 +2174,7 @@ fi
         
     
         
-        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
         
     
 
