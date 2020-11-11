@@ -1,4 +1,0 @@
-# GIT \| Travis CI
-
-
-
