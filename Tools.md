@@ -11,9 +11,6 @@ lens: [https://github.com/lensapp/lens](https://github.com/lensapp/lens)
 bat: [https://github.com/sharkdp/bat](https://github.com/sharkdp/bat)
 * a cat clone with syntax highlighting
 
-Gatlin: [https://gatling.io/](https://gatling.io/)
-* Performance Testing
-
 Navicat: [https://www.navicat.com/en/products/navicat-for-oracle](https://www.navicat.com/en/products/navicat-for-oracle)
 * DB GUI für Oracle, PostgreSQL & more
 
@@ -44,3 +41,8 @@ StatusOK
 PlantUML
 * [https://plantuml.com/](https://plantuml.com/)
 
+## Loadtesting
+* Gatlin: [https://gatling.io/](https://gatling.io/)
+  * Performance Testing
+* Locust
+* K6
