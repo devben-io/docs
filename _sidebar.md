@@ -44,6 +44,7 @@
     - [Screen cheatsheet](/Cheat%20Sheets/Screen-cheatsheet.md)
     - [Tmux cheatsheet](/Cheat%20Sheets/Tmux-cheatsheet.md)
     - [Yaml cheatsheet](/Cheat%20Sheets/Yaml-cheatsheet.md)
+    - [k8s Cheatsheet](/Cheat%20Sheets/k8s-Cheatsheet.md)
   - Docker
     - [Dynamic_resovler_in_nginx](/Docker/Dynamic_resovler_in_nginx.md)
     - [Logging](/Docker/Logging.md)
@@ -89,7 +90,7 @@
     - [Minishift](/K8s/Minishift.md)
     - [Oc cheat sheet](/K8s/Oc-cheat-sheet.md)
     - [Openshift](/K8s/Openshift.md)
-  - Link collection
+  - [Link collection](/Link-collection)
     - [Bind mount](/Link-collection/Bind-mount.md)
     - [Changelog_best_practice](/Link-collection/Changelog_best_practice.md)
     - [Encrypt remote backups](/Link-collection/Encrypt-remote-backups.md)
@@ -117,6 +118,7 @@
       - [RMQ Hacks](/Misc./RabbitMQ/RMQ-Hacks.md)
     - [SSH Tunneling port forwarding](/Misc./SSH%20Tunneling-port-forwarding.md)
     - [SSH proxies and jumphosts](/Misc./SSH-proxies-and-jumphosts.md)
+    - [Unikernel](/Misc./Unikernel.md)
   - OS
     - BSD
       - [Freebsd tinc](/OS/BSD/Freebsd-tinc.md)
