@@ -40,6 +40,7 @@ StatusOK
 
 PlantUML
 * [https://plantuml.com/](https://plantuml.com/)
+* https://blog.anoff.io/puml-cheatsheet.pdf
 
 ## Loadtesting
 * Gatlin: [https://gatling.io/](https://gatling.io/)
