@@ -1,5 +1,8 @@
 # Tools
 
+dog: [https://github.com/ogham/dog](https://github.com/ogham/dog)
+* DNS client a lá `dig`
+
 httrack: [https://www.httrack.com/](https://www.httrack.com/)
 * Webcrawler / Website offline downloader
 * Linux CLI tool
