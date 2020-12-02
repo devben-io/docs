@@ -70,6 +70,7 @@
     - [Squashing](/Git/Squashing.md)
     - [Subtrees](/Git/Subtrees.md)
     - [Sync fork from upstream repo](/Git/Sync-fork-from-upstream-repo.md)
+    - [Url rewrite](/Git/Url-rewrite.md)
     - [base64 encoded images in markdown](/Git/base64-encoded-images-in-markdown.md)
   - IDE
     - [Vscode_hacks](/IDE/Vscode_hacks.md)
@@ -114,6 +115,7 @@
     - [Install_snapscan](/Misc./Install_snapscan.md)
     - [Key to sre](/Misc./Key-to-sre.md)
     - [Matrix reset password synapse](/Misc./Matrix-reset-password-synapse.md)
+    - [Postmortem](/Misc./Postmortem.md)
     - RabbitMQ
       - [RMQ Hacks](/Misc./RabbitMQ/RMQ-Hacks.md)
     - [SSH Tunneling port forwarding](/Misc./SSH%20Tunneling-port-forwarding.md)
