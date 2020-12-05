@@ -1,5 +1,8 @@
 # Tools
 
+k8ssandra: [https://k8ssandra.io/](https://k8ssandra.io/)
+* Cassandra in k8s
+
 dog: [https://github.com/ogham/dog](https://github.com/ogham/dog)
 * DNS client a lá `dig`
 
