@@ -1,5 +1,12 @@
 # Tools
 
+
+pet: [https://github.com/knqyf263/pet](https://github.com/knqyf263/pet)
+* CLI snippet manager
+
+Gitahead: [https://gitahead.github.io/gitahead.com/](https://gitahead.github.io/gitahead.com/)
+* GUI for git
+
 k8ssandra: [https://k8ssandra.io/](https://k8ssandra.io/)
 * Cassandra in k8s
 
